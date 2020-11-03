@@ -3,7 +3,7 @@ package lesson02;
 public class PersonArray {
 
     /**
-     * Person Array
+     * Person Array sort via recursion
      */
 
     public static void main(String[] args) {
