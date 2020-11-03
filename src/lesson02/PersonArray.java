@@ -7,51 +7,46 @@ public class PersonArray {
      */
 
     public static void main(String[] args) {
-        Person p1 = new Person("Anton", 90, 190);
-        Person p2 = new Person("Caligula", 90, 170);
-        Person p3 = new Person("Macron", 90, 180);
-        Person p4 = new Person("Trump", 90, 150);
-        Person p5 = new Person("Biden", 90, 130);
-        Person p6 = new Person("Ivan", 90, 170);
-        Person p7 = new Person("Vova", 90, 156);
-        Person p8 = new Person("Merkel", 90, 199);
+        Person p1 = new Person("Anton", 23, 190);
+        Person p2 = new Person("Caligula", 25, 170);
+        Person p3 = new Person("Macron", 42, 180);
+        Person p4 = new Person("Trump", 72, 150);
+        Person p5 = new Person("Biden", 76, 130);
+        Person p6 = new Person("Ivan", 18, 170);
+        Person p7 = new Person("Vova", 44, 156);
+        Person p8 = new Person("Merkel", 70, 199);
 
         Person[] arrP = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8};
 
-        int[] intArr = {16, 23, 14, 7, 21, 20, 6, 1, 17, 13, 12, 9, 3, 19};
+        // printArr( sort(arrP) );
 
-        printArr(sort(intArr));
+        sort(arrP);
 
         System.out.println(arrP[0].name);
         System.out.println(p1.name);
         System.out.println(arrP[7].name);
     }
 
-    public static int[] sort(int[] intArr) {
+    public static Person[] sort(Person[] arrP) {
 
-        int k;
-        for (int i = 0; i < intArr.length - 1; i++) {
+        Person k;
+        for (int i = 0; i < arrP.length - 1; i++) {
 
-            if (intArr[i] < intArr[i + 1]) continue;
+            System.out.println(arrP[i].weight);
+            System.out.println(arrP[i + 1].weight);
 
-            k = intArr[i];
+            if (arrP[i].weight < arrP[i + 1].weight) continue;
 
-            intArr[i] = intArr[i + 1];
-            intArr[i + 1] = k;
+            k = arrP[i];
 
-            sort(intArr);
+            arrP[i].weight = arrP[i + 1].weight;
+            arrP[i + 1].weight = k.weight;
+
+            sort(arrP);
         }
 
-        return intArr;
+        return arrP;
     }
-
-/*    public static void main(String[] args) {
-        Bubblesort bs = new Bubblesort();
-        int[] arr = bs.sort();
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(i + 1 + ": " + arr[i]);
-        }
-    }*/
 
     public static void printArr(int[] arr) {
 
