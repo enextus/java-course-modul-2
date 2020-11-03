@@ -7,7 +7,7 @@ public class PersonArray {
      */
 
     public static void main(String[] args) {
-        Person p1 = new Person("Anton", 23, 190);
+        Person p1 = new Person("Anton", 90, 190);
         Person p2 = new Person("Caligula", 25, 170);
         Person p3 = new Person("Macron", 42, 180);
         Person p4 = new Person("Trump", 72, 150);
@@ -25,15 +25,17 @@ public class PersonArray {
 
     public static Person[] sort(Person[] arrP) {
 
-        double temp;
+        Person temp;
         for (int i = 0; i < arrP.length - 1; i++) {
 
             if (arrP[i].weight < arrP[i + 1].weight) continue;
 
-            temp = arrP[i].weight;
+            temp = arrP[i];
 
-            arrP[i].weight = arrP[i + 1].weight;
-            arrP[i + 1].weight = temp;
+            System.out.println("temp : " + temp);
+
+            arrP[i] = arrP[i + 1];
+            arrP[i + 1] = temp;
 
             sort(arrP);
         }
