@@ -33,7 +33,6 @@ public class Sum {
 
     public static void sum() {
 
-        // test 12
     }
 
     public static int sum(double d, int n) {
@@ -48,7 +47,7 @@ public class Sum {
 
     public static void sum(String s1, String s2, String s3) {
 
-        // test
+
     }
 
     public static int sum(int a, int b) {
