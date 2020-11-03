@@ -1,7 +1,7 @@
 public class CrudArray {
 
     /**
-     * CrudArray test
+     * CrudArray
      */
 
     public static void main(String[] args) {
