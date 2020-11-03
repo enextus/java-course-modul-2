@@ -25,28 +25,24 @@ public class PersonArray {
         printArr( sort(arrP) );
 
         // System.out.println(arrP[0].name);
-        System.out.println(p1.name);
-        System.out.println(arrP[7].name);
+        // System.out.println(p1.name);
+        // System.out.println(arrP[7].name);
     }
 
     public static Person[] sort(Person[] arrP) {
 
-        double tempObj;
+        double temp;
         for (int i = 0; i < arrP.length - 1; i++) {
-
-            System.out.println("1. p.weight: " + arrP[i].weight);
-            System.out.println("1. p.weight + 1: " + arrP[i + 1].weight);
-            System.out.println();
 
             if (arrP[i].weight < arrP[i + 1].weight) continue;
 
-            tempObj = arrP[i].weight;
+            temp = arrP[i].weight;
 
-            System.out.println("2. tempObj: " + tempObj);
+            System.out.println("2. tempObj: " + temp);
             System.out.println();
 
             arrP[i].weight = arrP[i + 1].weight;
-            arrP[i + 1].weight = tempObj;
+            arrP[i + 1].weight = temp;
 
             System.out.println("3. arrP[i]: " + arrP[i].weight);
             System.out.println("3. arrP[i] + 1: " + arrP[i + 1].weight);
