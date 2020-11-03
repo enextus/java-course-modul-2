@@ -33,7 +33,7 @@ public class Sum {
 
     public static void sum() {
 
-        // test
+        // test 1
     }
 
     public static int sum(double d, int n) {
