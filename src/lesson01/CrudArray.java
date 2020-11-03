@@ -1,7 +1,9 @@
+package lesson01;
+
 public class CrudArray {
 
     /**
-     * CrudArray
+     * lesson01.CrudArray
      */
 
     public static void main(String[] args) {
