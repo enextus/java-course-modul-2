@@ -18,15 +18,9 @@ public class PersonArray {
 
         Person[] arrP = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8};
 
-        // printArr( sort(arrP) );
-
         sort(arrP);
 
-        printArr( sort(arrP) );
-
-        // System.out.println(arrP[0].name);
-        // System.out.println(p1.name);
-        // System.out.println(arrP[7].name);
+        printArr(sort(arrP));
     }
 
     public static Person[] sort(Person[] arrP) {
@@ -38,15 +32,8 @@ public class PersonArray {
 
             temp = arrP[i].weight;
 
-            System.out.println("2. tempObj: " + temp);
-            System.out.println();
-
             arrP[i].weight = arrP[i + 1].weight;
             arrP[i + 1].weight = temp;
-
-            System.out.println("3. arrP[i]: " + arrP[i].weight);
-            System.out.println("3. arrP[i] + 1: " + arrP[i + 1].weight);
-            System.out.println();
 
             sort(arrP);
         }
@@ -59,4 +46,3 @@ public class PersonArray {
         for (Person element : arr) System.out.println(element.weight + " ");
     }
 }
-
