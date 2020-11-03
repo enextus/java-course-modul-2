@@ -1,6 +1,11 @@
 package lesson01;
 
 public class TypeTester {
+
+    /**
+     * TypeTester t = new Typetester();
+     * t.printType( yourVariable );
+     */
     void printType(byte x) {
         System.out.println(x + " is an byte");
     }
