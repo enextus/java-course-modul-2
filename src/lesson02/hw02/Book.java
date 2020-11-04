@@ -40,5 +40,6 @@ class BookTest {
         bookTwo.displayInfo();
         bookThree.displayInfo();
         bookFour.displayInfo();
+        System.out.println();
     }
 }
