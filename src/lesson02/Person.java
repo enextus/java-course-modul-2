@@ -18,7 +18,6 @@ public class Person {
     }
 
     public void findBMI() {
-
         bmi = weight / ((height) * (height) / 10000);
     }
 
