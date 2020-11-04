@@ -18,4 +18,9 @@ public class Lcm {
 
         return -1;
     }
+
+    public static int getGcd(int a, int b) {
+
+        return b == 0 ? a : getGcd(b, a % b);
+    }
 }
