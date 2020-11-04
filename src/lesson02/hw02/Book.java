@@ -32,7 +32,7 @@ public class Book {
 
 class BookTest {
     public static void main(String[] args) {
-        Book bookOne = new Book(1, "Tolstoj", "War and Peace", 1900);
+        Book bookOne = new Book(1, "Leo Tolstoy", "War and Peace", 1869);
 
         bookOne.displayInfo();
     }
