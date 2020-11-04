@@ -14,11 +14,18 @@ public class Book {
     int year;
 
 
-    public Book(int ID, String bookAuthor, String bookTitle, int bookYear) {
-        id = ID;
+    public Book(int bookId, String bookAuthor, String bookTitle, int bookYear) {
+        id = bookId;
         author = bookAuthor;
         title = bookTitle;
         year = bookYear;
+    }
+
+    public void displayInfo() {
+        System.out.println("The ID is: " + id);
+        System.out.println("The author is: " + author);
+        System.out.println("The height is: " + height);
+        System.out.println("The BMI is: " + bmi);
     }
 }
 
