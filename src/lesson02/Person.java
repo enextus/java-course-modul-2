@@ -19,7 +19,7 @@ public class Person {
 
     public void findBMI() {
 
-        bmi = weight / (height * height);
+        bmi = weight / ((height) * (height) / 10000);
     }
 
     public void displayInfo() {
@@ -34,6 +34,7 @@ class PersonTest {
     public static void main(String[] args) {
         Person user = new Person("Edward", 94, 182);
 
+        user.findBMI();
         user.displayInfo();
     }
 }
