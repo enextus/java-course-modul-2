@@ -1,7 +1,5 @@
 package lesson02.hw02;
 
-import lesson02.Person;
-
 public class Book {
 
     /**
