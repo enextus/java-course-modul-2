@@ -31,9 +31,9 @@ public class Book {
 class BookTest {
     public static void main(String[] args) {
         Book bookOne = new Book(1, "Leo Tolstoy", "War and Peace", 1869);
-        Book bookTwo = new Book(1, "Jane Austen", "Pride and Prejudice", 1813);
-        Book bookThree = new Book(1, "Dante Alighieri", "Divine Comedy", 1321);
-        Book bookFour = new Book(1, "Joshua Bloch", "Effective Java", 2001);
+        Book bookTwo = new Book(2, "Jane Austen", "Pride and Prejudice", 1813);
+        Book bookThree = new Book(3, "Dante Alighieri", "Divine Comedy", 1321);
+        Book bookFour = new Book(4, "Joshua Bloch", "Effective Java", 2001);
 
 
         bookOne.displayInfo();
