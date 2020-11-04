@@ -24,8 +24,8 @@ public class Book {
     public void displayInfo() {
         System.out.println("The ID is: " + id);
         System.out.println("The author is: " + author);
-        System.out.println("The height is: " + height);
-        System.out.println("The BMI is: " + bmi);
+        System.out.println("The height is: " + title);
+        System.out.println("The BMI is: " + year);
     }
 }
 
