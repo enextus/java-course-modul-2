@@ -1,32 +1,9 @@
 package lesson03;
 
-class TestCat {
-    public static void main(String[] args) {
-        Cat catchen = new Cat("Тигр");
-        Cat siam1 = new Cat(
-                "Фараон",
-                "2020-11-04",
-                "Мальчик",
-                "Silver",
-                100);
-
-        Address siam1Address = new Address("Berlin", "Kudam");
-        siam1Address.houseNumber = 56;
-        siam1Address.zip = "00000";
-
-        siam1.address = siam1Address;
-        Address adr = new Address("Москва", "Ленина");
-
-        Cat barsik = new Cat("Барсик", new Address("Dresden", "Lenina"));
-        Cat puzik = new Cat("Пузик", adr);
-
-    }
-}
-
 public class Cat {
-    String name; // кличка
-    String birthDate; // днюха
-    String breed;  // порода
+    String name;
+    String birthDate;
+    String breed;
     String color;
     int chipID;
     String gender;
@@ -37,9 +14,10 @@ public class Cat {
     Address address;
     double bmiIndex;
 
-    //final Long VERSION = 2020_11_04_00_10_07L;  // версионирование, java, убунту, андроид
+    final Long VERSION = 2020_11_04_00_10_07L;
 
     Cat(String name) {
+
     }
 
     Cat(String name, Address address) {
@@ -82,3 +60,31 @@ class Address {
     }
 }
 
+class TestCat {
+    public static void main(String[] args) {
+        Cat catOne = new Cat("Тигр");
+        Cat siam1 = new Cat(
+                "Фараон",
+                "2020-11-04",
+                "Мальчик",
+                "Silver",
+                100);
+
+        Address siam1Address = new Address("Berlin", "Kudam");
+
+        siam1Address.houseNumber = 56;
+        siam1Address.zip = "00000";
+
+        siam1.address = siam1Address;
+
+        Address adr = new Address("Москва", "Ленина");
+
+        Cat cat02 = new Cat("Барсик", new Address("Dresden", "Lenina"));
+        Cat cat03 = new Cat("Пузик", adr);
+
+        Cat cat01 = new Cat("TestName");
+
+        System.out.println(cat01.name);
+
+    }
+}
