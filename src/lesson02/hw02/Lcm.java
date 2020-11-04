@@ -11,13 +11,17 @@ public class Lcm {
      * The lcm is the "lowest common denominator" (lcd) that can be used before fractions can be added, subtracted or compared.
      * The lcm of more than two integers is also well-defined: it is the smallest positive integer that is divisible by each of them.
      *
+     * Expectation:
+     *  42
      *
+     * Test:
+     *  42
      */
 
     public static void main(String[] args) {
 
-        int a = 20;
-        int b = 100;
+        int a = 21;
+        int b = 6;
 
         System.out.println(getLcm(a, b));
     }
