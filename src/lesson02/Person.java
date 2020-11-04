@@ -24,16 +24,15 @@ public class Person {
 
     public void displayInfo() {
         System.out.println("The name is: " + name);
-        System.out.println("The name is: " + weight);
-        System.out.println("The name is: " + height);
+        System.out.println("The weight is: " + weight);
+        System.out.println("The height is: " + height);
         System.out.println("The BMI is: " + bmi);
     }
-
 }
 
 class PersonTest {
     public static void main(String[] args) {
-        Person user = new Person("Vasil", 94, 182);
+        Person user = new Person("Edward", 94, 182);
 
         user.displayInfo();
     }
