@@ -63,6 +63,7 @@ class Address {
 class TestCat {
     public static void main(String[] args) {
         Cat catOne = new Cat("Тигр");
+
         Cat siam1 = new Cat(
                 "Фараон",
                 "2020-11-04",
