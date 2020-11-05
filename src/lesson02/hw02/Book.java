@@ -1,31 +1,30 @@
 package lesson02.hw02;
 
+/**
+ * Class Book
+ * *
+ * Test:
+ * The ID is: 1
+ * The author is: Leo Tolstoy
+ * The height is: War and Peace
+ * The BMI is: 1869
+ * *
+ * The ID is: 2
+ * The author is: Jane Austen
+ * The height is: Pride and Prejudice
+ * The BMI is: 1813
+ * *
+ * The ID is: 3
+ * The author is: Dante Alighieri
+ * The height is: Divine Comedy
+ * The BMI is: 1321
+ * *
+ * The ID is: 4
+ * The author is: Joshua Bloch
+ * The height is: Effective Java
+ * The BMI is: 2001
+ */
 public class Book {
-
-    /**
-     * Class Book
-     *
-     * Test:
-     * The ID is: 1
-     * The author is: Leo Tolstoy
-     * The height is: War and Peace
-     * The BMI is: 1869
-     *
-     * The ID is: 2
-     * The author is: Jane Austen
-     * The height is: Pride and Prejudice
-     * The BMI is: 1813
-     *
-     * The ID is: 3
-     * The author is: Dante Alighieri
-     * The height is: Divine Comedy
-     * The BMI is: 1321
-     *
-     * The ID is: 4
-     * The author is: Joshua Bloch
-     * The height is: Effective Java
-     * The BMI is: 2001
-     */
 
     int id;
     String author;
