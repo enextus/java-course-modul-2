@@ -1,6 +1,8 @@
 package lesson02.hw02;
 
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Class Book
@@ -15,7 +17,7 @@ public class Book {
     String cover;
     int citationIndex;
     String isbn;
-    Timestamp ts;
+    String ts;
 
     public Book(int bookId,
                 String bookAuthor,
@@ -30,9 +32,9 @@ public class Book {
         this.ts = getTimestamp();
     }
 
-    public static Timestamp getTimestamp() {
+    public static String getTimestamp() {
 
-        return new Timestamp(System.currentTimeMillis());
+        return new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date());
     }
 
     public Book(int bookId,
@@ -56,7 +58,7 @@ public class Book {
         this.citationIndex = bookCitationIndex;
         this.isbn = bookIsbn;
 
-        this.ts = new Timestamp(System.currentTimeMillis());
+        this.ts = getTimestamp();
     }
 
     public void displayInfo() {
