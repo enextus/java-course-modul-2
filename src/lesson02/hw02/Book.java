@@ -18,7 +18,7 @@ public class Book {
     int citationIndex;
     String isbn;
     String ts;
-    int bookmark;
+    private int bookmark;
 
     public Book(int bookId,
                 String bookAuthor,
@@ -63,12 +63,16 @@ public class Book {
         this.ts = getTimestamp();
     }
 
-    private void setBookmark(int bookmark){
+    public void setBookmark(int bookmark){
         this.bookmark = bookmark;
     }
 
-    private int getBookmark(){
+    public int getBookmark(){
         return this.bookmark;
+    }
+
+    public void displayBookmark() {
+        System.out.println("The bookmark is on site: " + this.getBookmark());
     }
 
     public void displayInfo() {
@@ -124,5 +128,10 @@ class BookTest {
         System.out.println();
 
         bookSeven.displayInfo();
+
+        bookSeven.setBookmark(23);
+        bookSeven.getBookmark();
+
+
     }
 }
