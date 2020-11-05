@@ -50,7 +50,6 @@ public class Book {
         this.author = bookAuthor;
         this.title = bookTitle;
         this.year = bookYear;
-
         this.genre = bookGenre;
         this.language = bookLanguage;
         this.cover = bookCover;
