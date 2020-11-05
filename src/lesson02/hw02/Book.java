@@ -68,8 +68,7 @@ public class Book {
     }
 
     private int getBookmark(){
-        //
-        return -1;
+        return this.bookmark;
     }
 
     public void displayInfo() {
