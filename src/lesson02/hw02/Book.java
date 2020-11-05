@@ -61,6 +61,14 @@ public class Book {
         this.ts = getTimestamp();
     }
 
+    private void setBookmark(){
+        //
+    }
+
+    private int getBookmark(){
+        //
+    }
+
     public void displayInfo() {
         System.out.println("The ID is: " + this.id);
         System.out.println("The author is: " + this.author);
@@ -75,6 +83,15 @@ public class Book {
     }
 }
 
+
+
+
+
+
+
+
+
+// Test Class
 class BookTest {
     public static void main(String[] args) {
         Book bookOne = new Book(1, "Leo Tolstoy", "War and Peace", 1869);
