@@ -1,5 +1,7 @@
 package lesson02.hw02;
 
+import java.sql.Timestamp;
+
 /**
  * Class Book
  * *
@@ -33,14 +35,45 @@ public class Book {
     String genre;
     String language;
     String cover;
-    String citationindex;
+    String citationIndex;
     String isbn;
 
-    public Book(int bookId, String bookAuthor, String bookTitle, int bookYear) {
+    public Book(int bookId,
+                String bookAuthor,
+                String bookTitle,
+                int bookYear) {
+
         id = bookId;
         author = bookAuthor;
         title = bookTitle;
         year = bookYear;
+
+    }
+
+    public Book(int bookId,
+                String bookAuthor,
+                String bookTitle,
+                int bookYear,
+                String bookGenre,
+                String bookLanguage,
+                String bookCover,
+                String bookCitationIndex,
+                String bookIsbn) {
+
+        id = bookId;
+        author = bookAuthor;
+        title = bookTitle;
+        year = bookYear;
+
+        genre = bookGenre;
+        language = bookLanguage;
+        cover = bookCover;
+        citationIndex = bookCitationIndex;
+        isbn = bookIsbn;
+        int myYear = 2020;
+        int myMonth = 11;
+        int myDay = 5;
+        Timestamp ts = Timestamp.valueOf(String.format("%04d-%02d-%02d 00:00:00", myYear, myMonth, myDay));
     }
 
     public void displayInfo() {
@@ -57,6 +90,8 @@ class BookTest {
         Book bookTwo = new Book(2, "Jane Austen", "Pride and Prejudice", 1813);
         Book bookThree = new Book(3, "Dante Alighieri", "Divine Comedy", 1321);
         Book bookFour = new Book(4, "Joshua Bloch", "Effective Java", 2001);
+
+
 
         bookOne.displayInfo();
         System.out.println();
