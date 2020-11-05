@@ -15,6 +15,7 @@ public class Book {
     String cover;
     int citationIndex;
     String isbn;
+    Timestamp ts;
 
     public Book(int bookId,
                 String bookAuthor,
@@ -25,6 +26,8 @@ public class Book {
         this.author = bookAuthor;
         this.title = bookTitle;
         this.year = bookYear;
+
+        this.ts =  new Timestamp(System.currentTimeMillis());
     }
 
     public Book(int bookId,
@@ -48,10 +51,7 @@ public class Book {
         this.citationIndex = bookCitationIndex;
         this.isbn = bookIsbn;
 
-        int myYear = 2020;
-        int myMonth = 11;
-        int myDay = 5;
-        Timestamp ts = Timestamp.valueOf(String.format("%04d-%02d-%02d 00:00:00", myYear, myMonth, myDay));
+        this.ts =  new Timestamp(System.currentTimeMillis());
     }
 
     public void displayInfo() {
@@ -64,7 +64,7 @@ public class Book {
         if (this.language != null) System.out.println("The language is: " + this.language);
         if (this.cover != null) System.out.println("The cover is: " + this.cover);
 
-
+        System.out.println("Timestamp: " + this.ts);
     }
 }
 
