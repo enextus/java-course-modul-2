@@ -27,7 +27,12 @@ public class Book {
         this.title = bookTitle;
         this.year = bookYear;
 
-        this.ts =  new Timestamp(System.currentTimeMillis());
+        this.ts = getTimestamp();
+    }
+
+    public static Timestamp getTimestamp() {
+
+        return new Timestamp(System.currentTimeMillis());
     }
 
     public Book(int bookId,
@@ -51,7 +56,7 @@ public class Book {
         this.citationIndex = bookCitationIndex;
         this.isbn = bookIsbn;
 
-        this.ts =  new Timestamp(System.currentTimeMillis());
+        this.ts = new Timestamp(System.currentTimeMillis());
     }
 
     public void displayInfo() {
