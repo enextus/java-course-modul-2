@@ -1,6 +1,5 @@
 package lesson02.hw02;
 
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -35,7 +34,6 @@ public class Book {
     }
 
     public static String getTimestamp() {
-
         return new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date());
     }
 
@@ -89,14 +87,6 @@ public class Book {
     }
 }
 
-
-
-
-
-
-
-
-
 // Test Class
 class BookTest {
     public static void main(String[] args) {
@@ -128,9 +118,7 @@ class BookTest {
         System.out.println();
 
         bookSeven.displayInfo();
-
         bookSeven.setBookmark(23);
-
         bookSeven.displayBookmark();
     }
 }
