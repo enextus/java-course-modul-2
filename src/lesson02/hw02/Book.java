@@ -4,30 +4,8 @@ import java.sql.Timestamp;
 
 /**
  * Class Book
- * *
- * Test:
- * The ID is: 1
- * The author is: Leo Tolstoy
- * The height is: War and Peace
- * The BMI is: 1869
- * *
- * The ID is: 2
- * The author is: Jane Austen
- * The height is: Pride and Prejudice
- * The BMI is: 1813
- * *
- * The ID is: 3
- * The author is: Dante Alighieri
- * The height is: Divine Comedy
- * The BMI is: 1321
- * *
- * The ID is: 4
- * The author is: Joshua Bloch
- * The height is: Effective Java
- * The BMI is: 2001
  */
 public class Book {
-
     int id;
     String author;
     String title;
@@ -43,11 +21,10 @@ public class Book {
                 String bookTitle,
                 int bookYear) {
 
-        id = bookId;
-        author = bookAuthor;
-        title = bookTitle;
-        year = bookYear;
-
+        this.id = bookId;
+        this.author = bookAuthor;
+        this.title = bookTitle;
+        this.year = bookYear;
     }
 
     public Book(int bookId,
@@ -60,16 +37,16 @@ public class Book {
                 int bookCitationIndex,
                 String bookIsbn) {
 
-        id = bookId;
-        author = bookAuthor;
-        title = bookTitle;
-        year = bookYear;
+        this.id = bookId;
+        this.author = bookAuthor;
+        this.title = bookTitle;
+        this.year = bookYear;
 
-        genre = bookGenre;
-        language = bookLanguage;
-        cover = bookCover;
-        citationIndex = bookCitationIndex;
-        isbn = bookIsbn;
+        this.genre = bookGenre;
+        this.language = bookLanguage;
+        this.cover = bookCover;
+        this.citationIndex = bookCitationIndex;
+        this.isbn = bookIsbn;
 
         int myYear = 2020;
         int myMonth = 11;
@@ -78,10 +55,16 @@ public class Book {
     }
 
     public void displayInfo() {
-        System.out.println("The ID is: " + id);
-        System.out.println("The author is: " + author);
-        System.out.println("The height is: " + title);
-        System.out.println("The BMI is: " + year);
+        System.out.println("The ID is: " + this.id);
+        System.out.println("The author is: " + this.author);
+        System.out.println("The title is: " + this.title);
+        System.out.println("The publication year is: " + this.year);
+
+        if (this.genre != null) System.out.println("The genre is: " + this.genre);
+        if (this.language != null) System.out.println("The language is: " + this.language);
+        if (this.cover != null) System.out.println("The cover is: " + this.cover);
+
+
     }
 }
 
@@ -92,7 +75,7 @@ class BookTest {
         Book bookThree = new Book(3, "Dante Alighieri", "Divine Comedy", 1321);
         Book bookFour = new Book(4, "Joshua Bloch", "Effective Java", 2001);
 
-        Book bookFive = new Book(5, "George Orwell", "1984", 1949, "Dystopian, political fiction, social science fiction", "English", "hard", 56456, "978-3-86680-134-9");
+        Book bookFive = new Book(5, "George Orwell", "1984", 1949, "Dystopian, political fiction, social science fiction", "English", "soft", 56456, "978-3-86680-134-9");
         Book bookSix = new Book(6, "Mark Twain", "The Adventures of Huckleberry Finn", 1884, "Picaresque novel", "English", "hard", 10456, "978-3-86680-188-9");
         Book bookSeven = new Book(7, "Leo Tolstoy", "Anna Karenina", 1878, "Realist novel", "russian", "hard", 20456, "978-3-86680-192-9");
 
@@ -105,6 +88,9 @@ class BookTest {
         bookThree.displayInfo();
         System.out.println();
 
+        bookFour.displayInfo();
+        System.out.println();
+
         bookFive.displayInfo();
         System.out.println();
 
@@ -112,8 +98,5 @@ class BookTest {
         System.out.println();
 
         bookSeven.displayInfo();
-        System.out.println();
-
-        bookFour.displayInfo();
     }
 }
