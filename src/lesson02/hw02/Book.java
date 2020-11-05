@@ -35,7 +35,7 @@ public class Book {
     String genre;
     String language;
     String cover;
-    String citationIndex;
+    int citationIndex;
     String isbn;
 
     public Book(int bookId,
@@ -57,7 +57,7 @@ public class Book {
                 String bookGenre,
                 String bookLanguage,
                 String bookCover,
-                String bookCitationIndex,
+                int bookCitationIndex,
                 String bookIsbn) {
 
         id = bookId;
@@ -70,6 +70,7 @@ public class Book {
         cover = bookCover;
         citationIndex = bookCitationIndex;
         isbn = bookIsbn;
+
         int myYear = 2020;
         int myMonth = 11;
         int myDay = 5;
@@ -91,7 +92,9 @@ class BookTest {
         Book bookThree = new Book(3, "Dante Alighieri", "Divine Comedy", 1321);
         Book bookFour = new Book(4, "Joshua Bloch", "Effective Java", 2001);
 
-
+        Book bookFive = new Book(5, "George Orwell", "1984", 1949, "Dystopian, political fiction, social science fiction", "English", "hard", 56456, "978-3-86680-134-9");
+        Book bookSix = new Book(6, "Mark Twain", "The Adventures of Huckleberry Finn", 1884, "Picaresque novel", "English", "hard", 10456, "978-3-86680-188-9");
+        Book bookSeven = new Book(7, "Leo Tolstoy", "Anna Karenina", 1878, "Realist novel", "russian", "hard", 20456, "978-3-86680-192-9");
 
         bookOne.displayInfo();
         System.out.println();
@@ -100,6 +103,15 @@ class BookTest {
         System.out.println();
 
         bookThree.displayInfo();
+        System.out.println();
+
+        bookFive.displayInfo();
+        System.out.println();
+
+        bookSix.displayInfo();
+        System.out.println();
+
+        bookSeven.displayInfo();
         System.out.println();
 
         bookFour.displayInfo();
