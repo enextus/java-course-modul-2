@@ -29,7 +29,6 @@ public class Book {
         this.title = bookTitle;
         this.year = bookYear;
         this.bookmark = 0;
-
         this.ts = getTimestamp();
     }
 
