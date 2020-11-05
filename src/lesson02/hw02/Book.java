@@ -130,8 +130,7 @@ class BookTest {
         bookSeven.displayInfo();
 
         bookSeven.setBookmark(23);
-        bookSeven.getBookmark();
 
-
+        bookSeven.displayBookmark();
     }
 }
