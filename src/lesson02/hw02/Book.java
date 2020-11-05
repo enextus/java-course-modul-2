@@ -18,6 +18,7 @@ public class Book {
     int citationIndex;
     String isbn;
     String ts;
+    int bookmark;
 
     public Book(int bookId,
                 String bookAuthor,
@@ -28,6 +29,7 @@ public class Book {
         this.author = bookAuthor;
         this.title = bookTitle;
         this.year = bookYear;
+        this.bookmark = 0;
 
         this.ts = getTimestamp();
     }
@@ -61,12 +63,13 @@ public class Book {
         this.ts = getTimestamp();
     }
 
-    private void setBookmark(){
-        //
+    private void setBookmark(int bookmark){
+        this.bookmark = bookmark;
     }
 
     private int getBookmark(){
         //
+        return -1;
     }
 
     public void displayInfo() {
