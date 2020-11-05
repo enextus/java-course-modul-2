@@ -30,6 +30,11 @@ public class Book {
     String author;
     String title;
     int year;
+    String genre;
+    String language;
+    String cover;
+    String citationindex;
+    String isbn;
 
     public Book(int bookId, String bookAuthor, String bookTitle, int bookYear) {
         id = bookId;
