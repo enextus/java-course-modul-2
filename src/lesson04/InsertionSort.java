@@ -35,3 +35,6 @@ public class InsertionSort {
         }
     }
 }
+
+
+// https://izamorfix.ru/matematika/algebra/otritsatelnye_drobi.html
