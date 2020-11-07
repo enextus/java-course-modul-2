@@ -2,16 +2,23 @@ package lesson04.zoo;
 
 public class Pet {
     public String name;
-    private int age;
-    private String breed;
+    public int age;
+    public String breed;
 
-    Pet(){
+    public String nameZero = "ZORRO";
+
+    Pet() {
 
     }
-    Pet(String name){
+
+    Pet(String name) {
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
 
     }
-    void move(){
+
+    void move() {
         System.out.println("Я двигаюсь!!!");
     }
 }
