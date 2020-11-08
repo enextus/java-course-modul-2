@@ -2,6 +2,19 @@ package lesson04.hw04;
 
 /**
  * One realisation of insertion sort with recursive sort
+ *
+ * Test:
+ *   23  34 -10   0  23   0  -4   1
+ *
+ *   23  34 -10   0  23   0  -4   1
+ *  -10  23  34   0  23   0  -4   1
+ *  -10   0  23  34  23   0  -4   1
+ *  -10   0  23  23  34   0  -4   1
+ *  -10   0   0  23  23  34  -4   1
+ *  -10  -4   0   0  23  23  34   1
+ *  -10  -4   0   0   1  23  23  34
+ *
+ *  -10  -4   0   0   1  23  23  34
  */
 public class RecursiveInsertionSort {
 
@@ -16,10 +29,12 @@ public class RecursiveInsertionSort {
         print(arr);
         System.out.println();
 
-        RecursiveInsertionSort rs01 = new RecursiveInsertionSort();
+        // RecursiveInsertionSort rs01 = new RecursiveInsertionSort();
+        // rs01.insertionSort(arr.length);
 
-        rs01.insertionSort(arr.length);
+        insertionSort(arr.length);
 
+        System.out.println();
         print(arr);
         System.out.println();
 
@@ -28,7 +43,7 @@ public class RecursiveInsertionSort {
     /*
       The sorting function uses only index of array, instead of copying the array data in each recursive call.
     */
-    private int insertionSort(int maxIndex) {
+    private static int insertionSort(int maxIndex) {
 
         // at this point maxIndex points to the second element in the array.
         if (maxIndex <= 1) return maxIndex;
@@ -53,7 +68,7 @@ public class RecursiveInsertionSort {
 
         arr[i + 1] = key;
 
-        //print(arr);
+        print(arr);
 
         return maxIndex + 1;
     }
