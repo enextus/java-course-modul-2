@@ -5,10 +5,15 @@ import java.util.Date;
 
 public class Pet {
 
+    public static int someCounter = 0;
+
+    protected static String classVariable01 = "ZORRO";
+
     public String name;
     public int age;
     public String breed;
-    public String constructorName = "ZORRO";
+
+    public String constructorName = null;
     public String timeStamp;
 
     public String testName;
