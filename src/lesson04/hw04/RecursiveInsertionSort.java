@@ -23,9 +23,6 @@ public class RecursiveInsertionSort {
 
     public static void main(String[] args) {
 
-        System.out.println(RecursiveInsertionSort.arrLength);
-        System.out.println(RecursiveInsertionSort.class);
-
         print(arr);
         System.out.println();
 
