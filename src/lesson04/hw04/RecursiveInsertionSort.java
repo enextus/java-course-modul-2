@@ -5,7 +5,7 @@ package lesson04.hw04;
  */
 public class RecursiveInsertionSort {
 
-    static int[] arr = {2, 34, -10, 0, 23, 0, -4, 2};
+    static int[] arr = {23, 34, -10, 0, 23, 0, -4, 1};
     static int arrLength = arr.length;
 
     public static void main(String[] args) {
