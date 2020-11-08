@@ -3,7 +3,7 @@ package lesson02;
 public class PersonArray {
 
     /**
-     * Person Array sort via recursion
+     * Person Array sort via recursive bubble sort
      */
 
     public static void main(String[] args) {
@@ -16,8 +16,9 @@ public class PersonArray {
         Person p6 = new Person("Ivan", 18, 170);
         Person p7 = new Person("Uladzimir", 44, 156);
         Person p8 = new Person("Merkel", 41, 199);
+        Person p9 = new Person("Burvat", 38, 174);
 
-        Person[] arrP = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8};
+        Person[] arrP = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8, p9};
 
         printArr(sort(arrP));
     }
