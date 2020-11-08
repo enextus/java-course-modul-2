@@ -4,7 +4,7 @@ public class Duck extends Pet{
     private String wingsColor;
 
     Duck(String wingsColor, String name){
-        super(name);
+        super();
         this.wingsColor = wingsColor;                ;
     }
 
