@@ -41,11 +41,11 @@ public class Pet {
         String nN = this.name;
         String n2N = this.nameTwo;
 
-        return "| public String TSTwo | " + cN + " | " + nN + " | " + n2N + " | " + new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date());
+        return "| instance Method | " + cN + " | " + nN + " | " + n2N;
     }
 
     protected static String getTimestamp() {
 
-        return "| protected static String getTimestamp | " + new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date());
+        return "protected static Pet | " + new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date());
     }
 }

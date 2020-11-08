@@ -18,13 +18,13 @@ public class Cat extends Pet {
         this.breed = breed;
         this.timeStamp = this.getTimestamp();
         this.nameTwo = nameTwo;
-        this.constructorName = "0.1.2 of Class Cat";
+        this.constructorName = "this.constructorName  0.1.2 of Class Cat";
     }
 
     void meow() {
-        String t = " meow...";
+        String t = "1. meow...";
         System.out.printf("%s", t);
-        System.out.println();
+        System.out.print("\n\n");
 
         System.out.println("getTimestamp() " + this.getTimestamp());
         System.out.println();
