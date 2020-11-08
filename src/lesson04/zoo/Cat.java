@@ -32,82 +32,54 @@ public class Cat extends Pet {
     }
 
     void move() {
+        System.out.println("1. старт move");
+        System.out.println("this.toString(): " + this.toString());
+        System.out.println("Я двигаюсь в SubClass: " + this.name);
+        System.out.print("\n");
 
-        System.out.println("Я двигаюсь в SubClass.");
+        System.out.println("2. старт супер.move");
         super.move();
+
+        System.out.print("\n");
+
         System.out.println("super.toString(): " + super.toString());
-
+        System.out.println("super.constructorName: " + super.constructorName);
+        System.out.println("super.testName: " + super.testName);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public static void main(String[] args) {
 
         // CatOne
-        Cat catOne = new Cat("CatOne", "Barsik",4, "Siam");
+        Cat catOne = new Cat("CatOne", "Barsik", 4, "Siam");
+        Cat cat2 = new Cat("cat2", "Kuzja", 24, "Si2am2");
 
         String testStringOne = new String("testStringOne variable");
-
-        System.out.println("catOne.name: " + catOne.name);
-        System.out.println("catOne.nameTwo: " + catOne.nameTwo);
-        System.out.println("catOne.age: " + catOne.age);
-        System.out.print("\n");
-
-        catOne.meow();
-        catOne.move();
-
-        System.out.print("\n");
-
-        System.out.println("catOne.breed: " + catOne.breed);
-        System.out.print("\n");
-
-        System.out.println("catOne.constructorName: " + catOne.constructorName);
-        System.out.print("\n");
-        System.out.print("\n");
-
-        System.out.println("testStringOne: " + testStringOne);
-
-        System.out.print("\n");
-        System.out.println("______________________________________________________");
-        System.out.print("\n");
-        // cat2
-        Cat cat2 = new Cat("cat2", "Ba2rs2ik2",24, "Si2am2");
-
         String testString2 = new String("testString2 variable");
 
-        System.out.println("cat2.name: " + cat2.name);
-        System.out.println("cat2.nameTwo: " + cat2.nameTwo);
-        System.out.println("cat2.age: " + cat2.age);
-        System.out.print("\n");
-
-        catOne.meow();
-        catOne.move();
+        displayData(catOne);
+        animateMethods(catOne);
 
         System.out.print("\n");
 
-        System.out.println("catOne.breed: " + cat2.breed);
-        System.out.print("\n");
+        displayData(cat2);
+        animateMethods(cat2);
+    }
 
-        System.out.println("catOne.constructorName: " + cat2.constructorName);
+    private static void displayData(Cat obj) {
+        System.out.println("------------------------------------------------------");
+        System.out.println("constructorName: " + obj.constructorName);
+        System.out.println("______________________________________________________");
+        System.out.println("name: " + obj.name);
+        System.out.println("nameTwo: " + obj.nameTwo);
+        System.out.println("age: " + obj.age);
+        System.out.println("breed: " + obj.breed);
+        System.out.println("______________________________________________________");
         System.out.print("\n");
-        System.out.print("\n");
+    }
 
-        System.out.println("testStringOne: " + testString2);
+    private static void animateMethods(Cat obj){
+        obj.meow();
+        obj.move();
     }
 }

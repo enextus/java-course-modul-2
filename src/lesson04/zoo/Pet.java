@@ -11,6 +11,7 @@ public class Pet {
     public String constructorName = "ZORRO";
     public String timeStamp;
     private String nameTwo;
+    public String testName;
 
     // constructor
     public Pet() {
@@ -23,12 +24,15 @@ public class Pet {
         this.age = age;
         this.breed = breed;
         this.constructorName = "0.0.2 of Class Pet";
+        this.testName = "instance variable test of one instance of Class Pet";
         this.timeStamp = this.getTimestamp();
     }
 
     void move() {
 
-        System.out.println("Я двигаюсь в SuperClass.");
+        System.out.println("1. Я двигаюсь в SuperClass.");
+        System.out.println(this.age+this.name);
+        System.out.println("2. Я двигаюсь в SuperClass.");
     }
 
     public String getTimestampTwo() {
