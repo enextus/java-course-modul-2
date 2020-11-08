@@ -10,10 +10,10 @@ public class Pet {
     public String breed;
     public String constructorName = "ZORRO";
     public String timeStamp;
-    private String nameTwo;
+
     public String testName;
 
-    public String message = "super class Pet";
+    public String message = "super class Pet with message";
 
     // constructor
     public Pet() {
@@ -33,21 +33,21 @@ public class Pet {
     void move() {
 
         System.out.println("1. Я двигаюсь в SuperClass.");
-        System.out.println(this.age+this.name);
+        System.out.println(this.age + ", " + this.name + ", ");
         System.out.println("2. Я двигаюсь в SuperClass.");
     }
 
     public String getTimestampTwo() {
         System.out.print("\n");
+
         System.out.println(this.toString());
-        System.out.println(this.nameTwo);
         System.out.println(this.name);
         System.out.print("\n");
+
         String cN = this.constructorName;
         String nN = this.name;
-        String n2N = this.nameTwo;
 
-        return "| instance Method | " + cN + " | " + nN + " | " + n2N;
+        return "| instance Method | " + cN + " | " + nN + " | ";
     }
 
     protected static String getTimestamp() {

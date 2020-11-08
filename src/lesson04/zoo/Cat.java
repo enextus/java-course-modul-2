@@ -19,7 +19,7 @@ public class Cat extends Pet {
         this.age = age;
         this.breed = breed;
         this.timeStamp = this.getTimestamp();
-        this.nameTwo = nameTwo;
+        this.nameTwo = " 345345 nameTwo";
         this.constructorName = "this.constructorName  0.1.2 of Class Cat";
     }
 
@@ -27,14 +27,10 @@ public class Cat extends Pet {
         String t = "1. meow...";
         System.out.printf("%s", t);
         System.out.print("\n\n");
-
-        System.out.println("getTimestamp() " + this.getTimestamp());
-        System.out.println();
-        System.out.println("getTimestampTwo() " + this.getTimestampTwo());
     }
 
     void move() {
-        System.out.println("1. старт move");
+        System.out.println("1. move");
         System.out.println("this.toString(): " + this.toString());
         System.out.println("Я двигаюсь в SubClass: " + this.name);
         System.out.print("\n");
@@ -46,7 +42,7 @@ public class Cat extends Pet {
 
         System.out.println("super.toString(): " + super.toString());
         System.out.println("super.constructorName: " + super.constructorName);
-        System.out.println("super.testName: " + super.testName);
+        System.out.println("super.message: " + super.message);
     }
 
 
