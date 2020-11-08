@@ -21,6 +21,7 @@ public class RecursiveInsertionSort {
         rs01.insertionSort(arr.length);
 
         print(arr);
+        System.out.println();
 
     }
 
