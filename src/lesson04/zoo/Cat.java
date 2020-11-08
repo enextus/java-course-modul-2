@@ -6,6 +6,7 @@ public class Cat extends Pet {
 
     public String message = "child class Cat";
 
+
     // constructor 0.1.0
     public Cat() {
     }
@@ -28,7 +29,9 @@ public class Cat extends Pet {
         System.out.printf("%s", t);
         System.out.print("\n\n");
     }
-
+    public void getParentMessage() {
+        System.out.println(super.message);
+    }
     void move() {
         System.out.println("1. move");
         System.out.println("this.toString(): " + this.toString());
@@ -42,8 +45,9 @@ public class Cat extends Pet {
 
         System.out.println("super.toString(): " + super.toString());
         System.out.println("super.constructorName: " + super.constructorName);
-        System.out.println("super.message: " + super.message);
+        this.getParentMessage();
     }
+
 
 
     public static void main(String[] args) {
@@ -76,7 +80,7 @@ public class Cat extends Pet {
         System.out.print("\n");
     }
 
-    private static void animateMethods(Cat obj){
+    private static void animateMethods(Cat obj) {
         obj.meow();
         obj.move();
     }
