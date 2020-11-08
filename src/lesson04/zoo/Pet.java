@@ -13,6 +13,8 @@ public class Pet {
     private String nameTwo;
     public String testName;
 
+    public String message = "super class Pet";
+
     // constructor
     public Pet() {
     }
@@ -36,7 +38,11 @@ public class Pet {
     }
 
     public String getTimestampTwo() {
-
+        System.out.print("\n");
+        System.out.println(this.toString());
+        System.out.println(this.nameTwo);
+        System.out.println(this.name);
+        System.out.print("\n");
         String cN = this.constructorName;
         String nN = this.name;
         String n2N = this.nameTwo;

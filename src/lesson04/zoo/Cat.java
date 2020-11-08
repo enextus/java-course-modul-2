@@ -4,6 +4,8 @@ public class Cat extends Pet {
 
     public String nameTwo;
 
+    public String message = "child class Cat";
+
     // constructor 0.1.0
     public Cat() {
     }
