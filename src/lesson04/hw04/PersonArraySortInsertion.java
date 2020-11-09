@@ -31,48 +31,28 @@ public class PersonArraySortInsertion {
         printArr(arr);
 
         insertionSort(indexOfElementToSort);
-    }
 
+        printArr(arr);
+    }
 
     public static int insertionSort(int indexOfElementToSort) {
 
-        System.out.println("maxIndex: " + indexOfElementToSort);
-
-        //      at this point maxIndex points to the second element in the array.
         if (indexOfElementToSort <= 1) return indexOfElementToSort;
 
-        //      recursive call
         indexOfElementToSort = insertionSort(indexOfElementToSort - 1);
 
-        //      save a copy of the value in variable 'key'.
-        //      This value will be placed in the correct position
-        //      after the "while loop below" ends.
         Person key = arr[indexOfElementToSort];
 
-        System.out.println("Person key: " + key);
-
-        // maximal possible index value of the array
         int i = indexOfElementToSort - 1;
 
-        // "while loop below"
-        // compare value in 'key' with all the elements in array
-        // that come before the element key.
-        while ((i >= 0) && (arr[i].weight > key.weight)) {
-            arr[i + 1] = arr[i];
-            i--;
-        }
+            while ((i >= 0) && (arr[i].weight > key.weight)) {
+                arr[i + 1] = arr[i];
+                i--;
+            }
 
         arr[i + 1] = key;
 
-        // print(arr);
-
         return indexOfElementToSort + 1;
-    }
-
-    private static void print(int[] arr) {
-
-        for (int i : arr) System.out.printf("%4d", i);
-        System.out.println();
     }
 
     public static void printArr(Person[] arr) {
