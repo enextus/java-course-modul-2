@@ -1,10 +1,10 @@
 package lesson05.uni;
 
 public class UniUser extends Person {
-    String firstName;
-    private String secondName;
-    String uniID;
-    private int age;
+    public String firstName;
+    public String secondName;
+    public String uniID;
+    public int age;
 
     public UniUser(String firstName) {
         this.firstName = firstName;
@@ -22,11 +22,11 @@ public class UniUser extends Person {
         this.age = age;
     }
 
-    protected void eats() {
+    public void eats() {
         System.out.println("В столовой все цены со скидкой. Скидка = ");
     }
 
-    private void walks() {
+    public void walks() {
         System.out.println("Ходит по кампусу");
     }
 
