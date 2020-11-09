@@ -3,7 +3,6 @@ package lesson04.zoo;
 public class Cat extends Pet {
 
     public String nameTwo;
-
     public String message = "child class Cat";
 
 
@@ -12,16 +11,15 @@ public class Cat extends Pet {
     }
 
     // constructor 0.1.2
-    public Cat(String nameTwo, String name, int age, String breed) {
-
+    public Cat(String name, int age, String breed) {
         super();
-
         this.name = name;
         this.age = age;
         this.breed = breed;
         this.timeStamp = this.getTimestamp();
-        this.nameTwo = " 345345 nameTwo";
+        this.nameTwo = " here is " + "nameTwo";
         this.constructorName = "this.constructorName  0.1.2 of Class Cat";
+
         someCounter++;
     }
 
@@ -55,8 +53,8 @@ public class Cat extends Pet {
     public static void main(String[] args) {
 
         // CatOne
-        Cat catOne = new Cat("CatOne", "Barsik", 4, "Siam");
-        Cat cat2 = new Cat("cat2", "Kuzja", 24, "Si2am2");
+        Cat catOne = new Cat("Barsik", 4, "Siam");
+        Cat cat2 = new Cat("Kuzja", 24, "Si2am2");
 
         String testStringOne = new String("testStringOne variable");
         String testString2 = new String("testString2 variable");
@@ -90,5 +88,17 @@ public class Cat extends Pet {
     private static void animateMethods(Cat obj) {
         obj.meow();
         obj.move();
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "Name: " + name + ", " +
+                "someCounter: " + someCounter + ", " +
+                "age: " + age + ", " +
+                "breed: " + breed + ", " +
+                "constructorName: " + constructorName + ", " +
+                "NameTwo: " + nameTwo + ", " +
+                "Message: " + message + "}";
     }
 }

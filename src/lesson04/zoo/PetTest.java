@@ -1,12 +1,17 @@
 package lesson04.zoo;
 
 /**
- * 14m-modul2-mono-rep
- * 05 11 : 13
+ * class PetTest
  */
 public class PetTest {
     public static void main(String[] args) {
-        Duck d1 = new Duck("Белые", "Donalv");
-        d1.name = "Дональд";
+
+        Cat c1 = new Cat("Name", 23,"cats");
+
+        System.out.println(c1);
+
+        System.out.println();
+
+        System.out.println(c1.getTimestampTwo());
     }
 }
