@@ -66,6 +66,8 @@ public class PersonArraySortInsertion {
         int i = indexOfElementToInsert - 1;
 
         while ((i >= 0) && (arr[i].weight > elementToInsertForSorting.weight)) {
+
+            // swap 2 elements
             arr[i + 1] = arr[i];
             i--;
         }
