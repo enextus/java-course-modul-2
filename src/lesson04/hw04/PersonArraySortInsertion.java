@@ -52,17 +52,17 @@ public class PersonArraySortInsertion {
         printArr(arr);
 
         // The elements of the array are sorted by weight.
-        insertionSort(arrLength);
+        insertionSortByWeight(arrLength);
 
         // print sorted array
         printArr(arr);
     }
 
-    public static int insertionSort(int indexOfElementToInsertForSorting) {
+    public static int insertionSortByWeight(int indexOfElementToInsertForSorting) {
 
         if (indexOfElementToInsertForSorting <= 1) return indexOfElementToInsertForSorting;
 
-        indexOfElementToInsertForSorting = insertionSort(indexOfElementToInsertForSorting - 1);
+        indexOfElementToInsertForSorting = insertionSortByWeight(indexOfElementToInsertForSorting - 1);
 
         Person elementToInsertForSorting = arr[indexOfElementToInsertForSorting];
         int i = indexOfElementToInsertForSorting - 1;
