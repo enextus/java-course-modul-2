@@ -79,6 +79,6 @@ public class PersonArraySortInsertion {
 
     public static void printArr(Person[] arr) {
         System.out.println();
-        for (Person element : arr) System.out.println("Name: " + element.name + ", Weight: " + element.weight);
+        for (Person element : arr) System.out.println("Name: " + element.name + ", Weight: " + element.weight + ".");
     }
 }
