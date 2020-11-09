@@ -58,14 +58,14 @@ public class PersonArraySortInsertion {
         printArr(arr);
     }
 
-    public static int insertionSortByWeight(int indexOfElementToInsertForSorting) {
+    public static int insertionSortByWeight(int indexOfElementToInsert) {
 
-        if (indexOfElementToInsertForSorting <= 1) return indexOfElementToInsertForSorting;
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
-        indexOfElementToInsertForSorting = insertionSortByWeight(indexOfElementToInsertForSorting - 1);
+        indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
 
-        Person elementToInsertForSorting = arr[indexOfElementToInsertForSorting];
-        int i = indexOfElementToInsertForSorting - 1;
+        Person elementToInsertForSorting = arr[indexOfElementToInsert];
+        int i = indexOfElementToInsert - 1;
 
         while ((i >= 0) && (arr[i].weight > elementToInsertForSorting.weight)) {
             arr[i + 1] = arr[i];
@@ -74,7 +74,7 @@ public class PersonArraySortInsertion {
 
         arr[i + 1] = elementToInsertForSorting;
 
-        return indexOfElementToInsertForSorting + 1;
+        return indexOfElementToInsert + 1;
     }
 
     public static void printArr(Person[] arr) {
