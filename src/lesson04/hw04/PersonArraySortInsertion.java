@@ -61,7 +61,6 @@ public class PersonArraySortInsertion {
         indexOfElementToSort = insertionSort(indexOfElementToSort - 1);
 
         Person key = arr[indexOfElementToSort];
-
         int i = indexOfElementToSort - 1;
 
         while ((i >= 0) && (arr[i].weight > key.weight)) {
