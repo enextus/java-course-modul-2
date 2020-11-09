@@ -28,7 +28,7 @@ import lesson02.Person;
  */
 public class PersonArraySortInsertion {
 
-    public static int indexOfElementToSort;
+    public static int arrLength;
     public static Person[] arr = new Person[9];
 
     public static void main(String[] args) {
@@ -45,13 +45,14 @@ public class PersonArraySortInsertion {
 
         arr = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8, p9};
 
-        indexOfElementToSort = arr.length;
+        // indexOfElementToSort = arr.length;
+        arrLength = arr.length;
 
         // print unsorted array
         printArr(arr);
 
         // The elements of the array are sorted by weight.
-        insertionSort(indexOfElementToSort);
+        insertionSort(arrLength);
 
         // print sorted array
         printArr(arr);
