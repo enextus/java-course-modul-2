@@ -47,10 +47,12 @@ public class PersonArraySortInsertion {
 
         indexOfElementToSort = arr.length;
 
+        // print unsorted array
         printArr(arr);
 
         insertionSort(indexOfElementToSort);
 
+        // print sorted array via weight
         printArr(arr);
     }
 
