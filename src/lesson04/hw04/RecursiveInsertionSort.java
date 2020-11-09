@@ -2,10 +2,10 @@ package lesson04.hw04;
 
 /**
  * One realisation of insertion sort with recursive sort
- * <p>
+ * *
  * Test:
  * 23  34 -10   0  23   0  -4   1
- * <p>
+ * *
  * 23  34 -10   0  23   0  -4   1
  * -10  23  34   0  23   0  -4   1
  * -10   0  23  34  23   0  -4   1
@@ -13,7 +13,7 @@ package lesson04.hw04;
  * -10   0   0  23  23  34  -4   1
  * -10  -4   0   0  23  23  34   1
  * -10  -4   0   0   1  23  23  34
- * <p>
+ * *
  * -10  -4   0   0   1  23  23  34
  */
 public class RecursiveInsertionSort {
@@ -40,25 +40,25 @@ public class RecursiveInsertionSort {
 
         System.out.println("maxIndex: " + maxIndex);
 
-        //      at this point maxIndex points to the second element in the array.
+        //  at this point maxIndex points to the second element in the array.
         if (maxIndex <= 1) return maxIndex;
 
-        //      recursive call
+        //  recursive call
         maxIndex = insertionSort(maxIndex - 1);
 
-        //      save a copy of the value in variable 'key'.
-        //      This value will be placed in the correct position
-        //      after the "while loop below" ends.
+        //  save a copy of the value in variable 'key'.
+        //  This value will be placed in the correct position
+        //  after the "while loop below" ends.
         int key = arr[maxIndex];
 
         System.out.println("key: " + key);
 
-        // maximal possible index value of the array
+        //  maximal possible index value of the array
         int i = maxIndex - 1;
 
-        // "while loop below"
-        // compare value in 'key' with all the elements in array
-        // that come before the element key.
+        //  "while loop below"
+        //  compare value in 'key' with all the elements in array
+        //  that come before the element key.
         while ((i >= 0) && (arr[i] > key)) {
             arr[i + 1] = arr[i];
             i--;
@@ -73,6 +73,7 @@ public class RecursiveInsertionSort {
 
     private static void print(int[] arr) {
 
-        for (int i : arr) System.out.printf("%4d", i);System.out.println();
+        for (int i : arr) System.out.printf("%4d", i);
+        System.out.println();
     }
 }
