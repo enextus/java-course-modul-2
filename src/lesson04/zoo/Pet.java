@@ -9,6 +9,7 @@ public class Pet {
     public static int someCounter = 0;
     public static String classVariable01 = "ZORRO";
 
+
     // class methods
     protected static String getTimestamp() {
 
@@ -16,6 +17,7 @@ public class Pet {
     }
 
     // instance variables static
+    public int instanceNumber;
     public String name;
     public int age;
     public String breed;
@@ -49,7 +51,9 @@ public class Pet {
         String cN = this.constructorName;
         String nN = this.name;
 
-        return "| instance Method | " + cN + " | " + nN + " | ";
+        int cC = Pet.someCounter;
+
+        return "| instance Method | " + cN + " | " + nN + " | " + cC + " | ";
     }
 
 }

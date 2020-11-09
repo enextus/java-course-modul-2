@@ -44,8 +44,6 @@ public class PersonArraySortInsertion {
         Person p9 = new Person("Erdogan", 55, 174);
 
         arr = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8, p9};
-
-        // indexOfElementToSort = arr.length;
         arrLength = arr.length;
 
         // print unsorted array

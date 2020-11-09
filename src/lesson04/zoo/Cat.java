@@ -21,6 +21,7 @@ public class Cat extends Pet {
         this.constructorName = "this.constructorName  0.1.2 of Class Cat";
 
         someCounter++;
+        this.instanceNumber = someCounter;
     }
 
     void meow() {
