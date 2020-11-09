@@ -38,8 +38,6 @@ public class RecursiveInsertionSort {
     */
     private static int insertionSort(int indexOfElementToSort) {
 
-        System.out.println("0. indexOfElementToSort: " + indexOfElementToSort);
-
         //  at this point maxIndex points to the second element in the array.
         if (indexOfElementToSort <= 1) return indexOfElementToSort;
 

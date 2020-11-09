@@ -6,6 +6,12 @@ import lesson02.Person;
  * Person Array sort via recursive insertion sort
  */
 public class PersonArraySortInsertion {
+
+    public static int indexOfElementToSort;
+
+    public static Person[] arr = new Person[9];
+
+
     public static void main(String[] args) {
 
         Person p1 = new Person("Anton", 90, 190);
@@ -18,72 +24,49 @@ public class PersonArraySortInsertion {
         Person p8 = new Person("Merkel", 41, 199);
         Person p9 = new Person("Erdogan", 55, 174);
 
-        Person[] arr = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8, p9};
+        arr = new Person[]{p1, p2, p3, p4, p5, p6, p7, p8, p9};
 
-        int maxIndex = arr.length;
+        indexOfElementToSort = arr.length;
 
-       // insertionSort(maxIndex);
+        printArr(arr);
+
+        insertionSort(indexOfElementToSort);
     }
 
 
-/*
-    public static int insertionSort(int maxIndex) {
+    public static int insertionSort(int indexOfElementToSort) {
 
-
-        System.out.println("maxIndex: " + maxIndex);
+        System.out.println("maxIndex: " + indexOfElementToSort);
 
         //      at this point maxIndex points to the second element in the array.
-        if (maxIndex <= 1) return maxIndex;
+        if (indexOfElementToSort <= 1) return indexOfElementToSort;
 
         //      recursive call
-        maxIndex = insertionSort(maxIndex - 1);
+        indexOfElementToSort = insertionSort(indexOfElementToSort - 1);
 
         //      save a copy of the value in variable 'key'.
         //      This value will be placed in the correct position
         //      after the "while loop below" ends.
-        int key = arr[maxIndex];
+        Person key = arr[indexOfElementToSort];
 
-        System.out.println("key: " + key);
+        System.out.println("Person key: " + key);
 
         // maximal possible index value of the array
-        int i = maxIndex - 1;
+        int i = indexOfElementToSort - 1;
 
         // "while loop below"
         // compare value in 'key' with all the elements in array
         // that come before the element key.
-        while ((i >= 0) && (arr[i] > key)) {
+        while ((i >= 0) && (arr[i].weight > key.weight)) {
             arr[i + 1] = arr[i];
             i--;
         }
 
         arr[i + 1] = key;
 
-        print(arr);
+        // print(arr);
 
-        return maxIndex + 1;
-    }
-*/
-
-
-
-
-
-    public static Person[] sort(Person[] arrP) {
-
-        Person obj;
-        for (int i = 0; i < arrP.length - 1; i++) {
-
-            if (arrP[i].weight < arrP[i + 1].weight) continue;
-
-            obj = arrP[i];
-
-            arrP[i] = arrP[i + 1];
-            arrP[i + 1] = obj;
-
-            sort(arrP);
-        }
-
-        return arrP;
+        return indexOfElementToSort + 1;
     }
 
     private static void print(int[] arr) {
