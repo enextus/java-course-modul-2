@@ -8,9 +8,7 @@ import lesson02.Person;
 public class PersonArraySortInsertion {
 
     public static int indexOfElementToSort;
-
     public static Person[] arr = new Person[9];
-
 
     public static void main(String[] args) {
 
