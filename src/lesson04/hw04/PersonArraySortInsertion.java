@@ -4,6 +4,27 @@ import lesson02.Person;
 
 /**
  * Person Array sort via recursive insertion sort
+ * *
+ * Test:
+ * Name: Anton, Weight: 90.0
+ * Name: Caligula, Weight: 25.0
+ * Name: Macron, Weight: 42.0
+ * Name: Trump, Weight: 72.0
+ * Name: Biden, Weight: 76.0
+ * Name: Ivan, Weight: 18.0
+ * Name: Uladzimir, Weight: 44.0
+ * Name: Merkel, Weight: 41.0
+ * Name: Erdogan, Weight: 55.0
+ * *
+ * Name: Ivan, Weight: 18.0
+ * Name: Caligula, Weight: 25.0
+ * Name: Merkel, Weight: 41.0
+ * Name: Macron, Weight: 42.0
+ * Name: Uladzimir, Weight: 44.0
+ * Name: Erdogan, Weight: 55.0
+ * Name: Trump, Weight: 72.0
+ * Name: Biden, Weight: 76.0
+ * Name: Anton, Weight: 90.0
  */
 public class PersonArraySortInsertion {
 
@@ -43,10 +64,10 @@ public class PersonArraySortInsertion {
 
         int i = indexOfElementToSort - 1;
 
-            while ((i >= 0) && (arr[i].weight > key.weight)) {
-                arr[i + 1] = arr[i];
-                i--;
-            }
+        while ((i >= 0) && (arr[i].weight > key.weight)) {
+            arr[i + 1] = arr[i];
+            i--;
+        }
 
         arr[i + 1] = key;
 
@@ -54,7 +75,7 @@ public class PersonArraySortInsertion {
     }
 
     public static void printArr(Person[] arr) {
-
-        for (Person element : arr) System.out.println("Person name: " + element.name + ", weight: " + element.weight);
+        System.out.println();
+        for (Person element : arr) System.out.println("Name: " + element.name + ", Weight: " + element.weight);
     }
 }
