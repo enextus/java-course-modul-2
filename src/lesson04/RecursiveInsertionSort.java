@@ -1,4 +1,4 @@
-package lesson04.hw04;
+package lesson04;
 
 /**
  * One realisation of insertion sort with recursive sort
