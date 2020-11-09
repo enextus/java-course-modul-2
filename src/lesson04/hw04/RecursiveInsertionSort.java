@@ -36,25 +36,38 @@ public class RecursiveInsertionSort {
     /*
       The sorting function uses only index of array, instead of copying the array data in each recursive call.
     */
-    private static int insertionSort(int maxIndex) {
+    private static int insertionSort(int indexOfElementToSort) {
 
-        System.out.println("maxIndex: " + maxIndex);
+        System.out.println("0. indexOfElementToSort: " + indexOfElementToSort);
 
         //  at this point maxIndex points to the second element in the array.
-        if (maxIndex <= 1) return maxIndex;
+        if (indexOfElementToSort <= 1) return indexOfElementToSort;
 
         //  recursive call
-        maxIndex = insertionSort(maxIndex - 1);
+        indexOfElementToSort = insertionSort(indexOfElementToSort - 1);
 
         //  save a copy of the value in variable 'key'.
         //  This value will be placed in the correct position
         //  after the "while loop below" ends.
-        int key = arr[maxIndex];
 
+        System.out.println();
+        System.out.println("5.5. indexOfElementToSort: " + indexOfElementToSort);
+        System.out.println();
+        System.out.println("5.6. arr[0]: " + arr[0]);
+        System.out.println("5.7. arr[1]: " + arr[1]);
+        System.out.println("5.8. arr[2]: " + arr[2]);
+        System.out.println("5.9. arr[3]: " + arr[3]);
+        System.out.println();
+
+        // value of
+        int key = arr[indexOfElementToSort];
+
+        System.out.println("57. key: " + key);
         System.out.println("key: " + key);
+        System.out.println();
 
         //  maximal possible index value of the array
-        int i = maxIndex - 1;
+        int i = indexOfElementToSort - 1;
 
         //  "while loop below"
         //  compare value in 'key' with all the elements in array
@@ -68,7 +81,7 @@ public class RecursiveInsertionSort {
 
         print(arr);
 
-        return maxIndex + 1;
+        return indexOfElementToSort + 1;
     }
 
     private static void print(int[] arr) {
