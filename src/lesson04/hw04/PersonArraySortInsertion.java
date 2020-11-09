@@ -6,25 +6,25 @@ import lesson02.Person;
  * Person Array sort via recursive insertion sort
  * *
  * Test:
- * Name: Anton, Weight: 90.0
- * Name: Caligula, Weight: 25.0
- * Name: Macron, Weight: 42.0
- * Name: Trump, Weight: 72.0
- * Name: Biden, Weight: 76.0
- * Name: Ivan, Weight: 18.0
- * Name: Uladzimir, Weight: 44.0
- * Name: Merkel, Weight: 41.0
- * Name: Erdogan, Weight: 55.0
- * *
- * Name: Ivan, Weight: 18.0
- * Name: Caligula, Weight: 25.0
- * Name: Merkel, Weight: 41.0
- * Name: Macron, Weight: 42.0
- * Name: Uladzimir, Weight: 44.0
- * Name: Erdogan, Weight: 55.0
- * Name: Trump, Weight: 72.0
- * Name: Biden, Weight: 76.0
- * Name: Anton, Weight: 90.0
+ * Name: Anton, Weight: 90.0.
+ * Name: Caligula, Weight: 25.0.
+ * Name: Macron, Weight: 42.0.
+ * Name: Trump, Weight: 72.0.
+ * Name: Biden, Weight: 76.0.
+ * Name: Ivan, Weight: 18.0.
+ * Name: Uladzimir, Weight: 44.0.
+ * Name: Merkel, Weight: 41.0.
+ * Name: Erdogan, Weight: 55.0.
+ *
+ * Name: Ivan, Weight: 18.0.
+ * Name: Caligula, Weight: 25.0.
+ * Name: Merkel, Weight: 41.0.
+ * Name: Macron, Weight: 42.0.
+ * Name: Uladzimir, Weight: 44.0.
+ * Name: Erdogan, Weight: 55.0.
+ * Name: Trump, Weight: 72.0.
+ * Name: Biden, Weight: 76.0.
+ * Name: Anton, Weight: 90.0.
  */
 public class PersonArraySortInsertion {
 
