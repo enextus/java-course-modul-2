@@ -9,6 +9,11 @@ public class Person {
     public double height;
     public double bmi;
 
+    // constructor 0.0.1
+    public Person() {
+    }
+
+    // constructor 1.1.1
     public Person(String username, double userWeight, double userHeight) {
         name = username;
         weight = userWeight;

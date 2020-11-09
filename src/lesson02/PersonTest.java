@@ -1,7 +1,7 @@
 package lesson02;
 
 /**
- * Person Test Class
+ * Test Class Person
  */
 public class PersonTest {
     public static void main(String[] args) {
