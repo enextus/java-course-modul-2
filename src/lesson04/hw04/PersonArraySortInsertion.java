@@ -50,9 +50,10 @@ public class PersonArraySortInsertion {
         // print unsorted array
         printArr(arr);
 
+        // The elements of the array are sorted by weight.
         insertionSort(indexOfElementToSort);
 
-        // print sorted array via weight
+        // print sorted array
         printArr(arr);
     }
 
