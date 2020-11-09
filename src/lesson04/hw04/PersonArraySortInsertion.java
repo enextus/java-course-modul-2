@@ -63,15 +63,15 @@ public class PersonArraySortInsertion {
 
         indexOfElementToSort = insertionSort(indexOfElementToSort - 1);
 
-        Person elementToSort = arr[indexOfElementToSort];
+        Person elementToInsertForSorting = arr[indexOfElementToSort];
         int i = indexOfElementToSort - 1;
 
-        while ((i >= 0) && (arr[i].weight > elementToSort.weight)) {
+        while ((i >= 0) && (arr[i].weight > elementToInsertForSorting.weight)) {
             arr[i + 1] = arr[i];
             i--;
         }
 
-        arr[i + 1] = elementToSort;
+        arr[i + 1] = elementToInsertForSorting;
 
         return indexOfElementToSort + 1;
     }
