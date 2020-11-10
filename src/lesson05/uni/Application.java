@@ -82,36 +82,32 @@ public class Application {
 
         System.out.println("__________________________________________________");
 
-        // Sort __________________________________________________
+        // Sort students__________________________________________________
         studentsLength = students.length;
         System.out.println("studentsLength: " + studentsLength);
         printArr(students);
         studentsSortByAge(studentsLength);
         printArr(students);
 
-
-        /*
-        Object ob = new Lecturer("Завуч");
-        Lecturer newLecturer = (Lecturer) ob;*/
+        // Object ob = new Lecturer("Завуч");
+        // Lecturer newLecturer = (Lecturer) ob;
     }
 
     public static int studentsSortByAge(int indexOfElementToInsert) {
 
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
-        System.out.println(" indexOfElementToInsert: " + indexOfElementToInsert);
-
         indexOfElementToInsert = studentsSortByAge(indexOfElementToInsert - 1); // recursive call
 
-        Student elementToInsertForSorting = students[indexOfElementToInsert];
+        Student elementToInsert = students[indexOfElementToInsert]; // temporary hold the value of element to insert
 
         int i = indexOfElementToInsert - 1;
-        while ((i >= 0) && (students[i].age > ((Student) elementToInsertForSorting).age)) {
-            students[i + 1] = students[i]; // overwrite element[i + 1]  with element[i]
+        while ((i >= 0) && (students[i].age > (elementToInsert).age)) {
+            students[i + 1] = students[i]; // overwrite the element[i + 1] with the element[i]
             i--;
         }
 
-        students[i + 1] = elementToInsertForSorting;
+        students[i + 1] = elementToInsert;
 
         return indexOfElementToInsert + 1;
     }
