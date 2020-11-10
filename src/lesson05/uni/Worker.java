@@ -29,6 +29,13 @@ public class Worker extends Person {
                 '}';
     }
 
+
+    @Override
+    public void walks() {
+        super.walks();
+        System.out.println("Ходит в качестве рабочего.");
+    }
+
     public void works() {
 
         System.out.println("Работать!");
