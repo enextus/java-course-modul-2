@@ -103,9 +103,7 @@ public class Application {
 
         int i = indexOfElementToInsert - 1;
         while ((i >= 0) && (students[i].age > ((Student) elementToInsertForSorting).age)) {
-
-            // swap 2 elements
-            students[i + 1] = students[i];
+            students[i + 1] = students[i]; // overwrite element[i + 1]  with element[i]
             i--;
         }
 
