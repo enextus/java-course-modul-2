@@ -89,7 +89,7 @@ public class Application {
         studentsSortByAge(studentsLength);
         printArr(students);
 
-        // Object ob = new Lecturer("Завуч");
+        // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
     }
 
