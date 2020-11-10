@@ -29,6 +29,10 @@ public class Worker extends Person {
                 '}';
     }
 
+    public void receivingWages() {
+
+        System.out.println("Получение зарплаты. Receiving wages.");
+    }
 
     @Override
     public void walks() {

@@ -20,7 +20,13 @@ public final class Student extends Person {
     }
 
     public void study() {
+
         System.out.println("Должен учиться, учиться и ещё раз учиться!");
+    }
+
+    public void payingSemesterFees() {
+
+        System.out.println("Оплата семестровых сборов. Paying semester fees.");
     }
 
     @Override
@@ -58,17 +64,19 @@ public final class Student extends Person {
                         && this.uniID.equals(student.uniID);
     }
 
-    public boolean myEquals(Student st) {
-        return this.firstName.equals(st.firstName);
-
-/*        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
-        return Objects.equals(subject, student.subject);*/
-    }
-
     @Override
     public int hashCode() {
         return Objects.hash(firstName);
     }
+
+    /*
+        public boolean myEquals(Student st) {
+            return this.firstName.equals(st.firstName);
+
+           if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Student student = (Student) o;
+            return Objects.equals(subject, student.subject);
+        }
+    */
 }

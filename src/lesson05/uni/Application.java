@@ -26,6 +26,8 @@ public class Application {
         System.out.println();
 
         s1.walks();
+        l1.walks();
+        w1.walks();
 
         System.out.println();
 

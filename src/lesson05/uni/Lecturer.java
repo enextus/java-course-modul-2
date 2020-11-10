@@ -19,6 +19,11 @@ public class Lecturer extends Person {
         System.out.println("Должен учиться, учиться и ещё раз учиться!");
     }
 
+    public void receivingWages() {
+
+        System.out.println("Получение зарплаты. Receiving wages.");
+    }
+
     @Override
     public void walks() {
         super.walks();
