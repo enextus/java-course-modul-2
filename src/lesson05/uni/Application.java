@@ -17,13 +17,13 @@ public class Application {
 /*       UniUser[] newArray = new UniUser[10];
          Student[] newcollegs = new Student[20];*/
 
-        // System.out.println(w1);
-
         System.out.println(s1);
         System.out.println(s1.firstName);
         System.out.println(s1.secondName);
         System.out.println(s1.age);
         System.out.println(s1.uniID);
+
+        System.out.println();
 
         System.out.println(l1);
         System.out.println(l1.firstName);
