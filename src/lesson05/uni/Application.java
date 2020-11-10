@@ -86,14 +86,12 @@ public class Application {
 
         // Sort students__________________________________________________
         studentsLength = students.length;
-        System.out.println("studentsLength: " + studentsLength);
         printArr(students);
         studentsSortByAge(studentsLength);
         printArr(students);
 
         // Sort lecturers__________________________________________________
         lecturersLength = lecturers.length;
-        System.out.println("lecturersLength: " + lecturersLength);
         printArr(lecturers);
         studentsSortByAge(lecturersLength);
         printArr(lecturers);
@@ -142,6 +140,6 @@ public class Application {
 
     public static void printArr(Person[] arr) {
         System.out.println();
-        for (Person element : arr) System.out.println("Name: " + element.firstName + ", Weight: " + element.age + ".");
+        for (Person element : arr) System.out.println("" + element.age +  ", Name: " + element.firstName + ", Weight: " + element.uniID + ".");
     }
 }
