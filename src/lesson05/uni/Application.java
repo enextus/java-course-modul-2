@@ -2,6 +2,79 @@ package lesson05.uni;
 
 /**
  * class Application
+ *
+ * Test:
+ * Student{semester=6, faculty='Mathe', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
+ * Anton
+ * 39
+ * M3459876
+ * 6
+ * Mathe
+ * Student 1.2.1
+ * В столовой все цены со скидкой!
+ * Ходит по кампусу.
+ * Ходит в роли студента.
+ * Должен учиться, учиться и ещё раз учиться!
+ * Оплата семестровых сборов. Paying semester fees.
+ * 63420933
+ * __________________________________________________
+ * Lecturer{rank='professor', degree='PHD', constructor='Lecturer 1.3.1', firstName='Mike', secondName='Bullet', age=45, uniID='D3453466', occupation='Lecturer', parentConstructor='Person 1.1.1'}
+ * Mike
+ * Bullet
+ * 45
+ * D3453466
+ * professor
+ * PHD
+ * Lecturer 1.3.1
+ * В столовой имеется скидка.
+ * Скидка на еду для преподавателей.
+ * Ходит по кампусу.
+ * Ходит в качестве преподавателя.
+ * Должен учить!
+ * Получение зарплаты. Receiving wages.
+ * 63420933
+ * __________________________________________________
+ * Worker{position='foreman', workExperience=8, constructor='Worker 1.4.1', firstName='Arnold', secondName='Schwarz', age=37, uniID='W3456435629', occupation='facility manager', parentConstructor='Person 1.1.1'}
+ * Arnold
+ * Schwarz
+ * 37
+ * W3456435629
+ * foreman
+ * 8
+ * Worker 1.4.1
+ * Ходит по кампусу.
+ * Ходит в качестве рабочего.
+ * Получение зарплаты. Receiving wages.
+ * В столовой имеется скидка.
+ * Еда со скидкой для Workers.
+ * Выполнение работы.
+ * __________________________________________________
+ *
+ * 39, Name: Anton, Weight: M3459876.
+ * 18, Name: Boris, Weight: M3459845.
+ * 27, Name: Teo, Weight: M3459889.
+ *
+ * 18, Name: Boris, Weight: M3459845.
+ * 27, Name: Teo, Weight: M3459889.
+ * 39, Name: Anton, Weight: M3459876.
+ *
+ * 45, Name: Mike, Weight: D3453466.
+ * 55, Name: Paul, Weight: D3453434.
+ * 49, Name: Gregor, Weight: D3453462.
+ *
+ * 45, Name: Mike, Weight: D3453466.
+ * 55, Name: Paul, Weight: D3453434.
+ * 49, Name: Gregor, Weight: D3453462.
+ *
+ * 37, Name: Arnold, Weight: W3456435629.
+ * 24, Name: Simon, Weight: W3456435649.
+ * 47, Name: Bill, Weight: W3456435632.
+ *
+ * 24, Name: Simon, Weight: W3456435649.
+ * 37, Name: Arnold, Weight: W3456435629.
+ * 47, Name: Bill, Weight: W3456435632.
+ *
+ * Process finished with exit code 0
  */
 public class Application {
 
