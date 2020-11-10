@@ -142,4 +142,24 @@ public class Application {
         System.out.println();
         for (Person element : arr) System.out.println("" + element.age +  ", Name: " + element.firstName + ", Weight: " + element.uniID + ".");
     }
+
+
+    public static int workersSortByAge(int indexOfElementToInsert) {
+
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+        indexOfElementToInsert = workersSortByAge(indexOfElementToInsert - 1); // recursive call
+
+        Worker elementToInsert = workers[indexOfElementToInsert]; // temporary hold the value of element to insert
+
+        int i = indexOfElementToInsert - 1; // counter for while loop
+        while ((i >= 0) && (workers[i].age > (elementToInsert).age)) {
+            workers[i + 1] = workers[i]; // overwrite the element[i + 1] with the element[i]
+            i--;
+        }
+
+        workers[i + 1] = elementToInsert;
+
+        return indexOfElementToInsert + 1;
+    }
 }
