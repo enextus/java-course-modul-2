@@ -7,8 +7,16 @@ public class Application {
     public static void main(String[] args) {
 
         Student s1 = new Student("Anton", "Barret", 20, "M3459876", "Student", 6, "Mathe");
+        Student s2 = new Student("Anton", "Barret", 20, "M3459876", "Student", 6, "Mathe");
+        Student s3 = new Student("Anton", "Barret", 20, "M3459876", "Student", 6, "Mathe");
+
         Lecturer l1 = new Lecturer("Mike", "Follow", 45, "D3453466", "Lecturer", "professor", "PHD");
+        Lecturer l2 = new Lecturer("Mike", "Follow", 45, "D3453466", "Lecturer", "professor", "PHD");
+        Lecturer l3= new Lecturer("Mike", "Follow", 45, "D3453466", "Lecturer", "professor", "PHD");
+
         Worker w1 = new Worker("Arnold", "Schwarz", 37, "W3456435676", "facility manager", "foreman", 8);
+        Worker w2 = new Worker("Arnold", "Schwarz", 37, "W3456435676", "facility manager", "foreman", 8);
+        Worker w3 = new Worker("Arnold", "Schwarz", 37, "W3456435676", "facility manager", "foreman", 8);
 
 /*
         Object ob = new Lecturer("Завуч");
