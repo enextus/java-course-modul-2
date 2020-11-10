@@ -3,9 +3,7 @@ package lesson05.uni;
 public class Worker extends Person {
     private String position;
     private int workExperience;
-
     private String constructor;
-
     private static Worker[] workers;
 
     //  Worker 1.4.1
@@ -31,19 +29,17 @@ public class Worker extends Person {
                 '}';
     }
 
-    public void receivingWages() {
-
+    public void displayReceivingWages() {
         System.out.println("Получение зарплаты. Receiving wages.");
     }
 
     @Override
-    public void walks() {
-        super.walks();
+    public void displayWalks() {
+        super.displayWalks();
         System.out.println("Ходит в качестве рабочего.");
     }
 
     public void works() {
-
         System.out.println("Работать!");
     }
 }

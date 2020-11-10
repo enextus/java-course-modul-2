@@ -4,9 +4,7 @@ package lesson05.uni;
 public class Lecturer extends Person {
     private String rank;
     private String degree;
-
     private String constructor;
-
     private static Lecturer[] lecturers;
 
     // Lecturer 1.3.1
@@ -17,17 +15,37 @@ public class Lecturer extends Person {
         this.constructor = "Lecturer 1.3.1";
     }
 
-    public void teach() {
+    public String getConstructor() {
+        return constructor;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public void displayTeach() {
         System.out.println("Должен учиться, учиться и ещё раз учиться!");
     }
 
-    public void receivingWages() {
+    public void displayReceivingWages() {
         System.out.println("Получение зарплаты. Receiving wages.");
     }
 
     @Override
-    public void walks() {
-        super.walks();
+    public void displayWalks() {
+        super.displayWalks();
         System.out.println("Ходит в качестве преподавателя.");
     }
 

@@ -9,9 +9,7 @@ public class Person {
     public int age;
     public String uniID;
     public String occupation;
-
     public String parentConstructor;
-
     private static Person[] persons;
 
     // constructor Person 1.1.1
@@ -24,13 +22,11 @@ public class Person {
         this.parentConstructor = "Person 1.1.1";
     }
 
-    public void eats() {
-
+    public void displayEats() {
         System.out.println("В столовой все цены со скидкой. Скидка = ");
     }
 
-    public void walks() {
-
+    public void displayWalks() {
         System.out.println("Ходит по кампусу.");
     }
 }

@@ -8,11 +8,7 @@ import java.util.Objects;
 public final class Student extends Person {
     private int semester;
     private String faculty;
-
     private String constructor;
-
-
-
 
     // constructor Student 1.2.1
     public Student(String firstName, String secondName, int age, String uniID, String occupation, int semester, String faculty) {
@@ -22,25 +18,42 @@ public final class Student extends Person {
         this.constructor = "Student 1.2.1";
     }
 
+    public String getConstructor() {
+        return constructor;
+    }
 
-    public void study() {
+    public int getSemester() {
+        return semester;
+    }
 
+    public void setSemester(int semester) {
+        this.semester = semester;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    public void displayStudy() {
         System.out.println("Должен учиться, учиться и ещё раз учиться!");
     }
 
-    public void payingSemesterFees() {
-
+    public void displayFees() {
         System.out.println("Оплата семестровых сборов. Paying semester fees.");
     }
 
     @Override
-    public void eats() {
+    public void displayEats() {
         System.out.println("В столовой все цены со скидкой! ");
     }
 
     @Override
-    public void walks() {
-        super.walks();
+    public void displayWalks() {
+        super.displayWalks();
         System.out.println("Ходит в роли студента.");
     }
 

@@ -1,15 +1,13 @@
 package lesson05.uni;
 
-import lesson02.Person;
-
 /**
  * class Application
  */
 public class Application {
 
-    public static Student[] students  = new Student[3];
-    public static Lecturer[] lecturers  = new Lecturer[3];
-    public static Worker[] workers  = new Worker[3];
+    public static Student[] students = new Student[3];
+    public static Lecturer[] lecturers = new Lecturer[3];
+    public static Worker[] workers = new Worker[3];
     public static int studentsLength;
 
     public static void main(String[] args) {
@@ -30,31 +28,45 @@ public class Application {
         lecturers = new Lecturer[]{l1, l2, l3};
         workers = new Worker[]{w1, w2, w3};
 
+        // Students __________________________________________________
         System.out.println(s1);
         System.out.println(s1.firstName);
         System.out.println(s1.age);
         System.out.println(s1.uniID);
+        System.out.println(s1.getSemester());
+        System.out.println(s1.getFaculty());
+        System.out.println(s1.getConstructor());
 
-        studentsLength = students.length;
+        s1.displayEats();
+        s1.displayWalks();
 
-        System.out.println("studentsLength: " + studentsLength);
+        s1.displayStudy();
+        s1.displayFees();
 
-        printArr(students);
-
-        insertionSortStudentsByAge(studentsLength);
-
-        printArr(students);
-
-       /*   l1.walks();
-        w1.walks();
+        System.out.println(s1.hashCode());
 
         System.out.println();
 
+        // Lecturers __________________________________________________
         System.out.println(l1);
         System.out.println(l1.firstName);
         System.out.println(l1.secondName);
         System.out.println(l1.age);
         System.out.println(l1.uniID);
+        System.out.println(l1.getRank());
+        System.out.println(l1.getDegree());
+        System.out.println(l1.getConstructor());
+
+        s1.displayEats();
+        s1.displayWalks();
+
+        s1.displayStudy();
+        s1.displayFees();
+
+        System.out.println(s1.hashCode());
+
+        System.out.println();
+
 
         System.out.println();
 
@@ -62,7 +74,17 @@ public class Application {
         System.out.println(w1.firstName);
         System.out.println(w1.secondName);
         System.out.println(w1.age);
-        System.out.println(w1.uniID);*/
+        System.out.println(w1.uniID);
+
+        System.out.println();
+
+
+
+        studentsLength = students.length;
+        System.out.println("studentsLength: " + studentsLength);
+        printArr(students);
+        insertionSortStudentsByAge(studentsLength);
+        printArr(students);
 
         /*
         Object ob = new Lecturer("Завуч");
