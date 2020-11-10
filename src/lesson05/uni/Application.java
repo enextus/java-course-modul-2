@@ -28,6 +28,8 @@ public class Application {
          Worker[] workers = new Worker[3];
 
         students = new Student[]{s1, s2, s3};
+        lecturers = new Lecturer[]{l1, l2, l3};
+        workers = new Worker[]{w1, w2, w3};
 
 
 
