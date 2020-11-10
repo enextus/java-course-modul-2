@@ -45,7 +45,7 @@ public class Application {
 
         System.out.println(s1.hashCode());
 
-        System.out.println();
+        System.out.println("__________________________________________________");
 
         // Lecturers __________________________________________________
         System.out.println(l1);
@@ -57,18 +57,15 @@ public class Application {
         System.out.println(l1.getDegree());
         System.out.println(l1.getConstructor());
 
-        s1.displayEats();
-        s1.displayWalks();
+        l1.displayEats();
+        l1.displayWalks();
 
-        s1.displayStudy();
-        s1.displayFees();
+        l1.displayTeach();
+        l1.displayReceivingWages();
 
         System.out.println(s1.hashCode());
 
-        System.out.println();
-
-
-        System.out.println();
+        System.out.println("__________________________________________________");
 
         System.out.println(w1);
         System.out.println(w1.firstName);
@@ -76,9 +73,7 @@ public class Application {
         System.out.println(w1.age);
         System.out.println(w1.uniID);
 
-        System.out.println();
-
-
+        System.out.println("__________________________________________________");
 
         studentsLength = students.length;
         System.out.println("studentsLength: " + studentsLength);

@@ -1,6 +1,8 @@
 package lesson05.uni;
 
-
+/**
+ * class Person
+ */
 public class Lecturer extends Person {
     private String rank;
     private String degree;
@@ -36,11 +38,17 @@ public class Lecturer extends Person {
     }
 
     public void displayTeach() {
-        System.out.println("Должен учиться, учиться и ещё раз учиться!");
+        System.out.println("Должен учить!");
     }
 
     public void displayReceivingWages() {
         System.out.println("Получение зарплаты. Receiving wages.");
+    }
+
+    @Override
+    public void displayEats() {
+        super.displayEats();
+        System.out.println("Скидка на еду для преподавателей.");
     }
 
     @Override
