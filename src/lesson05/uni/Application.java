@@ -1,9 +1,16 @@
 package lesson05.uni;
 
+import lesson02.Person;
+
 /**
  * class Application
  */
 public class Application {
+
+    public static Student[] arrStudents = new Student[3];
+    public static Lecturer[] arrLecturers = new Lecturer[3];
+    public static Worker[] arrWorkers = new Worker[3];
+
     public static void main(String[] args) {
 
         Student s1 = new Student("Anton", "Barret", 20, "M3459876", "Student", 6, "Mathe");
@@ -23,13 +30,11 @@ public class Application {
         Lecturer newLecturer = (Lecturer) ob;*/
 
 
-         Student[] students = new Student[3];
-         Lecturer[] lecturers = new Lecturer[3];
-         Worker[] workers = new Worker[3];
 
-        students = new Student[]{s1, s2, s3};
-        lecturers = new Lecturer[]{l1, l2, l3};
-        workers = new Worker[]{w1, w2, w3};
+
+        arrStudents = new Student[]{s1, s2, s3};
+        arrLecturers = new Lecturer[]{l1, l2, l3};
+        arrWorkers = new Worker[]{w1, w2, w3};
 
 
 /*
@@ -60,5 +65,27 @@ public class Application {
         System.out.println(w1.secondName);
         System.out.println(w1.age);
         System.out.println(w1.uniID);*/
+
+
+        public static int insertionSortByWeight(int indexOfElementToInsert) {
+
+            if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+            indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
+
+            Person elementToInsertForSorting = arr[indexOfElementToInsert];
+            int i = indexOfElementToInsert - 1;
+
+            while ((i >= 0) && (arr[i].weight > elementToInsertForSorting.weight)) {
+
+                // swap 2 elements
+                arr[i + 1] = arr[i];
+                i--;
+            }
+
+            arr[i + 1] = elementToInsertForSorting;
+
+            return indexOfElementToInsert + 1;
+        }
     }
 }
