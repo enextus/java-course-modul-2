@@ -5,7 +5,7 @@ public class Worker extends Person {
 
 
     public Worker(String firstName, String secondName, int age, String uniID, String occupation, String constructor, String position) {
-        super(firstName, secondName, age, uniID, occupation, constructor);
+        super(firstName, secondName, age, uniID, occupation);
         this.position = position;
     }
 

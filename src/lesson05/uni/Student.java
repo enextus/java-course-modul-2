@@ -2,13 +2,16 @@ package lesson05.uni;
 
 import java.util.Objects;
 
+/**
+ * class Student
+ */
 public final class Student extends Person {
-
-
+    public int semester;
     public String faculty;
 
-    public Student(String firstName, String secondName, int age, String uniID, String occupation, String constructor, String faculty) {
-        super(firstName, secondName, age, uniID, occupation, constructor);
+    public Student(String firstName, String secondName, int age, String uniID, String occupation, int semester, String faculty) {
+        super(firstName, secondName, age, uniID, occupation);
+        this.semester = semester;
         this.faculty = faculty;
     }
 
@@ -17,10 +20,17 @@ public final class Student extends Person {
     }
 
     @Override
-    public void eats() {
-        System.out.println("В столовой все цены со скидкой. Скидка = ");
+    public String toString() {
+        return "Student{" +
+                "semester=" + semester +
+                ", faculty='" + faculty + '\'' +
+                '}';
     }
 
+    @Override
+    public void eats() {
+        System.out.println("В столовой все цены со скидкой! ");
+    }
 
 
     @Override
