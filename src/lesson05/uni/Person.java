@@ -22,6 +22,50 @@ public class Person {
         this.parentConstructor = "Person 1.1.1";
     }
 
+    public String getParentConstructor() {
+        return parentConstructor;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getUniID() {
+        return uniID;
+    }
+
+    public void setUniID(String uniID) {
+        this.uniID = uniID;
+    }
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
     public void displayEats() {
         System.out.println("В столовой имеется скидка.");
     }
