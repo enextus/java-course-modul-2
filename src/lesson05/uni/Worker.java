@@ -7,7 +7,7 @@ public class Worker extends Person {
     private String constructor;
 
     //  Worker 1.4.1
-    public Worker(String firstName, String secondName, int age, String uniID, String occupation, String position, int workExperience, String constructor) {
+    public Worker(String firstName, String secondName, int age, String uniID, String occupation, String position, int workExperience) {
         super(firstName, secondName, age, uniID, occupation);
         this.position = position;
         this.workExperience = workExperience;
@@ -19,6 +19,7 @@ public class Worker extends Person {
         return "Worker{" +
                 "position='" + position + '\'' +
                 ", workExperience=" + workExperience +
+                ", constructor='" + constructor + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
                 ", age=" + age +

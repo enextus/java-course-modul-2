@@ -12,7 +12,7 @@ public class Lecturer extends Person {
         super(firstName, secondName, age, uniID, occupation);
         this.rank = rank;
         this.degree = degree;
-        this.constructor = "Lecturer 1.2.1";
+        this.constructor = "Lecturer 1.3.1";
     }
 
     public void teach() {
