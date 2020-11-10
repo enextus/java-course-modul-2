@@ -2,22 +2,15 @@ package lesson05.uni;
 
 import java.util.Objects;
 
-public final class Student extends UniUser {
-    private String subject;
+public final class Student extends Person {
 
-    public Student(String firstName) {
-        super(firstName);
+
+    public String faculty;
+
+    public Student(String firstName, String secondName, int age, String uniID, String occupation, String constructor, String faculty) {
+        super(firstName, secondName, age, uniID, occupation, constructor);
+        this.faculty = faculty;
     }
-
-    public Student(String uniID, int age, String subject) {
-        super(uniID, age);
-        this.subject = subject;
-    }
-
-    public Student(String firstName, String secondName, String uniID, int age) {
-        super(firstName, secondName, uniID, age);
-    }
-
 
     public void study() {
         System.out.println("Должен учиться, учиться и ещё раз учиться!");
@@ -28,12 +21,7 @@ public final class Student extends UniUser {
         System.out.println("В столовой все цены со скидкой. Скидка = ");
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + '\'' + "Student{" +
-                "subject='" + subject + '\'' +
-                '}';
-    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -55,6 +43,6 @@ public final class Student extends UniUser {
 
     @Override
     public int hashCode() {
-        return Objects.hash(subject);
+        return Objects.hash(firstName);
     }
 }

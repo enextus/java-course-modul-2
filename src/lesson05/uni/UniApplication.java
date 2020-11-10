@@ -4,7 +4,7 @@ public class UniApplication {
 
     // class method
     private static void inheritanceIntroduction() {
-        Student pasha = new Student(
+/*        Student pasha = new Student(
                 "3544365436",
                 35,
                 "Java-Программист"
@@ -18,17 +18,17 @@ public class UniApplication {
                 "1234567",
                 35,
                 "Профессор"
-        );
+        );*/
 
-        System.out.println(dasha);
+//        System.out.println(dasha);
     }
 
     public static void main(String[] args) {
 
-        //inheritanceIntroduction();
-        Student sasha = new Student("Саша");
-        Teacher masha = new Teacher("Маша");
-        Worker glasha = new Worker("Глаша");
+        // inheritanceIntroduction();
+        // Student sasha = new Student("Саша");
+        // Teacher masha = new Teacher("Маша");
+        // Worker w1 = new Worker("Глаша", "#34STZ435m", 23);
 
 
 /*        UniUser pasha = new Student("Паша");
@@ -41,6 +41,6 @@ public class UniApplication {
 /*        UniUser[] newArray = new UniUser[10];
         Student[] newcollegs = new Student[20];*/
 
-        System.out.println(glasha);
+        // System.out.println(w1);
     }
 }

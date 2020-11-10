@@ -1,23 +1,18 @@
 package lesson05.uni;
 
-public class Worker extends UniUser{
-    private String firstName;
-    private String secondName;
-    private String uniID;
+public class Worker extends Person {
     private String position;
-    private int age;
-    private double eatCooficient = 0.8;
 
-    public Worker(String firstName) {
-        super(firstName);
-    }
 
-    public Worker(String uniID, int age) {
-        super(uniID, age);
+    public Worker(String firstName, String secondName, int age, String uniID, String occupation, String constructor, String position) {
+        super(firstName, secondName, age, uniID, occupation, constructor);
+        this.position = position;
     }
 
     public void works() {
+
         System.out.println("Работать!");
     }
+
 
 }
