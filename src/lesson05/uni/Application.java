@@ -100,10 +100,6 @@ public class Application {
         indexOfElementToInsert = insertionSortStudentsByAge(indexOfElementToInsert - 1); // recursive call
 
         Student elementToInsertForSorting = students[indexOfElementToInsert];
-        System.out.println(indexOfElementToInsert);
-        System.out.println(students.length);
-        System.out.println(students[1]);
-        // Object elementToInsertForSorting = students[1];
 
         int i = indexOfElementToInsert - 1;
         while ((i >= 0) && (students[i].age > ((Student) elementToInsertForSorting).age)) {
