@@ -39,7 +39,6 @@ public class Application {
 
         s1.displayEats();
         s1.displayWalks();
-
         s1.displayStudy();
         s1.displayFees();
 
@@ -59,7 +58,6 @@ public class Application {
 
         l1.displayEats();
         l1.displayWalks();
-
         l1.displayTeach();
         l1.displayReceivingWages();
 
@@ -67,11 +65,20 @@ public class Application {
 
         System.out.println("__________________________________________________");
 
+        // Workers __________________________________________________
         System.out.println(w1);
         System.out.println(w1.firstName);
         System.out.println(w1.secondName);
         System.out.println(w1.age);
         System.out.println(w1.uniID);
+        System.out.println(w1.getPosition());
+        System.out.println(w1.getWorkExperience());
+        System.out.println(w1.getConstructor());
+
+        w1.displayWalks();
+        w1.displayReceivingWages();
+        w1.displayEats();
+        w1.displayWorks();
 
         System.out.println("__________________________________________________");
 

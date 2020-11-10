@@ -14,6 +14,30 @@ public class Worker extends Person {
         this.constructor = "Worker 1.4.1";
     }
 
+    public String getConstructor() {
+        return constructor;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public int getWorkExperience() {
+        return workExperience;
+    }
+
+    public void setWorkExperience(int workExperience) {
+        this.workExperience = workExperience;
+    }
+
+    public void displayWorks() {
+        System.out.println("Выполнение работы.");
+    }
+
     @Override
     public String toString() {
         return "Worker{" +
@@ -31,6 +55,12 @@ public class Worker extends Person {
 
     public void displayReceivingWages() {
         System.out.println("Получение зарплаты. Receiving wages.");
+    }
+
+    @Override
+    public void displayEats() {
+        super.displayEats();
+        System.out.println("Еда со скидкой для Workers.");
     }
 
     @Override

@@ -23,7 +23,7 @@ public class Person {
     }
 
     public void displayEats() {
-        System.out.println("В столовой все цены со скидкой. Скидка = ");
+        System.out.println("В столовой имеется скидка.");
     }
 
     public void displayWalks() {
