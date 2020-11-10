@@ -23,7 +23,7 @@ public class Application {
         Lecturer l3 = new Lecturer("Gregor", "Swing", 49, "D3453462", "Lecturer", "lecturer", "PHD");
 
         Worker w1 = new Worker("Arnold", "Schwarz", 37, "W3456435629", "facility manager", "foreman", 8);
-        Worker w2 = new Worker("Simon", "Gloss", 34, "W3456435649", "facility manager", "foreman", 5);
+        Worker w2 = new Worker("Simon", "Gloss", 24, "W3456435649", "facility manager", "foreman", 5);
         Worker w3 = new Worker("Bill", "Trend", 47, "W3456435632", "facility manager", "foreman", 20);
 
         students = new Student[]{s1, s2, s3};
@@ -96,6 +96,11 @@ public class Application {
         studentsSortByAge(lecturersLength);
         printArr(lecturers);
 
+        // Sort workers__________________________________________________
+        workersLength = workers.length;
+        printArr(workers);
+        workersSortByAge(workersLength);
+        printArr(workers);
         // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
     }
