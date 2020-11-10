@@ -82,24 +82,26 @@ public class Application {
 
         System.out.println("__________________________________________________");
 
+        // Sort __________________________________________________
         studentsLength = students.length;
         System.out.println("studentsLength: " + studentsLength);
         printArr(students);
-        insertionSortStudentsByAge(studentsLength);
+        studentsSortByAge(studentsLength);
         printArr(students);
+
 
         /*
         Object ob = new Lecturer("Завуч");
         Lecturer newLecturer = (Lecturer) ob;*/
     }
 
-    public static int insertionSortStudentsByAge(int indexOfElementToInsert) {
+    public static int studentsSortByAge(int indexOfElementToInsert) {
 
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
         System.out.println(" indexOfElementToInsert: " + indexOfElementToInsert);
 
-        indexOfElementToInsert = insertionSortStudentsByAge(indexOfElementToInsert - 1); // recursive call
+        indexOfElementToInsert = studentsSortByAge(indexOfElementToInsert - 1); // recursive call
 
         Student elementToInsertForSorting = students[indexOfElementToInsert];
 
