@@ -11,6 +11,34 @@ public class Application {
     public static Lecturer[] arrLecturers = new Lecturer[3];
     public static Worker[] arrWorkers = new Worker[3];
 
+    public static int insertionSortByAge(int indexOfElementToInsert, Object[] arr){
+
+        arr = arr;
+
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+        indexOfElementToInsert = insertionSortByAge(indexOfElementToInsert - 1);
+
+        Person elementToInsertForSorting = arr[indexOfElementToInsert];
+        int i = indexOfElementToInsert - 1;
+
+        while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
+
+            // swap 2 elements
+            arr[i + 1] = arr[i];
+            i--;
+        }
+
+        arr[i + 1] = elementToInsertForSorting;
+
+        return indexOfElementToInsert + 1;
+    }
+
+    public static void printArr(Object[] arr) {
+        System.out.println();
+        for (Object element : arr) System.out.println("Name: " + element.name + ", Weight: " + element.age + ".");
+    }
+
     public static void main(String[] args) {
 
         Student s1 = new Student("Anton", "Barret", 20, "M3459876", "Student", 6, "Mathe");
@@ -29,25 +57,14 @@ public class Application {
         arrLecturers = new Lecturer[]{l1, l2, l3};
         arrWorkers = new Worker[]{w1, w2, w3};
 
-        public static int insertionSortByAge(int indexOfElementToInsert){
+        // print unsorted array
+        printArr(arrStudents);
 
-            if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+        // The elements of the array are sorted by weight.
+        insertionSortByWeight(arrStudents.length);
 
-            indexOfElementToInsert = insertionSortByAge(indexOfElementToInsert - 1);
+        // print sorted array
+        printArr(arrStudents);
 
-            Person elementToInsertForSorting = arr[indexOfElementToInsert];
-            int i = indexOfElementToInsert - 1;
-
-            while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
-
-                // swap 2 elements
-                arr[i + 1] = arr[i];
-                i--;
-            }
-
-            arr[i + 1] = elementToInsertForSorting;
-
-            return indexOfElementToInsert + 1;
-        }
     }
 }
