@@ -20,6 +20,12 @@ public class Lecturer extends Person {
     }
 
     @Override
+    public void walks() {
+        super.walks();
+        System.out.println("Ходит в качестве преподавателя.");
+    }
+
+    @Override
     public String toString() {
         return "Lecturer{" +
                 "rank='" + rank + '\'' +

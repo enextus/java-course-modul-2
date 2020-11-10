@@ -25,7 +25,11 @@ public class Application {
 
         System.out.println();
 
-        System.out.println(l1);
+        s1.walks();
+
+        System.out.println();
+
+/*        System.out.println(l1);
         System.out.println(l1.firstName);
         System.out.println(l1.secondName);
         System.out.println(l1.age);
@@ -37,6 +41,6 @@ public class Application {
         System.out.println(w1.firstName);
         System.out.println(w1.secondName);
         System.out.println(w1.age);
-        System.out.println(w1.uniID);
+        System.out.println(w1.uniID);*/
     }
 }
