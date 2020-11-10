@@ -12,6 +12,27 @@ public class Person {
 
     public String parentConstructor;
 
+/*    public static int insertionSortByWeight(int indexOfElementToInsert) {
+
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+        indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
+
+        Person elementToInsertForSorting = arr[indexOfElementToInsert];
+        int i = indexOfElementToInsert - 1;
+
+        while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
+
+            // swap 2 elements
+            arr[i + 1] = arr[i];
+            i--;
+        }
+
+        arr[i + 1] = elementToInsertForSorting;
+
+        return indexOfElementToInsert + 1;
+    }*/
+
     // constructor Person 1.1.1
     public Person(String firstName, String secondName, int age, String uniID, String occupation) {
         this.firstName = firstName;

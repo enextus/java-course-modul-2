@@ -27,20 +27,16 @@ public class Application {
         Worker w2 = new Worker("Simon", "Gloss", 34, "W3456435649", "facility manager", "foreman", 5);
         Worker w3 = new Worker("Bill", "Trend", 47, "W3456435632", "facility manager", "foreman", 20);
 
-/*
-        Object ob = new Lecturer("Завуч");
-        Lecturer newLecturer = (Lecturer) ob;*/
-
-        students = new Student[3];
-        lecturers = new Lecturer[3];
-        workers = new Worker[3];
-
         students = new Student[]{s1, s2, s3};
         lecturers = new Lecturer[]{l1, l2, l3};
         workers = new Worker[]{w1, w2, w3};
 
 
-/*
+        /*
+        Object ob = new Lecturer("Завуч");
+        Lecturer newLecturer = (Lecturer) ob;*/
+
+        /*
         System.out.println(s1);
         System.out.println(s1.firstName);
         System.out.println(s1.secondName);
@@ -55,7 +51,7 @@ public class Application {
 
         System.out.println();
 
-     System.out.println(l1);
+        System.out.println(l1);
         System.out.println(l1.firstName);
         System.out.println(l1.secondName);
         System.out.println(l1.age);
@@ -70,25 +66,5 @@ public class Application {
         System.out.println(w1.uniID);*/
 
 
-/*        public static int insertionSortByWeight(int indexOfElementToInsert) {
-
-            if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
-
-            indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
-
-            Person elementToInsertForSorting = arr[indexOfElementToInsert];
-            int i = indexOfElementToInsert - 1;
-
-            while ((i >= 0) && (arr[i].weight > elementToInsertForSorting.weight)) {
-
-                // swap 2 elements
-                arr[i + 1] = arr[i];
-                i--;
-            }
-
-            arr[i + 1] = elementToInsertForSorting;
-
-            return indexOfElementToInsert + 1;
-        }*/
     }
 }
