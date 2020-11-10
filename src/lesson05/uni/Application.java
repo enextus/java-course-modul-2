@@ -85,11 +85,33 @@ public class Application {
     public static int lecturersLength;
     public static int workersLength;
 
+    @Override
+    public String toString() {
+        return "Application{ "
+                + students.length + " | " +
+                + lecturers.length + " | " +
+                + workers.length +
+                " }";
+    }
+
     public static void main(String[] args) {
 
-        Student s1 = new Student("Anton", "Barret", 39, "M3459876", "Student", 6, "Mathe");
-        Student s2 = new Student("Boris", "Mao", 18, "M3459845", "Student", 6, "Mathe");
-        Student s3 = new Student("Teo", "Stain", 27, "M3459889", "Student", 6, "Mathe");
+        Application appOne = new Application();
+
+        System.out.println(appOne.getClass());
+        System.out.println(appOne.hashCode());
+
+        System.out.println();
+
+        System.out.println(appOne.students[0]);
+        System.out.println(appOne.students[1]);
+        System.out.println(appOne.students[2]);
+
+        System.out.println();
+
+        Student s1 = new Student("Anton", "Barret", 39, "M3459876", "Student", 8, "Theo");
+        Student s2 = new Student("Boris", "Mao", 18, "M3459845", "Student", 2, "Chemistry");
+        Student s3 = new Student("Teo", "Stain", 27, "M3459889", "Student", 5, "Mathe");
 
         Lecturer l1 = new Lecturer("Mike", "Bullet", 45, "D3453466", "Lecturer", "professor", "PHD");
         Lecturer l2 = new Lecturer("Paul", "Rider", 55, "D3453434", "Lecturer", "lecturer", "PHD");
@@ -102,6 +124,12 @@ public class Application {
         students = new Student[]{s1, s2, s3};
         lecturers = new Lecturer[]{l1, l2, l3};
         workers = new Worker[]{w1, w2, w3};
+
+        System.out.println(appOne.students[0]);
+        System.out.println(appOne.students[1]);
+        System.out.println(appOne.students[2]);
+
+        System.out.println();
 
         // Students __________________________________________________
         System.out.println(s1);
@@ -171,8 +199,12 @@ public class Application {
 
         // Sort workers__________________________________________________
         workersLength = workers.length;
+        System.out.println();
+        System.out.println("Unsorted list.");
         printArr(workers);
         workersSortByAge(workersLength);
+        System.out.println();
+        System.out.println("Sorted list.");
         printArr(workers);
         // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
@@ -183,6 +215,26 @@ public class Application {
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
         indexOfElementToInsert = studentsSortByAge(indexOfElementToInsert - 1); // recursive call
+
+        Student elementToInsert = students[indexOfElementToInsert]; // temporary hold the value of element to insert
+
+        int i = indexOfElementToInsert - 1;
+        while ((i >= 0) && (students[i].age > (elementToInsert).age)) {
+            students[i + 1] = students[i]; // overwrite the element[i + 1] with the element[i]
+            i--;
+        }
+
+        students[i + 1] = elementToInsert;
+
+        return indexOfElementToInsert + 1;
+    }
+
+
+    public int studentsSortByAgeInstance(int indexOfElementToInsert) {
+
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+        indexOfElementToInsert = studentsSortByAgeInstance(indexOfElementToInsert - 1); // recursive call
 
         Student elementToInsert = students[indexOfElementToInsert]; // temporary hold the value of element to insert
 
@@ -240,4 +292,6 @@ public class Application {
 
         return indexOfElementToInsert + 1;
     }
+
+
 }
