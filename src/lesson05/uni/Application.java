@@ -11,12 +11,17 @@ public class Application {
         Worker w1 = new Worker("Arnold", "Schwarz", 37, "W3456435676", "facility manager", "foreman", 8);
 
 /*
-        Object ob = new Teacher("Завуч");
-        Teacher newteacher = (Teacher) ob;*/
+        Object ob = new Lecturer("Завуч");
+        Lecturer newLecturer = (Lecturer) ob;*/
 
-/*       UniUser[] newArray = new UniUser[10];
-         Student[] newcollegs = new Student[20];*/
 
+         Student[] students = new Student[3];
+         Lecturer[] lecturers = new Lecturer[3];
+         Worker[] workers = new Worker[3];
+
+
+
+/*
         System.out.println(s1);
         System.out.println(s1.firstName);
         System.out.println(s1.secondName);
@@ -31,7 +36,7 @@ public class Application {
 
         System.out.println();
 
-/*        System.out.println(l1);
+     System.out.println(l1);
         System.out.println(l1.firstName);
         System.out.println(l1.secondName);
         System.out.println(l1.age);
