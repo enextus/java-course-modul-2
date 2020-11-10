@@ -28,6 +28,11 @@ public final class Student extends Person {
         System.out.println("В столовой все цены со скидкой! ");
     }
 
+    @Override
+    public void walks() {
+        super.walks();
+        System.out.println("Ходит в роли студента.");
+    }
 
     @Override
     public String toString() {

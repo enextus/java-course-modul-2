@@ -23,10 +23,12 @@ public class Person {
     }
 
     public void eats() {
+
         System.out.println("В столовой все цены со скидкой. Скидка = ");
     }
 
     public void walks() {
-        System.out.println("Ходит по кампусу");
+
+        System.out.println("Ходит по кампусу.");
     }
 }
