@@ -22,5 +22,9 @@ public class Application {
         // System.out.println(w1);
 
         System.out.println(s1);
+        System.out.println(s1.firstName);
+        System.out.println(s1.secondName);
+        System.out.println(s1.age);
+        System.out.println(s1.uniID);
     }
 }

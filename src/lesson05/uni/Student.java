@@ -9,10 +9,14 @@ public final class Student extends Person {
     public int semester;
     public String faculty;
 
+    public String constructor;
+
+    // constructor Student 1.2.1
     public Student(String firstName, String secondName, int age, String uniID, String occupation, int semester, String faculty) {
         super(firstName, secondName, age, uniID, occupation);
         this.semester = semester;
         this.faculty = faculty;
+        this.constructor = "Student 1.2.1";
     }
 
     public void study() {
@@ -20,18 +24,25 @@ public final class Student extends Person {
     }
 
     @Override
-    public String toString() {
-        return "Student{" +
-                "semester=" + semester +
-                ", faculty='" + faculty + '\'' +
-                '}';
-    }
-
-    @Override
     public void eats() {
         System.out.println("В столовой все цены со скидкой! ");
     }
 
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "semester=" + semester +
+                ", faculty='" + faculty + '\'' +
+                ", constructor='" + constructor + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", age=" + age +
+                ", uniID='" + uniID + '\'' +
+                ", occupation='" + occupation + '\'' +
+                ", parentConstructor='" + parentConstructor + '\'' +
+                '}';
+    }
 
     @Override
     public boolean equals(Object o) {
