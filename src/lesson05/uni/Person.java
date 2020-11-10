@@ -12,6 +12,8 @@ public class Person {
 
     public String parentConstructor;
 
+    private static Person[] persons;
+
     // constructor Person 1.1.1
     public Person(String firstName, String secondName, int age, String uniID, String occupation) {
         this.firstName = firstName;

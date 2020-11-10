@@ -22,7 +22,6 @@ public class Lecturer extends Person {
     }
 
     public void receivingWages() {
-
         System.out.println("Получение зарплаты. Receiving wages.");
     }
 

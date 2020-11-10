@@ -11,15 +11,15 @@ public final class Student extends Person {
 
     private String constructor;
 
-    private static Student[] students;
+    private static Student[] arr;
 
-    /*    public static int insertionSortByWeight(int indexOfElementToInsert) {
+    public static int insertionSortByAge(int indexOfElementToInsert) {
 
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
-        indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
+        indexOfElementToInsert = insertionSortByAge(indexOfElementToInsert - 1); // recursive call
 
-        Person elementToInsertForSorting = arr[indexOfElementToInsert];
+        Student elementToInsertForSorting = arr[indexOfElementToInsert];
         int i = indexOfElementToInsert - 1;
 
         while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
@@ -32,7 +32,8 @@ public final class Student extends Person {
         arr[i + 1] = elementToInsertForSorting;
 
         return indexOfElementToInsert + 1;
-    }*/
+    }
+
 
     // constructor Student 1.2.1
     public Student(String firstName, String secondName, int age, String uniID, String occupation, int semester, String faculty) {
@@ -41,6 +42,7 @@ public final class Student extends Person {
         this.faculty = faculty;
         this.constructor = "Student 1.2.1";
     }
+
 
     public void study() {
 
