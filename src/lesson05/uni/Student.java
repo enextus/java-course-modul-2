@@ -11,28 +11,7 @@ public final class Student extends Person {
 
     private String constructor;
 
-    private static Student[] arr;
 
-    public static int insertionSortByAge(int indexOfElementToInsert) {
-
-        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
-
-        indexOfElementToInsert = insertionSortByAge(indexOfElementToInsert - 1); // recursive call
-
-        Student elementToInsertForSorting = arr[indexOfElementToInsert];
-        int i = indexOfElementToInsert - 1;
-
-        while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
-
-            // swap 2 elements
-            arr[i + 1] = arr[i];
-            i--;
-        }
-
-        arr[i + 1] = elementToInsertForSorting;
-
-        return indexOfElementToInsert + 1;
-    }
 
 
     // constructor Student 1.2.1
