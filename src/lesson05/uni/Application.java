@@ -4,12 +4,23 @@ package lesson05.uni;
  * class Application
  *
  * Test:
- * Student{semester=6, faculty='Mathe', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
+ * class lesson05.uni.Application
+ * 1670782018
+ *
+ * null
+ * null
+ * null
+ *
+ * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
+ * Student{semester=2, faculty='Chemistry', constructor='Student 1.2.1', firstName='Boris', secondName='Mao', age=18, uniID='M3459845', occupation='Student', parentConstructor='Person 1.1.1'}
+ * Student{semester=5, faculty='Mathe', constructor='Student 1.2.1', firstName='Teo', secondName='Stain', age=27, uniID='M3459889', occupation='Student', parentConstructor='Person 1.1.1'}
+ *
+ * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Anton
  * 39
  * M3459876
- * 6
- * Mathe
+ * 8
+ * Theo
  * Student 1.2.1
  * В столовой все цены со скидкой!
  * Ходит по кампусу.
@@ -66,9 +77,13 @@ package lesson05.uni;
  * 55, Name: Paul, Weight: D3453434.
  * 49, Name: Gregor, Weight: D3453462.
  *
+ * Unsorted list.
+ *
  * 37, Name: Arnold, Weight: W3456435629.
  * 24, Name: Simon, Weight: W3456435649.
  * 47, Name: Bill, Weight: W3456435632.
+ *
+ * Sorted list.
  *
  * 24, Name: Simon, Weight: W3456435649.
  * 37, Name: Arnold, Weight: W3456435629.
