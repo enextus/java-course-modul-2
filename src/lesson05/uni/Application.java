@@ -27,6 +27,8 @@ public class Application {
          Lecturer[] lecturers = new Lecturer[3];
          Worker[] workers = new Worker[3];
 
+        students = new Student[]{s1, s2, s3};
+
 
 
 /*
