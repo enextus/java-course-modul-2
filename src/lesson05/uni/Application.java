@@ -9,6 +9,8 @@ public class Application {
     public static Lecturer[] lecturers = new Lecturer[3];
     public static Worker[] workers = new Worker[3];
     public static int studentsLength;
+    public static int lecturersLength;
+    public static int workersLength;
 
     public static void main(String[] args) {
 
@@ -89,6 +91,13 @@ public class Application {
         studentsSortByAge(studentsLength);
         printArr(students);
 
+        // Sort lecturers__________________________________________________
+        lecturersLength = lecturers.length;
+        System.out.println("lecturersLength: " + lecturersLength);
+        printArr(lecturers);
+        studentsSortByAge(lecturersLength);
+        printArr(lecturers);
+
         // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
     }
@@ -112,8 +121,27 @@ public class Application {
         return indexOfElementToInsert + 1;
     }
 
-    public static void printArr(Student[] arr) {
+    public static int lecturersSortByAge(int indexOfElementToInsert) {
+
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+        indexOfElementToInsert = studentsSortByAge(indexOfElementToInsert - 1); // recursive call
+
+        Lecturer elementToInsert = lecturers[indexOfElementToInsert]; // temporary hold the value of element to insert
+
+        int i = indexOfElementToInsert - 1; // counter for while loop
+        while ((i >= 0) && (lecturers[i].age > (elementToInsert).age)) {
+            lecturers[i + 1] = lecturers[i]; // overwrite the element[i + 1] with the element[i]
+            i--;
+        }
+
+        lecturers[i + 1] = elementToInsert;
+
+        return indexOfElementToInsert + 1;
+    }
+
+    public static void printArr(Person[] arr) {
         System.out.println();
-        for (Student element : arr) System.out.println("Name: " + element.firstName + ", Weight: " + element.age + ".");
+        for (Person element : arr) System.out.println("Name: " + element.firstName + ", Weight: " + element.age + ".");
     }
 }
