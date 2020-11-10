@@ -7,37 +7,11 @@ import lesson02.Person;
  */
 public class Application {
 
-    public static Student[] arrStudents = new Student[3];
-    public static Lecturer[] arrLecturers = new Lecturer[3];
-    public static Worker[] arrWorkers = new Worker[3];
+    private static Student[] students;
+    private static Lecturer[] lecturers;
+    private static Worker[] workers;
 
-    public static int insertionSortByAge(int indexOfElementToInsert, Object[] arr){
 
-        arr = arr;
-
-        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
-
-        indexOfElementToInsert = insertionSortByAge(indexOfElementToInsert - 1);
-
-        Person elementToInsertForSorting = arr[indexOfElementToInsert];
-        int i = indexOfElementToInsert - 1;
-
-        while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
-
-            // swap 2 elements
-            arr[i + 1] = arr[i];
-            i--;
-        }
-
-        arr[i + 1] = elementToInsertForSorting;
-
-        return indexOfElementToInsert + 1;
-    }
-
-    public static void printArr(Object[] arr) {
-        System.out.println();
-        for (Object element : arr) System.out.println("Name: " + element.name + ", Weight: " + element.age + ".");
-    }
 
     public static void main(String[] args) {
 
@@ -53,18 +27,68 @@ public class Application {
         Worker w2 = new Worker("Simon", "Gloss", 34, "W3456435649", "facility manager", "foreman", 5);
         Worker w3 = new Worker("Bill", "Trend", 47, "W3456435632", "facility manager", "foreman", 20);
 
-        arrStudents = new Student[]{s1, s2, s3};
-        arrLecturers = new Lecturer[]{l1, l2, l3};
-        arrWorkers = new Worker[]{w1, w2, w3};
+/*
+        Object ob = new Lecturer("Завуч");
+        Lecturer newLecturer = (Lecturer) ob;*/
 
-        // print unsorted array
-        printArr(arrStudents);
+        students = new Student[3];
+        lecturers = new Lecturer[3];
+        workers = new Worker[3];
 
-        // The elements of the array are sorted by weight.
-        insertionSortByWeight(arrStudents.length);
+        students = new Student[]{s1, s2, s3};
+        lecturers = new Lecturer[]{l1, l2, l3};
+        workers = new Worker[]{w1, w2, w3};
 
-        // print sorted array
-        printArr(arrStudents);
 
+/*
+        System.out.println(s1);
+        System.out.println(s1.firstName);
+        System.out.println(s1.secondName);
+        System.out.println(s1.age);
+        System.out.println(s1.uniID);
+
+        System.out.println();
+
+        s1.walks();
+        l1.walks();
+        w1.walks();
+
+        System.out.println();
+
+     System.out.println(l1);
+        System.out.println(l1.firstName);
+        System.out.println(l1.secondName);
+        System.out.println(l1.age);
+        System.out.println(l1.uniID);
+
+        System.out.println();
+
+        System.out.println(w1);
+        System.out.println(w1.firstName);
+        System.out.println(w1.secondName);
+        System.out.println(w1.age);
+        System.out.println(w1.uniID);*/
+
+
+/*        public static int insertionSortByWeight(int indexOfElementToInsert) {
+
+            if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+            indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
+
+            Person elementToInsertForSorting = arr[indexOfElementToInsert];
+            int i = indexOfElementToInsert - 1;
+
+            while ((i >= 0) && (arr[i].weight > elementToInsertForSorting.weight)) {
+
+                // swap 2 elements
+                arr[i + 1] = arr[i];
+                i--;
+            }
+
+            arr[i + 1] = elementToInsertForSorting;
+
+            return indexOfElementToInsert + 1;
+        }*/
     }
 }
