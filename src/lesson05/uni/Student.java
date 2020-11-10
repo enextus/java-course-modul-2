@@ -6,10 +6,10 @@ import java.util.Objects;
  * class Student
  */
 public final class Student extends Person {
-    public int semester;
-    public String faculty;
+    private int semester;
+    private String faculty;
 
-    public String constructor;
+    private String constructor;
 
     // constructor Student 1.2.1
     public Student(String firstName, String secondName, int age, String uniID, String occupation, int semester, String faculty) {

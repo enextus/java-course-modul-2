@@ -6,13 +6,11 @@ package lesson05.uni;
 public class Application {
     public static void main(String[] args) {
 
-        Student s1 = new Student("Anton", "Baranov", 20, "M3459876", "Student",  6 , "Mathe");
-        // Teacher t1 = new Teacher("Mike");
+        Student s1 = new Student("Anton", "Baranov", 20, "M3459876", "Student", 6, "Mathe");
+        Lecturer l1 = new Lecturer("Mike", "Follow", 45, "D3453466", "Lecturer", "professor", "PHD");
         // Worker w1 = new Worker("Глаша");
 
-
 /*
-
         Object ob = new Teacher("Завуч");
         Teacher newteacher = (Teacher) ob;*/
 
@@ -26,5 +24,11 @@ public class Application {
         System.out.println(s1.secondName);
         System.out.println(s1.age);
         System.out.println(s1.uniID);
+
+        System.out.println(l1);
+        System.out.println(l1.firstName);
+        System.out.println(l1.secondName);
+        System.out.println(l1.age);
+        System.out.println(l1.uniID);
     }
 }
