@@ -61,33 +61,33 @@ package lesson05.uni;
  * Выполнение работы.
  * __________________________________________________
  *
- * 39, Name: Anton, Weight: M3459876.
- * 18, Name: Boris, Weight: M3459845.
- * 27, Name: Teo, Weight: M3459889.
+ * 39, Name: Anton, uniID: M3459876.
+ * 18, Name: Boris, uniID: M3459845.
+ * 27, Name: Teo, uniID: M3459889.
  *
- * 18, Name: Boris, Weight: M3459845.
- * 27, Name: Teo, Weight: M3459889.
- * 39, Name: Anton, Weight: M3459876.
+ * 18, Name: Boris, uniID: M3459845.
+ * 27, Name: Teo, uniID: M3459889.
+ * 39, Name: Anton, uniID: M3459876.
  *
- * 45, Name: Mike, Weight: D3453466.
- * 55, Name: Paul, Weight: D3453434.
- * 49, Name: Gregor, Weight: D3453462.
+ * 45, Name: Mike, uniID: D3453466.
+ * 55, Name: Paul, uniID: D3453434.
+ * 49, Name: Gregor, uniID: D3453462.
  *
- * 45, Name: Mike, Weight: D3453466.
- * 55, Name: Paul, Weight: D3453434.
- * 49, Name: Gregor, Weight: D3453462.
+ * 45, Name: Mike, uniID: D3453466.
+ * 55, Name: Paul, uniID: D3453434.
+ * 49, Name: Gregor, uniID: D3453462.
  *
  * Unsorted list.
  *
- * 37, Name: Arnold, Weight: W3456435629.
- * 24, Name: Simon, Weight: W3456435649.
- * 47, Name: Bill, Weight: W3456435632.
+ * 37, Name: Arnold, uniID: W3456435629.
+ * 24, Name: Simon, uniID: W3456435649.
+ * 47, Name: Bill, uniID: W3456435632.
  *
  * Sorted list.
  *
- * 24, Name: Simon, Weight: W3456435649.
- * 37, Name: Arnold, Weight: W3456435629.
- * 47, Name: Bill, Weight: W3456435632.
+ * 24, Name: Simon, uniID: W3456435649.
+ * 37, Name: Arnold, uniID: W3456435629.
+ * 47, Name: Bill, uniID: W3456435632.
  *
  * Process finished with exit code 0
  */
@@ -285,7 +285,7 @@ public class Application {
 
     public static void printArr(Person[] arr) {
         System.out.println();
-        for (Person element : arr) System.out.println("" + element.age +  ", Name: " + element.firstName + ", Weight: " + element.uniID + ".");
+        for (Person element : arr) System.out.println("" + element.age +  ", Name: " + element.firstName + ", uniID: " + element.uniID + ".");
     }
 
 
