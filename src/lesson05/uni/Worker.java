@@ -6,6 +6,8 @@ public class Worker extends Person {
 
     private String constructor;
 
+    private static Worker[] workers;
+
     //  Worker 1.4.1
     public Worker(String firstName, String secondName, int age, String uniID, String occupation, String position, int workExperience) {
         super(firstName, secondName, age, uniID, occupation);

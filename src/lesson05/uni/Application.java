@@ -6,13 +6,6 @@ import lesson02.Person;
  * class Application
  */
 public class Application {
-
-    private static Student[] students;
-    private static Lecturer[] lecturers;
-    private static Worker[] workers;
-
-
-
     public static void main(String[] args) {
 
         Student s1 = new Student("Anton", "Barret", 20, "M3459876", "Student", 6, "Mathe");
@@ -27,10 +20,9 @@ public class Application {
         Worker w2 = new Worker("Simon", "Gloss", 34, "W3456435649", "facility manager", "foreman", 5);
         Worker w3 = new Worker("Bill", "Trend", 47, "W3456435632", "facility manager", "foreman", 20);
 
-        students = new Student[]{s1, s2, s3};
-        lecturers = new Lecturer[]{l1, l2, l3};
-        workers = new Worker[]{w1, w2, w3};
-
+        Student [] students = new Student[]{s1, s2, s3};
+        Lecturer [] lecturers = new Lecturer[]{l1, l2, l3};
+        Worker [] workers = new Worker[]{w1, w2, w3};
 
         /*
         Object ob = new Lecturer("Завуч");

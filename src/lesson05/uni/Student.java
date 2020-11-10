@@ -11,6 +11,29 @@ public final class Student extends Person {
 
     private String constructor;
 
+    private static Student[] students;
+
+    /*    public static int insertionSortByWeight(int indexOfElementToInsert) {
+
+        if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
+
+        indexOfElementToInsert = insertionSortByWeight(indexOfElementToInsert - 1);
+
+        Person elementToInsertForSorting = arr[indexOfElementToInsert];
+        int i = indexOfElementToInsert - 1;
+
+        while ((i >= 0) && (arr[i].age > elementToInsertForSorting.age)) {
+
+            // swap 2 elements
+            arr[i + 1] = arr[i];
+            i--;
+        }
+
+        arr[i + 1] = elementToInsertForSorting;
+
+        return indexOfElementToInsert + 1;
+    }*/
+
     // constructor Student 1.2.1
     public Student(String firstName, String secondName, int age, String uniID, String occupation, int semester, String faculty) {
         super(firstName, secondName, age, uniID, occupation);

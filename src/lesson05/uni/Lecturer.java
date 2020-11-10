@@ -7,6 +7,8 @@ public class Lecturer extends Person {
 
     private String constructor;
 
+    private static Lecturer[] lecturers;
+
     // Lecturer 1.3.1
     public Lecturer(String firstName, String secondName, int age, String uniID, String occupation, String rank, String degree) {
         super(firstName, secondName, age, uniID, occupation);
