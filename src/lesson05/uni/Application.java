@@ -32,7 +32,6 @@ public class Application {
         workers = new Worker[]{w1, w2, w3};
 
 
-
 /*
         System.out.println(s1);
         System.out.println(s1.firstName);
