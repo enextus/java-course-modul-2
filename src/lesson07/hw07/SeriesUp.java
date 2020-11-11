@@ -9,9 +9,13 @@ package lesson07.hw07;
  * seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
  * seriesUp(2) → [1, 1, 2]
  * Test:
+ *
+ * 1
  * 1 1 2
  * 1 1 2 1 2 3
  * 1 1 2 1 2 3 1 2 3 4
+ * 1 1 2 1 2 3 1 2 3 4 1 2 3 4 5
+ *
  */
 public class SeriesUp {
     public static void main(String[] args) {
