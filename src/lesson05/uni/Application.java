@@ -268,9 +268,9 @@ public class Application {
         return destArray;
     }
 
-    public static int delElementFromArray(Worker[] srcArray, Worker elementToDel) {
+    public static Person [] delElementFromArray(Person[] srcArray, Person elementToDel) {
 
-        if (srcArray == null) return -1;
+        if (srcArray == null) return srcArray;
 
         int indexOfElement = 0;
 
@@ -282,15 +282,13 @@ public class Application {
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
 
-        System.out.println(destArray);
-
         for (int i = 0, j = 0; i < srcArray.length; i++) {
             if (i != indexOfElement) {
                 destArray[j++] = srcArray[i];
             }
         }
 
-        return indexOfElement;
+        return destArray;
     }
 
     public static int studentsSortByAge(int indexOfElementToInsert) {
