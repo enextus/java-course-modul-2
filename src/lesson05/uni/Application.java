@@ -1,5 +1,7 @@
 package lesson05.uni;
 
+import java.util.Arrays;
+
 /**
  * class Application
  *
@@ -111,6 +113,7 @@ public class Application {
 
     public static void main(String[] args) {
 
+        // App________________________________________________________
         Application appOne = new Application();
 
         System.out.println(appOne.getClass());
@@ -223,6 +226,25 @@ public class Application {
         printArr(workers);
         // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
+
+        // AddElement______________________________________________________
+        System.out.println(students.length);
+
+        Student s4 = new Student("Humphrey", "Bogart", 57, "M34598463", "Actor", 10, "Theater");
+
+        addElementInToArray(students, s4);
+
+        System.out.println(students.length);
+
+        printArr(students);
+
+    }
+
+    public static Student[] addElementInToArray(Student[] srcArray, Student elementToAdd) {
+        Student[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
+
+        destArray[destArray.length - 1] = elementToAdd;
+        return destArray;
     }
 
     public static int studentsSortByAge(int indexOfElementToInsert) {
