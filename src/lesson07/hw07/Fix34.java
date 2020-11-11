@@ -30,9 +30,10 @@ public class Fix34 {
         int[] productArr = givenArr;
         int startIndex = 0;
         int target = 4;
+        int donorIndex, recipientIndex;
 
         for (int i = 0; i < arrLength; i++) {
-            int donorIndex, recipientIndex;
+
 
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
