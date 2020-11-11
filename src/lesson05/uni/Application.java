@@ -4,19 +4,19 @@ import java.util.Arrays;
 
 /**
  * class Application
- *
+ * <p>
  * Test:
  * class lesson05.uni.Application
  * 1670782018
- *
+ * <p>
  * null
  * null
  * null
- *
+ * <p>
  * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Student{semester=2, faculty='Chemistry', constructor='Student 1.2.1', firstName='Boris', secondName='Mao', age=18, uniID='M3459845', occupation='Student', parentConstructor='Person 1.1.1'}
  * Student{semester=5, faculty='Mathe', constructor='Student 1.2.1', firstName='Teo', secondName='Stain', age=27, uniID='M3459889', occupation='Student', parentConstructor='Person 1.1.1'}
- *
+ * <p>
  * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Anton
  * 39
@@ -62,35 +62,35 @@ import java.util.Arrays;
  * Еда со скидкой для Workers.
  * Выполнение работы.
  * __________________________________________________
- *
+ * <p>
  * 39, Name: Anton, uniID: M3459876.
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
- *
+ * <p>
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
  * 39, Name: Anton, uniID: M3459876.
- *
+ * <p>
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
- *
+ * <p>
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
- *
+ * <p>
  * Unsorted list.
- *
+ * <p>
  * 37, Name: Arnold, uniID: W3456435629.
  * 24, Name: Simon, uniID: W3456435649.
  * 47, Name: Bill, uniID: W3456435632.
- *
+ * <p>
  * Sorted list.
- *
+ * <p>
  * 24, Name: Simon, uniID: W3456435649.
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
- *
+ * <p>
  * Process finished with exit code 0
  */
 public class Application {
@@ -106,8 +106,8 @@ public class Application {
     public String toString() {
         return "Application{ "
                 + students.length + " | " +
-                + lecturers.length + " | " +
-                + workers.length +
+                +lecturers.length + " | " +
+                +workers.length +
                 " }";
     }
 
@@ -250,12 +250,34 @@ public class Application {
         System.out.println(workers.length);
         printArr(workers);
         System.out.println(workers[3]);
+
+        System.out.println(delElementInToArray(workers, w4));
+        printArr(workers);
     }
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
+
+        // If the array is empty
+        // return the original array
+        if (srcArray == null) return null;
+
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
         destArray[destArray.length - 1] = elementToAdd;
         return destArray;
+    }
+
+    public static int delElementInToArray(Person[] srcArray, Person elementToDel) {
+        int indexOfElement;
+
+        for (int i = 0; i < srcArray.length; i++) {
+
+            if (srcArray[i].equals(elementToDel)) {
+                indexOfElement = i;
+                return indexOfElement;
+            }
+        }
+
+        return -1;
     }
 
     public static int studentsSortByAge(int indexOfElementToInsert) {
@@ -311,7 +333,8 @@ public class Application {
 
     public static void printArr(Person[] arr) {
         System.out.println();
-        for (Person element : arr) System.out.println("" + element.age +  ", Name: " + element.firstName + ", uniID: " + element.uniID + ".");
+        for (Person element : arr)
+            System.out.println("" + element.age + ", Name: " + element.firstName + ", uniID: " + element.uniID + ".");
     }
 
     public static int workersSortByAge(int indexOfElementToInsert) {
