@@ -27,7 +27,7 @@ public class Fix34 {
 
     private static int[] fix34(int... givenArr) {
         int[] productArr = givenArr;
-        int donorIndex, recipientIndex;
+        int recipientIndex;
         int target = 4;
         int startIndex = 0;
 
