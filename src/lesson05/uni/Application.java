@@ -8,15 +8,15 @@ import java.util.Arrays;
  * Test:
  * class lesson05.uni.Application
  * 1670782018
- * <p>
+ *
  * null
  * null
  * null
- * <p>
+ *
  * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Student{semester=2, faculty='Chemistry', constructor='Student 1.2.1', firstName='Boris', secondName='Mao', age=18, uniID='M3459845', occupation='Student', parentConstructor='Person 1.1.1'}
  * Student{semester=5, faculty='Mathe', constructor='Student 1.2.1', firstName='Teo', secondName='Stain', age=27, uniID='M3459889', occupation='Student', parentConstructor='Person 1.1.1'}
- * <p>
+ *
  * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Anton
  * 39
@@ -62,35 +62,73 @@ import java.util.Arrays;
  * Еда со скидкой для Workers.
  * Выполнение работы.
  * __________________________________________________
- * <p>
+ *
  * 39, Name: Anton, uniID: M3459876.
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
- * <p>
+ *
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
  * 39, Name: Anton, uniID: M3459876.
- * <p>
+ *
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
- * <p>
+ *
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
- * <p>
+ *
  * Unsorted list.
- * <p>
+ *
  * 37, Name: Arnold, uniID: W3456435629.
  * 24, Name: Simon, uniID: W3456435649.
  * 47, Name: Bill, uniID: W3456435632.
- * <p>
+ *
  * Sorted list.
- * <p>
+ *
  * 24, Name: Simon, uniID: W3456435649.
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
- * <p>
+ * 3
+ * 4
+ *
+ * 18, Name: Boris, uniID: M3459845.
+ * 27, Name: Teo, uniID: M3459889.
+ * 39, Name: Anton, uniID: M3459876.
+ * 27, Name: Humphrey, uniID: M34598463.
+ * Student{semester=10, faculty='Theater', constructor='Student 1.2.1', firstName='Humphrey', secondName='Bogart', age=27, uniID='M34598463', occupation='Actor', parentConstructor='Person 1.1.1'}
+ * 3
+ * 4
+ *
+ * 45, Name: Mike, uniID: D3453466.
+ * 55, Name: Paul, uniID: D3453434.
+ * 49, Name: Gregor, uniID: D3453462.
+ * 39, Name: Swing, uniID: D3453905.
+ * Lecturer{rank='lecturer', degree='PHD', constructor='Lecturer 1.3.1', firstName='Swing', secondName='Gregor', age=39, uniID='D3453905', occupation='Lecturer', parentConstructor='Person 1.1.1'}
+ * 3
+ * 4
+ *
+ * 24, Name: Simon, uniID: W3456435649.
+ * 37, Name: Arnold, uniID: W3456435629.
+ * 47, Name: Bill, uniID: W3456435632.
+ * 32, Name: Gloss, uniID: W3456430427.
+ * Worker{position='worker', workExperience=4, constructor='Worker 1.4.1', firstName='Gloss', secondName='Simon', age=32, uniID='W3456430427', occupation='facility manager', parentConstructor='Person 1.1.1'}
+ *
+ *
+ *
+ * delElement
+ *
+ * 24, Name: Simon, uniID: W3456435649.
+ * 37, Name: Arnold, uniID: W3456435629.
+ * 47, Name: Bill, uniID: W3456435632.
+ * 32, Name: Gloss, uniID: W3456430427.
+ *
+ *
+ * 37, Name: Arnold, uniID: W3456435629.
+ * 47, Name: Bill, uniID: W3456435632.
+ * 32, Name: Gloss, uniID: W3456430427.
+ *
  * Process finished with exit code 0
  */
 public class Application {
