@@ -14,6 +14,9 @@ package lesson07.hw07;
  * fix34([3, 2, 2, 4])          → [3, 4, 2, 2]
  * *
  * Test:
+ * [1, 3, 4, 1]
+ * [3, 4, 2, 2]
+ * [1, 3, 4, 1, 1, 3, 4]
  */
 public class Fix34 {
     public static void main(String[] args) {
