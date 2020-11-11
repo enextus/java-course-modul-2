@@ -37,11 +37,8 @@ public class Fix34 {
 
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
-
                 recipientIndex = find4(productArr, target, startIndex);
-
                 startIndex = recipientIndex + 1;
-
                 int temp = productArr[recipientIndex];
                 productArr[recipientIndex] = productArr[donorIndex];
                 productArr[donorIndex] = temp;
