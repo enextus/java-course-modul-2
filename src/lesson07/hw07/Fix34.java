@@ -28,11 +28,10 @@ public class Fix34 {
     private static int[] fix34(int... givenArr) {
         int arrLength = givenArr.length;
         int[] productArr = givenArr;
-
         int startIndex = 0;
         int target = 4;
         for (int i = 0; i < arrLength; i++) {
-            int donorIndex, recipientIndex = 0;
+            int donorIndex, recipientIndex;
 
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
