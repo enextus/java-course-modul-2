@@ -232,7 +232,7 @@ public class Application {
 
         Student s4 = new Student("Humphrey", "Bogart", 57, "M34598463", "Actor", 10, "Theater");
 
-        addElementInToArray(students, s4);
+        students = (Student[]) addElementInToArray(students, s4);
 
         System.out.println(students.length);
 
@@ -240,8 +240,8 @@ public class Application {
 
     }
 
-    public static Student[] addElementInToArray(Student[] srcArray, Student elementToAdd) {
-        Student[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
+    public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
+        Person[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
 
         destArray[destArray.length - 1] = elementToAdd;
         return destArray;
