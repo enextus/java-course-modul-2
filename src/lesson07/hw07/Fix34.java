@@ -35,7 +35,7 @@ public class Fix34 {
         for (int i = 0; i < arrLength; i++) {
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
-                recipientIndex = findTargetInArray(productArr, target, startIndex);
+                recipientIndex = findIndexOfTarget(productArr, target, startIndex);
                 startIndex = recipientIndex + 1;
 
                 int temp = productArr[recipientIndex];
@@ -46,7 +46,7 @@ public class Fix34 {
         return productArr;
     }
 
-    public static int findTargetInArray(int[] a, int target, int startIndex) {
+    public static int findIndexOfTarget(int[] a, int target, int startIndex) {
         for (int i = startIndex; i < a.length; i++) if (target == a[i]) return i;
         return -1;
     }
