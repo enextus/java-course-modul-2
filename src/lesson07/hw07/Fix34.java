@@ -34,18 +34,12 @@ public class Fix34 {
 
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
-                System.out.println("donorIndex: " + donorIndex);
-
 
                 recipientIndex = find4(productArr, 4, startIndex);
 
                 startIndex = recipientIndex + 1;
-                System.out.println("index: " + startIndex);
-
-                System.out.println("recipientIndex: " + recipientIndex);
 
                 int temp = productArr[recipientIndex];
-                System.out.println(temp);
                 productArr[recipientIndex] = productArr[donorIndex];
                 productArr[donorIndex] = temp;
             }
