@@ -27,7 +27,7 @@ public class Fix34 {
         int[] productArr = new int[arrLength];
         productArr = (int[]) givenArr;
 
-        int index = 0;
+        int startIndex = 0;
         for (int i = 0; i < arrLength; i++) {
             int donorIndex = 0;
             int recipientIndex = 0;
@@ -37,10 +37,10 @@ public class Fix34 {
                 System.out.println("donorIndex: " + donorIndex);
 
 
-                recipientIndex = find4(productArr, 4, index);
+                recipientIndex = find4(productArr, 4, startIndex);
 
-                index = recipientIndex + 1;
-                System.out.println("index: " + index);
+                startIndex = recipientIndex + 1;
+                System.out.println("index: " + startIndex);
 
                 System.out.println("recipientIndex: " + recipientIndex);
 
@@ -54,7 +54,6 @@ public class Fix34 {
     }
 
     public static int find4(int[] a, int target, int index) {
-
         for (int i = index; i < a.length; i++)
             if (target == a[i]) return i;
         return -1;
