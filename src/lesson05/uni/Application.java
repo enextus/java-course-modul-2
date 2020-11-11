@@ -257,8 +257,6 @@ public class Application {
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
 
-        // If the array is empty
-        // return the original array
         if (srcArray == null) return null;
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
@@ -267,13 +265,15 @@ public class Application {
     }
 
     public static int delElementInToArray(Person[] srcArray, Person elementToDel) {
-        int indexOfElement;
+
+        if (srcArray == null) return -1;
+
+        int indexOfElement = 0;
 
         for (int i = 0; i < srcArray.length; i++) {
 
             if (srcArray[i].equals(elementToDel)) {
                 indexOfElement = i;
-                return indexOfElement;
             } else {
                 return -1;
             }
@@ -287,7 +287,7 @@ public class Application {
             }
         }
 
-        return -1;
+        return indexOfElement;
     }
 
     public static int studentsSortByAge(int indexOfElementToInsert) {
