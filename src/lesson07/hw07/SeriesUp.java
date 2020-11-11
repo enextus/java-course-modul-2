@@ -28,9 +28,7 @@ public class SeriesUp {
     }
 
     private static int[] seriesUp(int i) {
-
         int arrayLength = i * (i + 1) / 2;
-
         int[] array = new int[arrayLength];
 
         int index = 0;
