@@ -7,15 +7,15 @@ import java.util.Arrays;
  * Test:
  * class lesson05.uni.Application
  * 1670782018
- *
+ * <p>
  * null
  * null
  * null
- *
+ * <p>
  * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Student{semester=2, faculty='Chemistry', constructor='Student 1.2.1', firstName='Boris', secondName='Mao', age=18, uniID='M3459845', occupation='Student', parentConstructor='Person 1.1.1'}
  * Student{semester=5, faculty='Mathe', constructor='Student 1.2.1', firstName='Teo', secondName='Stain', age=27, uniID='M3459889', occupation='Student', parentConstructor='Person 1.1.1'}
- *
+ * <p>
  * Student{semester=8, faculty='Theo', constructor='Student 1.2.1', firstName='Anton', secondName='Barret', age=39, uniID='M3459876', occupation='Student', parentConstructor='Person 1.1.1'}
  * Anton
  * 39
@@ -61,37 +61,30 @@ import java.util.Arrays;
  * Еда со скидкой для Workers.
  * Выполнение работы.
  * __________________________________________________
- *
  * 39, Name: Anton, uniID: M3459876.
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
- *
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
  * 39, Name: Anton, uniID: M3459876.
- *
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
- *
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
- *
+ * <p>
  * Unsorted list.
- *
  * 37, Name: Arnold, uniID: W3456435629.
  * 24, Name: Simon, uniID: W3456435649.
  * 47, Name: Bill, uniID: W3456435632.
- *
+ * <p>
  * Sorted list.
- *
  * 24, Name: Simon, uniID: W3456435649.
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
  * 3
  * 4
- *
  * 18, Name: Boris, uniID: M3459845.
  * 27, Name: Teo, uniID: M3459889.
  * 39, Name: Anton, uniID: M3459876.
@@ -99,32 +92,41 @@ import java.util.Arrays;
  * Student{semester=10, faculty='Theater', constructor='Student 1.2.1', firstName='Humphrey', secondName='Bogart', age=27, uniID='M34598463', occupation='Actor', parentConstructor='Person 1.1.1'}
  * 3
  * 4
- *
  * 45, Name: Mike, uniID: D3453466.
  * 55, Name: Paul, uniID: D3453434.
  * 49, Name: Gregor, uniID: D3453462.
  * 39, Name: Swing, uniID: D3453905.
  * Lecturer{rank='lecturer', degree='PHD', constructor='Lecturer 1.3.1', firstName='Swing', secondName='Gregor', age=39, uniID='D3453905', occupation='Lecturer', parentConstructor='Person 1.1.1'}
+ * <p>
+ * DelElement from Array lecturers
+ * 45, Name: Mike, uniID: D3453466.
+ * 55, Name: Paul, uniID: D3453434.
+ * 49, Name: Gregor, uniID: D3453462.
+ * 39, Name: Swing, uniID: D3453905.
+ * <p>
+ * 55, Name: Paul, uniID: D3453434.
+ * 49, Name: Gregor, uniID: D3453462.
+ * 39, Name: Swing, uniID: D3453905.
+ * <p>
+ * AddElement to workers
  * 3
  * 4
- *
  * 24, Name: Simon, uniID: W3456435649.
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
  * 32, Name: Gloss, uniID: W3456430427.
  * Worker{position='worker', workExperience=4, constructor='Worker 1.4.1', firstName='Gloss', secondName='Simon', age=32, uniID='W3456430427', occupation='facility manager', parentConstructor='Person 1.1.1'}
- *
- *
+ * <p>
  * 24, Name: Simon, uniID: W3456435649.
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
  * 32, Name: Gloss, uniID: W3456430427.
- *
- *
+ * <p>
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
  * 32, Name: Gloss, uniID: W3456430427.
- *
+ * <p>
+ * Process finished with exit code 0
  */
 public class Application {
 
@@ -242,13 +244,13 @@ public class Application {
         studentsSortByAge(studentsLength);
         printArr(students);
 
-        // Sort lecturers__________________________________________________
+        // Sort lecturers __________________________________________________
         lecturersLength = lecturers.length;
         printArr(lecturers);
         studentsSortByAge(lecturersLength);
         printArr(lecturers);
 
-        // Sort workers__________________________________________________
+        // Sort workers __________________________________________________
         workersLength = workers.length;
         System.out.println();
         System.out.println("Unsorted list.");
@@ -260,7 +262,7 @@ public class Application {
         // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
 
-        // AddElement to students________________________________________________
+        // AddElement to students ________________________________________________
         System.out.println(students.length);
         Student s4 = new Student("Humphrey", "Bogart", 27, "M34598463", "Actor", 10, "Theater");
         students = (Student[]) addElementInToArray(students, s4);
@@ -268,7 +270,7 @@ public class Application {
         printArr(students);
         System.out.println(students[3]);
 
-        // AddElement to lecturers________________________________________________
+        // AddElement to lecturers ________________________________________________
         System.out.println(lecturers.length);
         Lecturer l4 = new Lecturer("Swing", "Gregor", 39, "D3453905", "Lecturer", "lecturer", "PHD");
         lecturers = (Lecturer[]) addElementInToArray(lecturers, l4);
@@ -276,7 +278,16 @@ public class Application {
         printArr(lecturers);
         System.out.println(lecturers[3]);
 
-        // AddElement to workers________________________________________________
+        // DelElement from Array lecturers _______________________________________________
+        System.out.println("\nDelElement from Array lecturers");
+        printArr(lecturers);
+        System.out.println();
+        lecturers = (Lecturer[]) delElementFromArray(lecturers, l4);
+        printArr(lecturers);
+
+
+        // AddElement to workers ________________________________________________
+        System.out.println("\nAddElement to workers ");
         System.out.println(workers.length);
         Worker w4 = new Worker("Gloss", "Simon", 32, "W3456430427", "facility manager", "worker", 4);
         workers = (Worker[]) addElementInToArray(workers, w4);
@@ -284,11 +295,11 @@ public class Application {
         printArr(workers);
         System.out.println(workers[3]);
 
-        // DelElement from Array_______________________________________________
+        // DelElement from Array workers _______________________________________________
         System.out.println();
         printArr(workers);
         System.out.println();
-        workers =(Worker[]) delElementFromArray(workers, w4);
+        workers = (Worker[]) delElementFromArray(workers, w4);
         printArr(workers);
     }
 
@@ -301,14 +312,15 @@ public class Application {
         return destArray;
     }
 
-    public static Person [] delElementFromArray(Person[] srcArray, Person elementToDel) {
+    public static Person[] delElementFromArray(Person[] srcArray, Person elementToDel) {
 
         if (srcArray == null) return srcArray;
 
         int indexOfElement = 0;
 
         for (int i = 0; i < srcArray.length; i++) {
-            if (srcArray[i].equals(elementToDel)) indexOfElement = i; break;
+            if (srcArray[i].equals(elementToDel)) indexOfElement = i;
+            break;
         }
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
@@ -371,12 +383,6 @@ public class Application {
         return indexOfElementToInsert + 1;
     }
 
-    public static void printArr(Person[] arr) {
-        System.out.println();
-        for (Person element : arr)
-            System.out.println("" + element.age + ", Name: " + element.firstName + ", uniID: " + element.uniID + ".");
-    }
-
     public static int workersSortByAge(int indexOfElementToInsert) {
 
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
@@ -392,5 +398,10 @@ public class Application {
 
         workers[i + 1] = elementToInsert;
         return indexOfElementToInsert + 1;
+    }
+
+    public static void printArr(Person[] arr) {
+        for (Person element : arr)
+            System.out.println("" + element.age + ", Name: " + element.firstName + ", uniID: " + element.uniID + ".");
     }
 }
