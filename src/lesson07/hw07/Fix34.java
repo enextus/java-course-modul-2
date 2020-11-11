@@ -27,17 +27,17 @@ public class Fix34 {
 
     private static int[] fix34(int... givenArr) {
         int[] productArr = givenArr;
-        int recipientIndex;
+        int swapIndex;
         int target = 4;
         int startIndex = 0;
 
         for (int i = 0; i < productArr.length; i++) {
             if (productArr[i] == 3) {
-                recipientIndex = findIndexOfTarget(productArr, target, startIndex);
-                startIndex = recipientIndex + 1;
+                swapIndex = findIndexOfTarget(productArr, target, startIndex);
+                startIndex = swapIndex + 1;
 
-                int temp = productArr[recipientIndex];
-                productArr[recipientIndex] = productArr[i + 1];
+                int temp = productArr[swapIndex];
+                productArr[swapIndex] = productArr[i + 1];
                 productArr[i + 1] = temp;
             }
         }
