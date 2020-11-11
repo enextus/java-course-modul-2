@@ -15,14 +15,14 @@ package lesson07.hw07;
  * *
  * Test:
  * [1, 3, 4, 1]
- * [3, 4, 2, 2]
  * [1, 3, 4, 1, 1, 3, 4]
+ * [3, 4, 2, 2]
  */
 public class Fix34 {
     public static void main(String[] args) {
         printArr(fix34(1, 3, 1, 4));
-        printArr(fix34(3, 2, 2, 4));
         printArr(fix34(1, 3, 1, 4, 4, 3, 1));
+        printArr(fix34(3, 2, 2, 4));
     }
 
     private static int[] fix34(int... givenArr) {
