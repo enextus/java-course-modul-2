@@ -34,11 +34,12 @@ public class Fix34 {
         for (int i = 0; i < productArr.length; i++) {
             if (productArr[i] == 3) {
                 swapIndex = findIndexOfTarget(productArr, target, startIndex);
-                startIndex = swapIndex + 1;
 
                 int temp = productArr[swapIndex];
                 productArr[swapIndex] = productArr[i + 1];
                 productArr[i + 1] = temp;
+
+                startIndex = swapIndex + 1;
             }
         }
         return productArr;
