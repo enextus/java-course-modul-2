@@ -33,8 +33,6 @@ public class Fix34 {
         int donorIndex, recipientIndex;
 
         for (int i = 0; i < arrLength; i++) {
-
-
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
                 recipientIndex = findTargetInArray(productArr, target, startIndex);
