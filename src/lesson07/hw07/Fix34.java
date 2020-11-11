@@ -47,8 +47,7 @@ public class Fix34 {
     }
 
     public static int find4(int[] a, int target, int index) {
-        for (int i = index; i < a.length; i++)
-            if (target == a[i]) return i;
+        for (int i = index; i < a.length; i++) if (target == a[i]) return i;
         return -1;
     }
 
