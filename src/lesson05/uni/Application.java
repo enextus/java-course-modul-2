@@ -227,22 +227,26 @@ public class Application {
         // Object ob = new Lecturer("Meyer");
         // Lecturer newLecturer = (Lecturer) ob;
 
-        // AddElement______________________________________________________
+        // AddElement to students________________________________________________
         System.out.println(students.length);
-
-        Student s4 = new Student("Humphrey", "Bogart", 57, "M34598463", "Actor", 10, "Theater");
-
+        Student s4 = new Student("Humphrey", "Bogart", 27, "M34598463", "Actor", 10, "Theater");
         students = (Student[]) addElementInToArray(students, s4);
-
         System.out.println(students.length);
-
         printArr(students);
+        System.out.println(students[3]);
+
+        // AddElement to lecturers________________________________________________
+        System.out.println(lecturers.length);
+        Lecturer l4 = new Lecturer("Swing", "Gregor", 39, "D3453905", "Lecturer", "lecturer", "PHD");
+        lecturers = (Lecturer[]) addElementInToArray(lecturers, l4);
+        System.out.println(lecturers.length);
+        printArr(lecturers);
+        System.out.println(lecturers[3]);
 
     }
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
-
         destArray[destArray.length - 1] = elementToAdd;
         return destArray;
     }
