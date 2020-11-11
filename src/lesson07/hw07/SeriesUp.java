@@ -31,17 +31,17 @@ public class SeriesUp {
 
         int arrayLength = i * (i + 1) / 2;
 
-        int[] students = new int[arrayLength];
+        int[] array = new int[arrayLength];
 
         int index = 0;
         for (int j = 1; j <= i; j++) {
             for (int k = 1; k <= j; k++) {
-                students[index] = k;
+                array[index] = k;
                 index++;
             }
         }
 
-        return students;
+        return array;
     }
 
     private static void printArr(int[] arr) {
