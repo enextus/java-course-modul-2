@@ -31,13 +31,14 @@ public class Fix34 {
         productArr = (int[]) givenArr;
 
         int startIndex = 0;
+        int target = 4;
         for (int i = 0; i < arrLength; i++) {
             int donorIndex, recipientIndex = 0;
 
             if (productArr[i] == 3) {
                 donorIndex = i + 1;
 
-                recipientIndex = find4(productArr, 4, startIndex);
+                recipientIndex = find4(productArr, target, startIndex);
 
                 startIndex = recipientIndex + 1;
 
