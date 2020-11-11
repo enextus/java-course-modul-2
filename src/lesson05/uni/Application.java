@@ -262,7 +262,7 @@ public class Application {
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
 
-        if (srcArray == null) return null;
+        if (srcArray == null) return srcArray;
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length + 1);
         destArray[destArray.length - 1] = elementToAdd;
