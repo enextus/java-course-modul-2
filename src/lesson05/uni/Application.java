@@ -252,7 +252,8 @@ public class Application {
         System.out.println(workers[3]);
 
         // delElement
-        System.out.println();
+        System.out.println("\n\n");
+        System.out.println("delElement");
         printArr(workers);
         System.out.println(delElementFromArray(workers, w4));
         printArr(workers);
@@ -267,7 +268,7 @@ public class Application {
         return destArray;
     }
 
-    public static int delElementFromArray(Person[] srcArray, Person elementToDel) {
+    public static int delElementFromArray(Worker[] srcArray, Worker elementToDel) {
 
         if (srcArray == null) return -1;
 
@@ -275,9 +276,20 @@ public class Application {
 
         for (int i = 0; i < srcArray.length; i++) {
 
+            System.out.println("-> "  + srcArray[3]);
+            System.out.println("-> "  + elementToDel);
+
+            System.out.println("-> "  + srcArray[3].equals(elementToDel));
+            System.out.println("-> "  + elementToDel.equals(srcArray[3]));
+
             if (srcArray[i].equals(elementToDel)) {
+
                 indexOfElement = i;
+
+                System.out.println("find i: " + i);
+
             } else {
+                System.out.println("-1: " + indexOfElement);
                 return -1;
             }
         }
