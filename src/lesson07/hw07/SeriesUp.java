@@ -15,10 +15,12 @@ package lesson07.hw07;
  */
 public class SeriesUp {
     public static void main(String[] args) {
-
+        printArr(seriesUp(0));
+        printArr(seriesUp(1));
         printArr(seriesUp(2));
         printArr(seriesUp(3));
         printArr(seriesUp(4));
+        printArr(seriesUp(5));
     }
 
     private static int[] seriesUp(int i) {
