@@ -11,16 +11,20 @@ import lesson05.uni.Student;
  * seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
  * seriesUp(2) → [1, 1, 2]
  * Test:
+ * 1 1 2
+ * 1 1 2 1 2 3
+ * 1 1 2 1 2 3 1 2 3 4
  */
 public class SeriesUp {
     public static void main(String[] args) {
 
-        //System.out.println(seriesUp(3));
-        seriesUp(2);
+        printArr(seriesUp(2));
         System.out.println();
-        seriesUp(3);
+
+        printArr(seriesUp(3));
         System.out.println();
-        seriesUp(4);
+
+        printArr(seriesUp(4));
         System.out.println();
     }
 
@@ -28,21 +32,21 @@ public class SeriesUp {
 
         int arrayLength = i * (i + 1) / 2;
 
-        System.out.println(arrayLength);
+        //System.out.println(arrayLength);
 
         int[] students = new int[arrayLength];
-
-        students = new int[]{1, 1, 2, 1, 2, 3, 4};
 
         int counter = 0;
         for (int j = 1; j <= i; j++) {  // kol-wo serij
 
             for (int k = 1; k <= j; k++) { // sama serija
 
-                System.out.print(k  + "(" + (counter)  + ")" + " ");
+                //System.out.print(k  + "(" + (counter)  + ")" + " ");
+                students[counter] = k;
+
                 counter++;
             }
-            System.out.print(" ");
+            //System.out.print(" ");
         }
 
         return students;
