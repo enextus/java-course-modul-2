@@ -46,8 +46,8 @@ public class Fix34 {
         return productArr;
     }
 
-    public static int findIndexOfTarget(int[] a, int target, int startIndex) {
-        for (int i = startIndex; i < a.length; i++) if (target == a[i]) return i;
+    public static int findIndexOfTarget(int[] productArr, int target, int startIndex) {
+        for (int i = startIndex; i < productArr.length; i++) if (target == productArr[i]) return i;
         return -1;
     }
 
