@@ -9,7 +9,7 @@ package lesson07.hw07;
  * seriesUp(3) → [1, 1, 2, 1, 2, 3]
  * seriesUp(4) → [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
  * seriesUp(2) → [1, 1, 2]
- * <p>
+ * *
  * Test:
  * []
  * [1]
