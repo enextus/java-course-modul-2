@@ -256,7 +256,8 @@ public class Application {
         System.out.println("delElement");
         printArr(workers);
         System.out.println();
-        printArr(delElementFromArray(workers, w4));
+        workers =(Worker[]) delElementFromArray(workers, w4);
+        printArr(workers);
     }
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
