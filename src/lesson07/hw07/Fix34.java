@@ -33,13 +33,12 @@ public class Fix34 {
 
         for (int i = 0; i < productArr.length; i++) {
             if (productArr[i] == 3) {
-                donorIndex = i + 1;
                 recipientIndex = findIndexOfTarget(productArr, target, startIndex);
                 startIndex = recipientIndex + 1;
 
                 int temp = productArr[recipientIndex];
-                productArr[recipientIndex] = productArr[donorIndex];
-                productArr[donorIndex] = temp;
+                productArr[recipientIndex] = productArr[i + 1];
+                productArr[i + 1] = temp;
             }
         }
         return productArr;
