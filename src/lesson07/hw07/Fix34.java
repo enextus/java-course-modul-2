@@ -28,9 +28,9 @@ public class Fix34 {
     private static int[] fix34(int... givenArr) {
         int arrLength = givenArr.length;
         int[] productArr = givenArr;
-        int startIndex = 0;
-        int target = 4;
         int donorIndex, recipientIndex;
+        int target = 4;
+        int startIndex = 0;
 
         for (int i = 0; i < arrLength; i++) {
             if (productArr[i] == 3) {
