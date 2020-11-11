@@ -274,6 +274,16 @@ public class Application {
             if (srcArray[i].equals(elementToDel)) {
                 indexOfElement = i;
                 return indexOfElement;
+            } else {
+                return -1;
+            }
+        }
+
+        Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
+
+        for (int i = 0, j = 0; i < srcArray.length; i++) {
+            if (i != indexOfElement) {
+                destArray[j++] = srcArray[i];
             }
         }
 
