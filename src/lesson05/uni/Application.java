@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /**
  * class Application
- * <p>
  * Test:
  * class lesson05.uni.Application
  * 1670782018
@@ -116,9 +115,6 @@ import java.util.Arrays;
  * Worker{position='worker', workExperience=4, constructor='Worker 1.4.1', firstName='Gloss', secondName='Simon', age=32, uniID='W3456430427', occupation='facility manager', parentConstructor='Person 1.1.1'}
  *
  *
- *
- * delElement
- *
  * 24, Name: Simon, uniID: W3456435649.
  * 37, Name: Arnold, uniID: W3456435629.
  * 47, Name: Bill, uniID: W3456435632.
@@ -129,7 +125,6 @@ import java.util.Arrays;
  * 47, Name: Bill, uniID: W3456435632.
  * 32, Name: Gloss, uniID: W3456430427.
  *
- * Process finished with exit code 0
  */
 public class Application {
 
@@ -290,8 +285,7 @@ public class Application {
         System.out.println(workers[3]);
 
         // DelElement from Array_______________________________________________
-        System.out.println("\n\n");
-        System.out.println("delElement");
+        System.out.println();
         printArr(workers);
         System.out.println();
         workers =(Worker[]) delElementFromArray(workers, w4);
