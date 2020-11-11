@@ -30,6 +30,7 @@ public class Fix34 {
         int[] productArr = givenArr;
         int startIndex = 0;
         int target = 4;
+
         for (int i = 0; i < arrLength; i++) {
             int donorIndex, recipientIndex;
 
