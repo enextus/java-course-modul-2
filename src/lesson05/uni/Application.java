@@ -263,7 +263,6 @@ public class Application {
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
         indexOfElementToInsert = studentsSortByAge(indexOfElementToInsert - 1); // recursive call
-
         Student elementToInsert = students[indexOfElementToInsert]; // temporary hold the value of element to insert
 
         int i = indexOfElementToInsert - 1;
@@ -273,17 +272,14 @@ public class Application {
         }
 
         students[i + 1] = elementToInsert;
-
         return indexOfElementToInsert + 1;
     }
-
 
     public int studentsSortByAgeInstance(int indexOfElementToInsert) {
 
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
         indexOfElementToInsert = studentsSortByAgeInstance(indexOfElementToInsert - 1); // recursive call
-
         Student elementToInsert = students[indexOfElementToInsert]; // temporary hold the value of element to insert
 
         int i = indexOfElementToInsert - 1;
@@ -293,7 +289,6 @@ public class Application {
         }
 
         students[i + 1] = elementToInsert;
-
         return indexOfElementToInsert + 1;
     }
 
@@ -302,7 +297,6 @@ public class Application {
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
         indexOfElementToInsert = studentsSortByAge(indexOfElementToInsert - 1); // recursive call
-
         Lecturer elementToInsert = lecturers[indexOfElementToInsert]; // temporary hold the value of element to insert
 
         int i = indexOfElementToInsert - 1; // counter for while loop
@@ -312,7 +306,6 @@ public class Application {
         }
 
         lecturers[i + 1] = elementToInsert;
-
         return indexOfElementToInsert + 1;
     }
 
@@ -321,13 +314,11 @@ public class Application {
         for (Person element : arr) System.out.println("" + element.age +  ", Name: " + element.firstName + ", uniID: " + element.uniID + ".");
     }
 
-
     public static int workersSortByAge(int indexOfElementToInsert) {
 
         if (indexOfElementToInsert <= 1) return indexOfElementToInsert;
 
         indexOfElementToInsert = workersSortByAge(indexOfElementToInsert - 1); // recursive call
-
         Worker elementToInsert = workers[indexOfElementToInsert]; // temporary hold the value of element to insert
 
         int i = indexOfElementToInsert - 1; // counter for while loop
@@ -337,9 +328,6 @@ public class Application {
         }
 
         workers[i + 1] = elementToInsert;
-
         return indexOfElementToInsert + 1;
     }
-
-
 }
