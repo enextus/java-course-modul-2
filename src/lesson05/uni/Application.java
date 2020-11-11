@@ -251,7 +251,10 @@ public class Application {
         printArr(workers);
         System.out.println(workers[3]);
 
-        System.out.println(delElementInToArray(workers, w4));
+        // delElement
+        System.out.println();
+        printArr(workers);
+        System.out.println(delElementFromArray(workers, w4));
         printArr(workers);
     }
 
@@ -264,7 +267,7 @@ public class Application {
         return destArray;
     }
 
-    public static int delElementInToArray(Person[] srcArray, Person elementToDel) {
+    public static int delElementFromArray(Person[] srcArray, Person elementToDel) {
 
         if (srcArray == null) return -1;
 
@@ -280,6 +283,8 @@ public class Application {
         }
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
+
+        System.out.println(destArray);
 
         for (int i = 0, j = 0; i < srcArray.length; i++) {
             if (i != indexOfElement) {
