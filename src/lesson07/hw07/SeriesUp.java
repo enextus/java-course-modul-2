@@ -39,7 +39,6 @@ public class SeriesUp {
                 index++;
             }
         }
-
         return array;
     }
 
