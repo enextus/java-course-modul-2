@@ -274,24 +274,10 @@ public class Application {
 
         int indexOfElement = 0;
 
+        System.out.println("srcArray.length: " + srcArray.length);
+
         for (int i = 0; i < srcArray.length; i++) {
-
-            System.out.println("-> "  + srcArray[3]);
-            System.out.println("-> "  + elementToDel);
-
-            System.out.println("-> "  + srcArray[3].equals(elementToDel));
-            System.out.println("-> "  + elementToDel.equals(srcArray[3]));
-
-            if (srcArray[i].equals(elementToDel)) {
-
-                indexOfElement = i;
-
-                System.out.println("find i: " + i);
-
-            } else {
-                System.out.println("-1: " + indexOfElement);
-                return -1;
-            }
+            if (srcArray[i].equals(elementToDel)) indexOfElement = i; break;
         }
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
