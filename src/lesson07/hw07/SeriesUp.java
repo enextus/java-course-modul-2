@@ -11,12 +11,12 @@ package lesson07.hw07;
  * seriesUp(2) → [1, 1, 2]
  *
  * Test:
- *
- * 1
- * 1 1 2
- * 1 1 2 1 2 3
- * 1 1 2 1 2 3 1 2 3 4
- * 1 1 2 1 2 3 1 2 3 4 1 2 3 4 5
+ * []
+ * [1, ]
+ * [1, 1, 2, ]
+ * [1, 1, 2, 1, 2, 3, ]
+ * [1, 1, 2, 1, 2, 3, 1, 2, 3, 4, ]
+ * [1, 1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, ]
  */
 public class SeriesUp {
     public static void main(String[] args) {
@@ -44,7 +44,8 @@ public class SeriesUp {
     }
 
     private static void printArr(int[] arr) {
-        for (int element : arr) System.out.print(element + " ");
-        System.out.println();
+        System.out.print("[");
+        for (int element : arr) System.out.print(element + ", ");
+        System.out.println("]");
     }
 }
