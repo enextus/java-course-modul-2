@@ -251,12 +251,12 @@ public class Application {
         printArr(workers);
         System.out.println(workers[3]);
 
-        // delElement
+        // DelElement from Array_______________________________________________
         System.out.println("\n\n");
         System.out.println("delElement");
         printArr(workers);
-        System.out.println(delElementFromArray(workers, w4));
-        printArr(workers);
+        System.out.println();
+        printArr(delElementFromArray(workers, w4));
     }
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
@@ -281,6 +281,8 @@ public class Application {
         }
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
+
+        System.out.println("destArray.length: " + destArray.length);
 
         for (int i = 0, j = 0; i < srcArray.length; i++) {
             if (i != indexOfElement) {
