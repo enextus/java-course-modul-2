@@ -243,6 +243,13 @@ public class Application {
         printArr(lecturers);
         System.out.println(lecturers[3]);
 
+        // AddElement to workers________________________________________________
+        System.out.println(workers.length);
+        Worker w4 = new Worker("Gloss", "Simon", 32, "W3456430427", "facility manager", "worker", 4);
+        workers = (Worker[]) addElementInToArray(workers, w4);
+        System.out.println(workers.length);
+        printArr(workers);
+        System.out.println(workers[3]);
     }
 
     public static Person[] addElementInToArray(Person[] srcArray, Person elementToAdd) {
