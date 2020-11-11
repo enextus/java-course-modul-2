@@ -275,20 +275,14 @@ public class Application {
 
         int indexOfElement = 0;
 
-        System.out.println("srcArray.length: " + srcArray.length);
-
         for (int i = 0; i < srcArray.length; i++) {
             if (srcArray[i].equals(elementToDel)) indexOfElement = i; break;
         }
 
         Person[] destArray = Arrays.copyOf(srcArray, srcArray.length - 1);
 
-        System.out.println("destArray.length: " + destArray.length);
-
         for (int i = 0, j = 0; i < srcArray.length; i++) {
-            if (i != indexOfElement) {
-                destArray[j++] = srcArray[i];
-            }
+            if (i != indexOfElement) destArray[j++] = srcArray[i];
         }
 
         return destArray;
