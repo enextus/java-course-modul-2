@@ -47,8 +47,8 @@ public class Fix34 {
         return productArr;
     }
 
-    public static int find4(int[] a, int target, int index) {
-        for (int i = index; i < a.length; i++) if (target == a[i]) return i;
+    public static int find4(int[] a, int target, int startIndex) {
+        for (int i = startIndex; i < a.length; i++) if (target == a[i]) return i;
         return -1;
     }
 
