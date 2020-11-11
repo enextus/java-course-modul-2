@@ -27,8 +27,7 @@ public class Fix34 {
 
     private static int[] fix34(int... givenArr) {
         int arrLength = givenArr.length;
-        int[] productArr = new int[arrLength];
-        productArr = (int[]) givenArr;
+        int[] productArr = givenArr;
 
         int startIndex = 0;
         int target = 4;
