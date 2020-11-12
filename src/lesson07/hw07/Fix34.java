@@ -20,6 +20,8 @@ package lesson07.hw07;
  * [1, 3, 4, 2, 1, 3, 4, 3, 4, 3, 4, 2, 2, 1, 3, 4, 1, 2, 3, 4, 1]
  */
 public class Fix34 {
+    public static int[] arr;
+
     public static void main(String[] args) {
         printArr(fix34(1, 3, 1, 4));
         printArr(fix34(1, 3, 1, 4, 4, 3, 1));
@@ -28,14 +30,15 @@ public class Fix34 {
         printArr(fix34(1, 3, 2, 4, 4, 3, 1, 3, 1, 3, 4, 2, 2, 1, 3, 2, 4, 4, 3, 1, 4));
     }
 
-    private static int[] fix34(int... arr) {
+    private static int[] fix34(int... args) {
+        arr = args;
         int target = 4;
         int indexOfTarget;
         int indexOfBegin = 0;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 3) {
-                indexOfTarget = findIndexOfTarget(arr, target, indexOfBegin);
+                indexOfTarget = findIndexOfTarget(target, indexOfBegin);
 
                 int temp = arr[indexOfTarget];
                 arr[indexOfTarget] = arr[i + 1];
@@ -47,7 +50,7 @@ public class Fix34 {
         return arr;
     }
 
-    public static int findIndexOfTarget(int[] arr, int target, int startIndex) {
+    public static int findIndexOfTarget(int target, int startIndex) {
         for (int i = startIndex; i < arr.length; i++) if (target == arr[i]) return i;
         return -1;
     }
