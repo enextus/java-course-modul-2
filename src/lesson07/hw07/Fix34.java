@@ -28,8 +28,8 @@ public class Fix34 {
     }
 
     private static int[] fix34(int... arr) {
-        int indexOfTarget;
         int target = 4;
+        int indexOfTarget;
         int startIndex = 0;
 
         for (int i = 0; i < arr.length; i++) {
