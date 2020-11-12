@@ -17,27 +17,35 @@ package lesson07.hw07;
  * [1, 1, 2, 1, 2, 3]
  * [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
  * [1, 1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5]
+ * [1, 1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6]
+ * []
  */
 public class SeriesUp {
+
+    public static int arrLength;
+    public static int[] arr;
+
     public static void main(String[] args) {
-//        printArr(seriesUp(0));
-//        printArr(seriesUp(1));
+        printArr(seriesUp(0));
+        printArr(seriesUp(1));
         printArr(seriesUp(2));
-//        printArr(seriesUp(3));
-//        printArr(seriesUp(4));
-//        printArr(seriesUp(5));
+        printArr(seriesUp(3));
+        printArr(seriesUp(4));
+        printArr(seriesUp(5));
+        printArr(seriesUp(6));
+        printArr(seriesUp(-1));
     }
 
     private static int[] seriesUp(int i) {
-        int arrLength = i * (i + 1) / 2;
-        int[] arr = new int[arrLength];
+        arrLength = i * (i + 1) / 2;
+        arr = new int[arrLength];
 
         int index = 0;
-        for (int j = 1; j <= i; j++) index = generatePattern(index, j, arr);
+        for (int j = 1; j <= i; j++) index = generatePattern(index, j);
         return arr;
     }
 
-    private static int generatePattern(int index, int j, int[] arr) {
+    private static int generatePattern(int index, int j) {
         for (int k = 1; k <= j; k++) {
             arr[index] = k;
             index++;
