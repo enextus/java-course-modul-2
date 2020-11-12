@@ -21,9 +21,8 @@ package lesson07.hw07;
  * []
  */
 public class SeriesUp {
-
-    public static int arrLength;
     public static int[] arr;
+    public static int arrLength;
 
     public static void main(String[] args) {
         printArr(seriesUp(0));
