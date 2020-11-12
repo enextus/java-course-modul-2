@@ -25,23 +25,23 @@ public class Fix34 {
         printArr(fix34(3, 2, 2, 4));
     }
 
-    private static int[] fix34(int... productArr) {
+    private static int[] fix34(int... arr) {
         int swapIndex;
         int target = 4;
         int startIndex = 0;
 
-        for (int i = 0; i < productArr.length; i++) {
-            if (productArr[i] == 3) {
-                swapIndex = findIndexOfTarget(productArr, target, startIndex);
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 3) {
+                swapIndex = findIndexOfTarget(arr, target, startIndex);
 
-                int temp = productArr[swapIndex];
-                productArr[swapIndex] = productArr[i + 1];
-                productArr[i + 1] = temp;
+                int temp = arr[swapIndex];
+                arr[swapIndex] = arr[i + 1];
+                arr[i + 1] = temp;
 
                 startIndex = swapIndex + 1;
             }
         }
-        return productArr;
+        return arr;
     }
 
     public static int findIndexOfTarget(int[] arr, int target, int startIndex) {
