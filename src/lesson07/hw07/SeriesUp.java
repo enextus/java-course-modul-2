@@ -20,12 +20,12 @@ package lesson07.hw07;
  */
 public class SeriesUp {
     public static void main(String[] args) {
-        printArr(seriesUp(0));
-        printArr(seriesUp(1));
+//        printArr(seriesUp(0));
+//        printArr(seriesUp(1));
         printArr(seriesUp(2));
-        printArr(seriesUp(3));
-        printArr(seriesUp(4));
-        printArr(seriesUp(5));
+//        printArr(seriesUp(3));
+//        printArr(seriesUp(4));
+//        printArr(seriesUp(5));
     }
 
     private static int[] seriesUp(int i) {
@@ -33,15 +33,16 @@ public class SeriesUp {
         int[] arr = new int[arrLength];
 
         int index = 0;
-        for (int j = 1; j <= i; j++) generatePattern(index, j, arr);
+        for (int j = 1; j <= i; j++) index = generatePattern(index, j, arr);
         return arr;
     }
 
-    private static void generatePattern(int index, int j, int[] arr) {
+    private static int generatePattern(int index, int j, int[] arr) {
         for (int k = 1; k <= j; k++) {
             arr[index] = k;
             index++;
         }
+        return index;
     }
 
     private static void printArr(int[] arr) {
