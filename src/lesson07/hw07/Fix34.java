@@ -31,17 +31,17 @@ public class Fix34 {
     private static int[] fix34(int... arr) {
         int target = 4;
         int indexOfTarget;
-        int startIndex = 0;
+        int indexOfBegin = 0;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 3) {
-                indexOfTarget = findIndexOfTarget(arr, target, startIndex);
+                indexOfTarget = findIndexOfTarget(arr, target, indexOfBegin);
 
                 int temp = arr[indexOfTarget];
                 arr[indexOfTarget] = arr[i + 1];
                 arr[i + 1] = temp;
 
-                startIndex = i + 2;
+                indexOfBegin = i + 2;
             }
         }
         return arr;
