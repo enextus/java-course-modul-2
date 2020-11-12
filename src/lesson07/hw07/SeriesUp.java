@@ -33,9 +33,7 @@ public class SeriesUp {
         int[] arr = new int[arrLength];
 
         int index = 0;
-        for (int j = 1; j <= i; j++) {
-            generatePattern(index, j, arr);
-        }
+        for (int j = 1; j <= i; j++) generatePattern(index, j, arr);
         return arr;
     }
 
