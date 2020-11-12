@@ -28,16 +28,16 @@ public class Fix34 {
     }
 
     private static int[] fix34(int... arr) {
-        int indexOf4;
+        int indexOfTarget;
         int target = 4;
         int startIndex = 0;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 3) {
-                indexOf4 = findIndexOfTarget(arr, target, startIndex);
+                indexOfTarget = findIndexOfTarget(arr, target, startIndex);
 
-                int temp = arr[indexOf4];
-                arr[indexOf4] = arr[i + 1];
+                int temp = arr[indexOfTarget];
+                arr[indexOfTarget] = arr[i + 1];
                 arr[i + 1] = temp;
 
                 startIndex = i + 2;
