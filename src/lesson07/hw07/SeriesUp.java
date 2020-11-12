@@ -34,12 +34,16 @@ public class SeriesUp {
 
         int index = 0;
         for (int j = 1; j <= i; j++) {
-            for (int k = 1; k <= j; k++) {
-                arr[index] = k;
-                index++;
-            }
+            generatePattern(index, j, arr);
         }
         return arr;
+    }
+
+    private static void generatePattern(int index, int j, int[] arr) {
+        for (int k = 1; k <= j; k++) {
+            arr[index] = k;
+            index++;
+        }
     }
 
     private static void printArr(int[] arr) {
