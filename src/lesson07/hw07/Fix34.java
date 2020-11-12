@@ -25,8 +25,7 @@ public class Fix34 {
         printArr(fix34(3, 2, 2, 4));
     }
 
-    private static int[] fix34(int... givenArr) {
-        int[] productArr = givenArr;
+    private static int[] fix34(int... productArr) {
         int swapIndex;
         int target = 4;
         int startIndex = 0;
