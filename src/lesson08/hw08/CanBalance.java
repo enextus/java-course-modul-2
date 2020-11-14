@@ -28,13 +28,13 @@ public class CanBalance {
         return false;
     }
 
-    private static int sumFromBegin(int i) {
+    private static int sumFromBegin(int i) { // sum of elements from the beginning of the array
         int sum = 0;
         for (int j = 0; j <= i; j++) sum += arr[j];
         return sum;
     }
 
-    private static int sumToEnd(int i) {
+    private static int sumToEnd(int i) { // sum of elements to end of array
         int sum = 0;
         for (int j = i + 1; j <= arr.length - 1; j++) sum += arr[j];
         return sum;
