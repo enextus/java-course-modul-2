@@ -15,4 +15,17 @@ package lesson08.hw08;
  *
  */
 public class LinearIn {
+    public static int [] arrOuter;
+    public static int [] arrInner;
+
+    public static void main(String[] args) {
+        linearIn(new int[]{1, 2, 4, 6}, new int[]{2, 4});
+        // linearIn([1, 2, 4, 6], [2, 3, 4]);
+        // linearIn([1, 2, 4, 4, 6], [2, 4]);
+    }
+
+    public static void linearIn(int[] arrOuter, int[] arrInner){
+        System.out.println(arrOuter);
+        System.out.println(arrInner);
+    }
 }
