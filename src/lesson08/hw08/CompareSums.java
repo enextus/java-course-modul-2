@@ -10,7 +10,7 @@ package lesson08.hw08;
  * Test:
  */
 public class CompareSums {
-    int[] arr;
+    public static int[] arr;
 
     public static void main(String[] args) {
         canBalance(1, 1, 1, 2, 1);
