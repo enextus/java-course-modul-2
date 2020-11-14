@@ -11,6 +11,9 @@ package lesson08.hw08;
  * maxSpan([1, 4, 2, 1, 4, 1, 4])   → 6
  * maxSpan([1, 4, 2, 1, 4, 4, 4])   → 6
  * Test:
+ * 4
+ * 6
+ * 6
  */
 public class Span {
     public static int[] arr;
