@@ -9,14 +9,17 @@ package lesson08.hw08;
  * canBalance([2, 1, 1, 2, 1]) → false
  * canBalance([10, 10])        → true
  * Test:
+ * true
+ * false
+ * true
  */
 public class CompareSums {
     public static int[] arr;
 
     public static void main(String[] args) {
-        canBalance(1, 1, 1, 2, 1);
-/*        canBalance(2, 1, 1, 2, 1);
-        canBalance(10, 10);*/
+        System.out.println(canBalance(1, 1, 1, 2, 1));
+        System.out.println(canBalance(2, 1, 1, 2, 1));
+        System.out.println(canBalance(10, 10));
     }
 
     private static boolean canBalance(int... args) {
