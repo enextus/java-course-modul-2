@@ -19,22 +19,16 @@ public class LinearIn {
     public static int[] arrInner;
 
     public static void main(String[] args) {
-        System.out.println(linearIn(new int[]{1, 2, 4, 6, 8}, new int[]{2, 4, 8}));
+        System.out.println(linearIn(new int[]{1, 2, 4, 6, 9}, new int[]{2, 4, 8}));
         // linearIn([1, 2, 4, 6], [2, 3, 4]);
         // linearIn([1, 2, 4, 4, 6], [2, 4]);
     }
 
     public static boolean linearIn(int[] arrOuter, int[] arrInner) {
-        printArr(arrOuter);
-        printArr(arrInner);
-
         int result = 0;
 
         for (int i = 0; i < arrInner.length; i++) {
-
             result = recursiveBinarySearch(arrOuter, arrOuter[0], arrOuter[arrInner.length - 1], arrInner[i]);
-            System.out.println(result);
-
             if (result == -1 ) return false;
         }
         return true;
