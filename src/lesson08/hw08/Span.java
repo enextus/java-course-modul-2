@@ -26,16 +26,13 @@ public class Span {
 
     private static int maxSpan(int... args) {
         arr = args;
-        int target;
-        int indexOfTarget;
         int span;
         int spanResult = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            target = arr[i];
-            indexOfTarget = findIndexOfTarget(target);
 
-            span = indexOfTarget;
+            span = findIndexOfTarget(arr[i]);
+
             if (spanResult < span) spanResult = span;
         }
         return spanResult;
