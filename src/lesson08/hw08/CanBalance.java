@@ -13,7 +13,7 @@ package lesson08.hw08;
  * false
  * true
  */
-public class CompareSums {
+public class CanBalance {
     public static int[] arr;
 
     public static void main(String[] args) {
