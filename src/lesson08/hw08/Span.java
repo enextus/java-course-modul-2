@@ -10,10 +10,13 @@ package lesson08.hw08;
  * maxSpan([1, 2, 1, 1, 3])         → 4
  * maxSpan([1, 4, 2, 1, 4, 1, 4])   → 6
  * maxSpan([1, 4, 2, 1, 4, 4, 4])   → 6
+ * *
+ * maxSpan([2, 1, 4, 2, 1, 3, 1, 2, 4, 4, 4, 2])   → 11
  * Test:
  * 4
  * 6
  * 6
+ * 11
  */
 public class Span {
     public static int[] arr;
@@ -22,6 +25,7 @@ public class Span {
         System.out.println(maxSpan(1, 2, 1, 1, 3));
         System.out.println(maxSpan(1, 4, 2, 1, 4, 1, 4));
         System.out.println(maxSpan(1, 4, 2, 1, 4, 4, 4));
+        System.out.println(maxSpan(2, 1, 4, 2, 1, 3, 1, 2, 4, 4, 4, 2));
     }
 
     private static int maxSpan(int... args) {
