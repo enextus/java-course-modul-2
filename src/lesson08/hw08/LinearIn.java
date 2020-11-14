@@ -13,6 +13,12 @@ package lesson08.hw08;
  * linearIn([1, 2, 4, 4, 6], [2, 4]) → true
  * *
  * Test:
+ * true
+ * false
+ * true
+ *
+ * true
+ * false
  */
 public class LinearIn {
     public static int[] arrOuter;
@@ -22,6 +28,9 @@ public class LinearIn {
         System.out.println(linearIn(new int[]{1, 2, 4, 6}, new int[]{2, 4}));
         System.out.println(linearIn(new int[]{1, 2, 4, 6}, new int[]{2, 3, 4}));
         System.out.println(linearIn(new int[]{1, 2, 4, 4, 6}, new int[]{2, 4}));
+        System.out.println();
+        System.out.println(linearIn(new int[]{1, 2, 4, 6, 34,  34,  78, 90}, new int[]{2, 4, 34}));
+        System.out.println(linearIn(new int[]{1, 2, 4, 6, 34,  34,  78, 90}, new int[]{2, 4, 100}));
     }
 
     public static boolean linearIn(int[] arrOuter, int[] arrInner) {
