@@ -23,11 +23,8 @@ public class CompareSums {
         arr = args;
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("sumFromBegin: " + sumFromBegin(i));
-            System.out.println("sumToEnd: " + sumToEnd(i));
-
+            if (sumFromBegin(i) == sumToEnd(i)) return true;
         }
-
         return false;
     }
 
@@ -43,10 +40,9 @@ public class CompareSums {
     private static int sumToEnd(int i) {
         int sum = 0;
 
-        for (int j = i+1; j <= arr.length-1; j++) {
+        for (int j = i + 1; j <= arr.length - 1; j++) {
             sum += arr[j];
         }
         return sum;
     }
-
 }
