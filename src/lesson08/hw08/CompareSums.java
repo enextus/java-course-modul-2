@@ -22,8 +22,8 @@ public class CompareSums {
     private static boolean canBalance(int... args) {
         arr = args;
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            System.out.println("sumFromBegin: " + sumFromBegin(arr[i]));
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("sumFromBegin: " + sumFromBegin(i));
         }
 
         return false;
@@ -32,7 +32,7 @@ public class CompareSums {
     private static int sumFromBegin(int i) {
         int sum = 0;
 
-        for (int j = 0; j < i; j++) {
+        for (int j = 0; j <= i; j++) {
             sum += arr[j];
         }
         return sum;
