@@ -19,8 +19,8 @@ public class Human {
     }
 
     private int getFullAge() {
-        LocalDate curDate = LocalDate.now();
-        return Period.between(dateOfBirth, curDate).getYears();
+        LocalDate currentDate = LocalDate.now();
+        return Period.between(dateOfBirth, currentDate).getYears();
     }
 
     public static void main(String[] args) {
@@ -29,9 +29,7 @@ public class Human {
         String input = scanner.nextLine();
         scanner.close();
 
-        LocalDate dob = LocalDate.parse(input);
-
-        Human humanOne = new Human("Adam", dob);
+        Human humanOne = new Human("Adam", LocalDate.parse(input));
 
         System.out.println("Age is:" + humanOne.getFullAge());
     }
