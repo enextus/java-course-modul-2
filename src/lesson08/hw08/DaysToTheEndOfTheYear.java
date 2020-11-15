@@ -13,6 +13,7 @@ public class DaysToTheEndOfTheYear {
     public static Scanner sc = new Scanner(System.in);
     public static int leapDay = 0;
     public static int[] numberOfMonth = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    public static int daysAfter = 0;
 
     public static void main(String[] args) {
         System.out.println("Please enter the year: ");
@@ -29,8 +30,6 @@ public class DaysToTheEndOfTheYear {
     }
 
     private static int getNumberOfDays(int year, int month, int day) {
-        int daysAfter = 0;
-
         if (checkLeapYear(year)) leapDay = 1;
         if (month < 12) {
             int indexBegin = month;
