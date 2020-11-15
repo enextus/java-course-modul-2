@@ -1,18 +1,16 @@
 package lesson08.hash;
 
-import java.lang.management.MemoryNotificationInfo;
-
 /**
- * class Main
+ * class BlackBox
  */
-public class Main {
+public class BlackBox {
     private static int tsStatic;
     private static int alterStatic;
 
     private int ts;
     private int alter;
 
-    public Main(int alter) {
+    public BlackBox(int alter) {
         this.ts = 100;
         System.out.println("Obj from class Main was created!");
         this.alter = alter;
@@ -35,15 +33,15 @@ public class Main {
         return "Main{" +
                 "alter='" + this.alter + '\'' +
                 "ts='" + this.ts + '\'' +
-        '}';
+                '}';
     }
 
     public static void main(String[] args) {
         Object object = new Object();
         Main testObjMain = new Main(12);
 
-        Main.alterStatic = 10000;
-        Main.tsStatic = 222;
+        BlackBox.alterStatic = 10000;
+        BlackBox.tsStatic = 222;
 
         System.out.println();
         System.out.println("testObjMain.hashCode(): " + testObjMain.hashCode());
@@ -54,7 +52,7 @@ public class Main {
         System.out.println(testObjMain.getTs());
         System.out.println(testObjMain.getAlter());
         System.out.println();
-        System.out.println(Main.alterStatic);
-        System.out.println(Main.tsStatic);
+        System.out.println(BlackBox.alterStatic);
+        System.out.println(BlackBox.tsStatic);
     }
 }
