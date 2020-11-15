@@ -1,6 +1,5 @@
 package lesson08.hw08;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 
@@ -10,12 +9,10 @@ import java.time.ZoneId;
 public class DateToEpochConverter {
     public static void main(String[] args) {
         LocalDateTime time = LocalDateTime.now();
-
         System.out.println("Now is: " + time);
 
         ZoneId zoneId = ZoneId.systemDefault(); // or: ZoneId.of("Europe/Berlin");
         long epoch = time.atZone(zoneId).toEpochSecond();
-
         System.out.println("Epoch is: " + epoch);
     }
 }
