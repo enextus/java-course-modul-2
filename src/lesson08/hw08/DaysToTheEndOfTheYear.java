@@ -35,13 +35,11 @@ public class DaysToTheEndOfTheYear {
 
         if (month < 12) {
 
-            int indexBegin = month - 1;
-
+            int indexBegin = month;
             for (int i = indexBegin; i < numberOfMonth.length; i++) {
-
                 daysAfter += numberOfMonth[i];
-
             }
+            daysAfter += numberOfMonth[month - 1] - day;
             System.out.println(daysAfter);
 
         } else if (month == 12) daysAfter = numberOfMonth[month - 1] - day;
