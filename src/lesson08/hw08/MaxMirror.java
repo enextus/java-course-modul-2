@@ -35,18 +35,19 @@ public class MaxMirror {
         if (arrLen == 0) return maxElem;
 
         for (int i = 0; i < arrLen; i++) {
-            int shifIndex = 0;
+            int shiftIndex = 0;
 
             for (int j = (arrLen - 1); j > i; j--) {
-                System.out.print("i = " + i + ", counter = " + shifIndex + ", arr[i + counter] = " + arr[i + shifIndex]);
-                if (arr[i + shifIndex] != arr[j]) break;
+                System.out.print("i = " + i + ", counter = " + shiftIndex + ", arr[i + counter] = " + arr[i + shiftIndex]);
+                //if (arr[i + shiftIndex] != arr[j]) break;
+                if (arr[j] != arr[i + shiftIndex]) break;
 
-                shifIndex++;
+                shiftIndex++;
 
-                System.out.println(" -> counter wird erhöht bis " + shifIndex);
+                System.out.println(" -> counter wird um 1 bis zum " + shiftIndex + " erhöht.");
             }
 
-            maxElem = Math.max(maxElem, shifIndex);
+            maxElem = Math.max(maxElem, shiftIndex);
 
             System.out.println();
         }
