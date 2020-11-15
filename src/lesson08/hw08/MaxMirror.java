@@ -18,7 +18,7 @@ public class MaxMirror {
     public static int[] arr;
 
     public static void main(String[] args) {
-        maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1});
+        System.out.println(maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1}));
         // maxMirror(new int[]{1, 2, 1, 4});
         // maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1});
     }
