@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class DateToEpochConverter {
     public static void main(String[] args) {
-        System.out.print("Please enter date of birth in YYYY-MM-DD: ");
+        System.out.print("Please enter date in YYYY-MM-DD: ");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
