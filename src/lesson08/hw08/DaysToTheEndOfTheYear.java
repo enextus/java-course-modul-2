@@ -32,21 +32,11 @@ public class DaysToTheEndOfTheYear {
         int daysAfter = 0;
 
         if (checkLeapYear(year)) leapDay = 1;
-
         if (month < 12) {
-
             int indexBegin = month;
-            for (int i = indexBegin; i < numberOfMonth.length; i++) {
-                daysAfter += numberOfMonth[i];
-            }
+            for (int i = indexBegin; i < numberOfMonth.length; i++) daysAfter += numberOfMonth[i];
             daysAfter += numberOfMonth[month - 1] - day;
-            System.out.println(daysAfter);
-
-        } else if (month == 12) daysAfter = numberOfMonth[month - 1] - day;
-
-
-        System.out.println("day = " + day + ", leapDay = " + leapDay + ", daysAfter = " + daysAfter);
-
+        } else daysAfter = numberOfMonth[month - 1] - day;
         return leapDay + daysAfter;
     }
 
