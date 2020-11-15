@@ -29,8 +29,7 @@ public class DaysToTheEndOfTheYear {
     private static int getNumberOfDays(int year, int month, int day) {
         if (checkLeapYear(year)) leapDay = 1;
         if (month < 12) {
-            int indexBegin = month;
-            for (int i = indexBegin; i < numberOfMonth.length; i++) daysAfter += numberOfMonth[i];
+            for (int i = month; i < numberOfMonth.length; i++) daysAfter += numberOfMonth[i];
             daysAfter += numberOfMonth[month - 1] - day;
         } else daysAfter = numberOfMonth[month - 1] - day;
         return leapDay + daysAfter;
