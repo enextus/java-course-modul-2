@@ -38,8 +38,8 @@ public class DaysToTheEndOfTheYear {
                 daysAfter += numberOfMonth[i];
             }
 
-        }else if (month == 12 ) {
-            daysAfter =  numberOfMonth[12] - day;
+        } else if (month == 12) {
+            daysAfter = numberOfMonth[12] - day;
         }
 
         System.out.println("day = " + day + ", leapDay = " + leapDay + ", daysAfter = " + daysAfter);
