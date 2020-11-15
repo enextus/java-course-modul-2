@@ -31,6 +31,6 @@ public class Human {
 
         Human humanOne = new Human("Adam", LocalDate.parse(input));
 
-        System.out.println("Age is:" + humanOne.getFullAge());
+        System.out.println("" + humanOne.name + "'s age is: " + humanOne.getFullAge() + " years.");
     }
 }
