@@ -8,9 +8,17 @@ import java.util.Scanner;
  * class Human with the data of birth and calculating of full age.
  */
 public class Human {
-    public String name;
-    public LocalDate dateOfBirth;
-    public int fullAge;
+    private String name;
+    private LocalDate dateOfBirth;
+    private int fullAge;
+
+    public static String dataInput(){
+        System.out.print("Please enter date of birth in YYYY-MM-DD: ");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        scanner.close();
+        return input;
+    }
 
     public Human(String name, LocalDate dateOfBirth) {
         this.name = name;
@@ -24,13 +32,7 @@ public class Human {
     }
 
     public static void main(String[] args) {
-        System.out.print("Please enter date of birth in YYYY-MM-DD: ");
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        scanner.close();
-
-        Human humanOne = new Human("Adam", LocalDate.parse(input));
-
+        Human humanOne = new Human("Adam", LocalDate.parse(Human.dataInput()));
         System.out.println("" + humanOne.name + "'s age is: " + humanOne.getFullAge() + " years.");
     }
 }
