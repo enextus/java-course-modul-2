@@ -9,11 +9,10 @@ import java.time.ZoneId;
  */
 public class DateToEpochConverter {
     public static void main(String[] args) {
-        LocalDateTime now = LocalDateTime.now();
-
-        System.out.println("Now is: " + now);
-
         LocalDateTime time = LocalDateTime.now();
+
+        System.out.println("Now is: " + time);
+
         ZoneId zoneId = ZoneId.systemDefault(); // or: ZoneId.of("Europe/Berlin");
         long epoch = time.atZone(zoneId).toEpochSecond();
 
