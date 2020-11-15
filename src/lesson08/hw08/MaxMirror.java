@@ -13,18 +13,23 @@ package lesson08.hw08;
  * maxMirror({7, 1, 2, 9, 7, 2, 1}) → 2
  * *
  * Test:
+ * 3
+ * 0
+ * 2
+ * *
+ * Collision:
+ * maxMirror({1, 2, 1, 4}) → 3    -      Test: 0 !!!
  */
 public class MaxMirror {
     public static int[] arr;
 
     public static void main(String[] args) {
         System.out.println(maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1}));
-        // maxMirror(new int[]{1, 2, 1, 4});
-        // maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1});
+        System.out.println(maxMirror(new int[]{1, 2, 1, 4}));
+        System.out.println(maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1}));
     }
 
     private static int maxMirror(int[] arr) {
-        arr = arr;
         final int arrLen = arr.length;
         int maxElem = 0;
         if (arrLen == 0) return maxElem;
