@@ -15,7 +15,6 @@ public class DaysToTheEndOfTheYear {
     public static int[] numberOfMonth = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     public static void main(String[] args) {
-
         System.out.println("Please enter the year: ");
         int year = sc.nextInt();
 
@@ -25,8 +24,8 @@ public class DaysToTheEndOfTheYear {
         System.out.println("Please enter the day: ");
         int day = sc.nextInt();
 
-        System.out.print("Entered date is: " + month + "." + day + "." + year);
-        System.out.println("" + getNumberOfDays(year, month, day));
+        System.out.print("Entered date is: " + month + "." + day + "." + year + "\n");
+        System.out.println("There are " + getNumberOfDays(year, month, day) + " days left until the end of this year!");
     }
 
     private static int getNumberOfDays(int year, int month, int day) {
