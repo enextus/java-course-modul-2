@@ -38,15 +38,17 @@ public class MaxMirror {
             int counter = 0;
 
             for (int j = (arrLen - 1); j > i; j--) {
-                System.out.println("i: " + i + ", arr[i + counter]: " + arr[i + counter] + ", counter: " + counter);
+                System.out.print("i = " + i + ", counter = " + counter + ", arr[i + counter] = " + arr[i + counter]);
                 if (arr[i + counter] != arr[j]) break;
 
                 counter++;
 
-                System.out.print(" -> counter++");
+                System.out.println(" -> counter wird erhöht bis " + counter);
             }
 
             maxElem = Math.max(maxElem, counter);
+
+            System.out.println();
         }
 
         if (maxElem == 1) maxElem = 0;
