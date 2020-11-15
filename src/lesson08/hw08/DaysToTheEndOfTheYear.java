@@ -38,8 +38,7 @@ public class DaysToTheEndOfTheYear {
             daysAfter += numberOfMonth[i];
         }
 
-        return -1;
-        //return numberOfMonth[month - 1] + leapDay + day;
+        return leapDay + +day + daysAfter;
     }
 
     private static boolean checkLeapYear(int a) {
