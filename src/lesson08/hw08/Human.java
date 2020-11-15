@@ -12,7 +12,7 @@ public class Human {
     private LocalDate dateOfBirth;
     private int fullAge;
 
-    public static String dataInput(){
+    private static String dataInput(){
         System.out.print("Please enter date of birth in YYYY-MM-DD: ");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
