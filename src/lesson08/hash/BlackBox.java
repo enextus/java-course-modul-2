@@ -1,58 +1,43 @@
 package lesson08.hash;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * class BlackBox
  */
 public class BlackBox {
-    private static int tsStatic;
-    private static int alterStatic;
+    private SimpleDateFormat ts;
+    private Date date;
+    private String dateOfCreationOfObj;
 
-    private int ts;
-    private int alter;
+    int varA;
+    int varB;
 
-    public BlackBox(int alter) {
-        this.ts = 100;
-        System.out.println("Obj from class Main was created!");
-        this.alter = alter;
+    public BlackBox(int varA, int varB) {
+//        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+//        this.date = new Date();
+//        this.dateOfCreationOfObj = this.ts.format(date);
+//        System.out.println("Obj from " + this.getClass() + " was created at " + dateOfCreationOfObj + "; ");
+
+        this.varA = varA;
+        this.varB = varB;
     }
 
-    public int getTs() {
+    public SimpleDateFormat getTs() {
         return this.ts;
     }
 
-    public int getAlter() {
-        return this.alter;
-    }
-
-    public void setAlter(int alter) {
-        this.alter = alter;
-    }
-
-    @Override
-    public String toString() {
-        return "Main{" +
-                "alter='" + this.alter + '\'' +
-                "ts='" + this.ts + '\'' +
-                '}';
-    }
-
     public static void main(String[] args) {
-        Object object = new Object();
-        Main testObjMain = new Main(12);
+        BlackBox object1 = new BlackBox(5, 10);
+        BlackBox object2 = new BlackBox(5, 10);
 
-        BlackBox.alterStatic = 10000;
-        BlackBox.tsStatic = 222;
+        for (int i = 0; i < 5; i++) {
 
-        System.out.println();
-        System.out.println("testObjMain.hashCode(): " + testObjMain.hashCode());
-        System.out.println("testObjMain.getClass(): " + testObjMain.getClass());
-        System.out.println();
-        System.out.println(testObjMain);
-        System.out.println();
-        System.out.println(testObjMain.getTs());
-        System.out.println(testObjMain.getAlter());
-        System.out.println();
-        System.out.println(BlackBox.alterStatic);
-        System.out.println(BlackBox.tsStatic);
+            BlackBox testObj = new BlackBox(354, 267);
+
+            System.out.println();
+            System.out.println(testObj.hashCode());
+        }
     }
 }
