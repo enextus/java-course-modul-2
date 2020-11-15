@@ -5,7 +5,7 @@ import java.time.Period;
 import java.util.Scanner;
 
 /**
- * class Human
+ * class Human with the data of birth and calculating of full age.
  */
 public class Human {
     public String name;
