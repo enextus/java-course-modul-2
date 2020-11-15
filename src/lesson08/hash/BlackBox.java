@@ -9,81 +9,44 @@ import java.util.concurrent.TimeUnit;
  * class BlackBox
  *
  * static inline intptr_t get_next_hash(Thread * Self, oop obj) {
- *
  *   intptr_t value = 0 ;
- *
  *   if (hashCode == 0) {
- *
  *      // This form uses an unguarded global Park-Miller RNG,
- *
  *      // so it's possible for two threads to race and generate the same RNG.
- *
  *      // On MP system we'll have lots of RW access to a global, so the
- *
  *      // mechanism induces lots of coherency traffic.
- *
  *      value = os::random() ;
- *
  *   } else
- *
  *   if (hashCode == 1) {
- *
  *      // This variation has the property of being stable (idempotent)
- *
  *      // between STW operations.  This can be useful in some of the 1-0
- *
  *      // synchronization schemes.
- *
  *      intptr_t addrBits = intptr_t(obj) >> 3 ;
- *
  *      value = addrBits ^ (addrBits >> 5) ^ GVars.stwRandom ;
- *
  *   } else
- *
  *   if (hashCode == 2) {
- *
  *      value = 1 ;            // for sensitivity testing
- *
  *   } else
- *
  *   if (hashCode == 3) {
- *
  *      value = ++GVars.hcSequence ;
- *
  *   } else
- *
  *   if (hashCode == 4) {
- *
  *      value = intptr_t(obj) ;
- *
  *   } else {
- *
  *      // Marsaglia's xor-shift scheme with thread-specific state
- *
  *      // This is probably the best overall implementation -- we'll
- *
  *      // likely make this the default in future releases.
  *
  *      unsigned t = Self->_hashStateX ;
- *
  *      t ^= (t << 11) ;
- *
  *      Self->_hashStateX = Self->_hashStateY ;
- *
  *      Self->_hashStateY = Self->_hashStateZ ;
- *
  *      Self->_hashStateZ = Self->_hashStateW ;
- *
  *      unsigned v = Self->_hashStateW ;
- *
  *      v = (v ^ (v >> 19)) ^ (t ^ (t >> 8)) ;
- *
  *      Self->_hashStateW = v ;
- *
  *      value = v ;
- *
  *   }
- *
  */
 public class BlackBox {
     private SimpleDateFormat ts;
