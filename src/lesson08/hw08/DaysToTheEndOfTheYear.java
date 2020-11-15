@@ -11,9 +11,8 @@ import java.util.Scanner;
 public class DaysToTheEndOfTheYear {
 
     public static Scanner sc = new Scanner(System.in);
-    public static int leapDay = 0;
+    public static int leapDay;
     public static int[] numberOfMonth = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    public static int result;
 
     public static void main(String[] args) {
 
@@ -26,19 +25,17 @@ public class DaysToTheEndOfTheYear {
         System.out.println("Please enter the day: ");
         int day = sc.nextInt();
 
-        System.out.print("Year " + year);
-        System.out.print("Month " + year);
-        System.out.print("Day " + year);
+        System.out.print("Entered date is: " + month + "." + day + "." + year);
+        System.out.println("" + getNumberOfDays(year, month, day));
+    }
 
-
+    private static int getNumberOfDays(int year, int month, int day) {
+        leapDay = 0;
         if (checkLeapYear(year)) leapDay = 1;
-
-        result = 0;
-
+        return numberOfMonth[month - 1] + leapDay + day;
     }
 
     private static boolean checkLeapYear(int a) {
         return ((a % 4) == 0 && a % 100 != 0) || (a % 400) == 0;
     }
-
 }
