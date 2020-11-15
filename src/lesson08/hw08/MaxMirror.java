@@ -39,7 +39,6 @@ public class MaxMirror {
 
             for (int j = (arrLen - 1); j > i; j--) {
                 System.out.print("i = " + i + ", counter = " + shiftIndex + ", arr[i + counter] = " + arr[i + shiftIndex]);
-                //if (arr[i + shiftIndex] != arr[j]) break;
                 if (arr[j] != arr[i + shiftIndex]) break;
 
                 shiftIndex++;
