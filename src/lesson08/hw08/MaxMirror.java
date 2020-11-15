@@ -34,12 +34,13 @@ public class MaxMirror {
         int maxElem = 0;
         if (arrLen == 0) return maxElem;
 
+        System.out.println("here");
+
         for (int i = 0; i < arrLen; i++) {
             int counter = 0;
+
             for (int j = (arrLen - 1); j > i; j--) {
-                if (arr[i + counter] != arr[j]) {
-                    break;
-                }
+                if (arr[i + counter] != arr[j]) break;
                 counter++;
             }
 
