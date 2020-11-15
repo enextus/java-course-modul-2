@@ -21,9 +21,6 @@ package lesson08.hw08;
  * false
  */
 public class LinearIn {
-    public static int[] arrOuter;
-    public static int[] arrInner;
-
     public static void main(String[] args) {
         System.out.println(linearIn(new int[]{1, 2, 4, 6}, new int[]{2, 4}));
         System.out.println(linearIn(new int[]{1, 2, 4, 6}, new int[]{2, 3, 4}));
