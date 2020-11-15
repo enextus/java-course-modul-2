@@ -3,7 +3,7 @@ package lesson08.hw08;
 import java.util.Scanner;
 
 /**
- * Program for determining the day number from the beginning of the year.
+ * Program for determining the day number between the date and end of the year.
  * 1804 1904 2004
  * 1808 1908 2008
  * 1812 1912 2012
