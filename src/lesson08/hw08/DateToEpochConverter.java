@@ -14,12 +14,10 @@ public class DateToEpochConverter {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
+
         LocalDate date =  LocalDate.parse(input);
 
-        LocalDateTime localDateTimeAtStartOfDay = date.atStartOfDay();
-
-        // LocalDateTime time = LocalDateTime.now();
-        LocalDateTime time =  localDateTimeAtStartOfDay;
+        LocalDateTime time =  date.atStartOfDay();
         System.out.println("Now is: " + time);
 
         ZoneId zoneId = ZoneId.systemDefault(); // or: ZoneId.of("Europe/Berlin");
