@@ -25,8 +25,8 @@ public class MaxMirror {
 
     public static void main(String[] args) {
         System.out.println(maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1}));
-        System.out.println(maxMirror(new int[]{1, 2, 1, 4}));
-        System.out.println(maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1}));
+        //System.out.println(maxMirror(new int[]{1, 2, 1, 4}));
+        //System.out.println(maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1}));
     }
 
     private static int maxMirror(int[] arr) {
@@ -34,14 +34,16 @@ public class MaxMirror {
         int maxElem = 0;
         if (arrLen == 0) return maxElem;
 
-        System.out.println("here");
-
         for (int i = 0; i < arrLen; i++) {
             int counter = 0;
 
             for (int j = (arrLen - 1); j > i; j--) {
+                System.out.println("i: " + i + ", arr[i + counter]: " + arr[i + counter] + ", counter: " + counter);
                 if (arr[i + counter] != arr[j]) break;
+
                 counter++;
+
+                System.out.print(" -> counter++");
             }
 
             maxElem = Math.max(maxElem, counter);
