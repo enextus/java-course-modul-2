@@ -52,7 +52,6 @@ public class BlackBox {
     private SimpleDateFormat ts;
     private Date date;
     private String dateOfCreationOfObj;
-
     int varA;
     int varB;
     int varC;
@@ -65,28 +64,26 @@ public class BlackBox {
         if (this == o) return true;
         if (!(o instanceof BlackBox)) return false;
         BlackBox blackBox = (BlackBox) o;
-        return varA == blackBox.varA && varB == blackBox.varB;
+        return varA == blackBox.varA &&
+                varB == blackBox.varB &&
+                varC == blackBox.varC &&
+                varD == blackBox.varD &&
+                varE == blackBox.varE &&
+                varF == blackBox.varF &&
+                Objects.equals(ts, blackBox.ts) &&
+                Objects.equals(date, blackBox.date) &&
+                Objects.equals(dateOfCreationOfObj, blackBox.dateOfCreationOfObj);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(varA, varB, varC, varD, varE, varF);
-    }
-
-    public BlackBox(int varA, int varB) {
-        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
-        this.date = new Date();
-        this.dateOfCreationOfObj = this.ts.format(date);
-        // System.out.println("Obj from " + this.getClass() + " was created at " + dateOfCreationOfObj + "; ");
-
-        this.varA = varA;
-        this.varB = varB;
+        return Objects.hash(ts, date, dateOfCreationOfObj, varA, varB, varC, varD, varE, varF);
     }
 
     public BlackBox(int varA, int varB, int varC, int varD, int varE, int varF) {
-        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+/*        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         this.date = new Date();
-        this.dateOfCreationOfObj = this.ts.format(date);
+        this.dateOfCreationOfObj = this.ts.format(date);*/
         this.varA = varA;
         this.varB = varB;
         this.varC = varC;
@@ -96,23 +93,22 @@ public class BlackBox {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        BlackBox object1 = new BlackBox(5, 10);
-        BlackBox object2 = new BlackBox(5, 10);
-        BlackBox object3 = new BlackBox(5, 10, 67, 34, 4, 44);
+        BlackBox object1 = new BlackBox(3554, 2647,333,29,909,626);
+        BlackBox object2 = new BlackBox(354, 267,33,2,99,66);
 
         for (int i = 0; i < 3; i++) {
             BlackBox testObj = new BlackBox(354, 267,33,2,99,66);
-
+            BlackBox object3 = new BlackBox(354, 267,33,2,99,66);
+            BlackBox object4 = new BlackBox(5, 10, 67, 34, 4, 44);
+            BlackBox object5 = new BlackBox(5, 10, 67, 34, 4, 44);
             // TimeUnit.SECONDS.sleep(1);
 
-            System.out.println();
-            System.out.println(testObj.hashCode());
-            System.out.println();
+            System.out.println("testObj.hashCode() = " + testObj.hashCode());
+            System.out.println("object3.hashCode() = " + object3.hashCode());
+            System.out.println("object4.hashCode() = " + object4.hashCode());
+            System.out.println("object5.hashCode() = " + object5.hashCode());
 
-            System.out.println(object1.equals(object2));
-
-            System.out.println(System.identityHashCode(object2));
-            System.out.println(System.identityHashCode(object1));
+            System.out.println();
         }
     }
 }
