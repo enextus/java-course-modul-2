@@ -1,20 +1,23 @@
 package lesson08.hash;
 
+/**
+ * class Main
+ */
 public class Main extends Object {
-
     public static int ts;
     public static int alter;
 
     public Main(int alter) {
-        ts = 100;
+        this.ts = 100;
         System.out.println("Obj Main was created!");
+        this.alter = alter;
     }
 
     @Override
     public String toString() {
         return "Main{" +
-                "alter='" + alter + '\'' +
-                "ts='" + ts + '\'' +
+                "alter='" + this.alter + '\'' +
+                "ts='" + this.ts + '\'' +
         '}';
     }
 
@@ -24,7 +27,6 @@ public class Main extends Object {
         Main testObjMain = new Main(12);
 
         int hCode;
-
 
         System.out.println(testObjMain.hashCode());
         System.out.println(testObjMain.getClass());
