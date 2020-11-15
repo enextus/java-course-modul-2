@@ -2,6 +2,8 @@ package lesson08.hash;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 /**
  * class BlackBox
@@ -84,30 +86,46 @@ import java.util.Date;
  *
  */
 public class BlackBox {
-//    private SimpleDateFormat ts;
-//    private Date date;
-//    private String dateOfCreationOfObj;
+    private SimpleDateFormat ts;
+    private Date date;
+    private String dateOfCreationOfObj;
 
     int varA;
     int varB;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof BlackBox)) return false;
+        BlackBox blackBox = (BlackBox) o;
+        return varA == blackBox.varA &&
+                varB == blackBox.varB;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(varA, varB);
+    }
+
     public BlackBox(int varA, int varB) {
-//        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
-//        this.date = new Date();
-//        this.dateOfCreationOfObj = this.ts.format(date);
-//        System.out.println("Obj from " + this.getClass() + " was created at " + dateOfCreationOfObj + "; ");
+        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+        this.date = new Date();
+        this.dateOfCreationOfObj = this.ts.format(date);
+        System.out.println("Obj from " + this.getClass() + " was created at " + dateOfCreationOfObj + "; ");
 
         this.varA = varA;
         this.varB = varB;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         BlackBox object1 = new BlackBox(5, 10);
         BlackBox object2 = new BlackBox(5, 10);
 
         for (int i = 0; i < 5; i++) {
 
             BlackBox testObj = new BlackBox(354, 267);
+
+            TimeUnit.SECONDS.sleep(3);
 
             System.out.println();
             System.out.println(testObj.hashCode());
