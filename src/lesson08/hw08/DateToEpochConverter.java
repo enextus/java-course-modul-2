@@ -18,7 +18,7 @@ public class DateToEpochConverter {
         LocalDate date =  LocalDate.parse(input);
 
         LocalDateTime time =  date.atStartOfDay();
-        System.out.println("Now is: " + time);
+        System.out.println("Date (with time at start of day) is: " + time);
 
         ZoneId zoneId = ZoneId.systemDefault(); // or: ZoneId.of("Europe/Berlin");
         long epoch = time.atZone(zoneId).toEpochSecond();
