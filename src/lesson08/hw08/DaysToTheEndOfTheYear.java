@@ -11,7 +11,15 @@ public class DaysToTheEndOfTheYear {
 
     public static void main(String[] args) {
 
-        int year = 2018; // start with not a leap year: Year 2018 not satisfies the condition of the specification.
+        System.out.println("Please enter the year for the leap year test: ");
+        int year = sc.nextInt();
+
+        System.out.print("Year " + year);
+
+
+
+
+
 
         System.out.print("Year " + year);
 
