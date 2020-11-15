@@ -9,7 +9,6 @@ import java.util.Scanner;
  * 1812 1912 2012
  */
 public class DaysToTheEndOfTheYear {
-
     public static Scanner sc = new Scanner(System.in);
     public static int leapDay = 0;
     public static int[] numberOfMonth = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -18,10 +17,8 @@ public class DaysToTheEndOfTheYear {
     public static void main(String[] args) {
         System.out.println("Please enter the year: ");
         int year = sc.nextInt();
-
         System.out.println("Please enter the month: ");
         int month = sc.nextInt();
-
         System.out.println("Please enter the day: ");
         int day = sc.nextInt();
 
