@@ -19,6 +19,18 @@ package lesson08.hw08;
  * *
  * Collision:
  * maxMirror({1, 2, 1, 4}) → 3    -      Test: 0 !!!
+ *
+ * Note:
+ * i = 0, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 1 -> counter wird um 1 bis zum 1 erhoeht.
+ * i = 0, shiftIndex = 1, arr[j] = 2, arr[i + shiftIndex] = 2 -> counter wird um 1 bis zum 2 erhoeht.
+ * i = 0, shiftIndex = 2, arr[j] = 3, arr[i + shiftIndex] = 3 -> counter wird um 1 bis zum 3 erhoeht.
+ * i = 0, shiftIndex = 3, arr[j] = 9, arr[i + shiftIndex] = 8
+ * i = 1, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 2
+ * i = 2, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 3
+ * i = 3, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 8
+ * i = 4, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 9
+ * i = 5, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 3
+ * i = 6, shiftIndex = 0, arr[j] = 1, arr[i + shiftIndex] = 2
  */
 public class MaxMirror {
     public static int[] arr;
@@ -38,12 +50,12 @@ public class MaxMirror {
             int shiftIndex = 0;
 
             for (int j = (arrLen - 1); j > i; j--) {
-                System.out.print("i = " + i + ", counter = " + shiftIndex + ", arr[i + counter] = " + arr[i + shiftIndex]);
+                System.out.print("i = " + i + ", shiftIndex = " + shiftIndex + ", arr[j] = " + arr[j] + ", arr[i + shiftIndex] = " + arr[i + shiftIndex]);
                 if (arr[j] != arr[i + shiftIndex]) break;
 
                 shiftIndex++;
 
-                System.out.println(" -> counter wird um 1 bis zum " + shiftIndex + " erhöht.");
+                System.out.println(" -> counter wird um 1 bis zum " + shiftIndex + " erhoeht.");
             }
 
             maxElem = Math.max(maxElem, shiftIndex);
