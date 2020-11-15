@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * class BlackBox
- * <p>
+ * *
  * static inline intptr_t get_next_hash(Thread * Self, oop obj) {
  * intptr_t value = 0 ;
  * if (hashCode == 0) {
@@ -36,7 +36,7 @@ import java.util.concurrent.TimeUnit;
  * // Marsaglia's xor-shift scheme with thread-specific state
  * // This is probably the best overall implementation -- we'll
  * // likely make this the default in future releases.
- * <p>
+ * *
  * unsigned t = Self->_hashStateX ;
  * t ^= (t << 11) ;
  * Self->_hashStateX = Self->_hashStateY ;
@@ -55,39 +55,55 @@ public class BlackBox {
 
     int varA;
     int varB;
+    int varC;
+    int varD;
+    int varE;
+    int varF;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof BlackBox)) return false;
         BlackBox blackBox = (BlackBox) o;
-        return varA == blackBox.varA &&
-                varB == blackBox.varB;
+        return varA == blackBox.varA && varB == blackBox.varB;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(varA, varB);
+        return Objects.hash(varA, varB, varC, varD, varE, varF);
     }
 
     public BlackBox(int varA, int varB) {
         this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         this.date = new Date();
         this.dateOfCreationOfObj = this.ts.format(date);
-        System.out.println("Obj from " + this.getClass() + " was created at " + dateOfCreationOfObj + "; ");
+        // System.out.println("Obj from " + this.getClass() + " was created at " + dateOfCreationOfObj + "; ");
 
         this.varA = varA;
         this.varB = varB;
     }
 
+    public BlackBox(int varA, int varB, int varC, int varD, int varE, int varF) {
+        this.ts = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+        this.date = new Date();
+        this.dateOfCreationOfObj = this.ts.format(date);
+        this.varA = varA;
+        this.varB = varB;
+        this.varC = varC;
+        this.varD = varD;
+        this.varE = varE;
+        this.varF = varF;
+    }
+
     public static void main(String[] args) throws InterruptedException {
         BlackBox object1 = new BlackBox(5, 10);
         BlackBox object2 = new BlackBox(5, 10);
+        BlackBox object3 = new BlackBox(5, 10, 67, 34, 4, 44);
 
-        for (int i = 0; i < 5; i++) {
-            BlackBox testObj = new BlackBox(354, 267);
+        for (int i = 0; i < 3; i++) {
+            BlackBox testObj = new BlackBox(354, 267,33,2,99,66);
 
-            TimeUnit.SECONDS.sleep(1);
+            // TimeUnit.SECONDS.sleep(1);
 
             System.out.println();
             System.out.println(testObj.hashCode());
