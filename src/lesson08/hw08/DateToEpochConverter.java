@@ -10,7 +10,6 @@ import java.time.ZoneId;
 public class DateToEpochConverter {
     public static void main(String[] args) {
         LocalDateTime now = LocalDateTime.now();
-        Timestamp timestamp = Timestamp.valueOf(now);
 
         System.out.println("Now is: " + now);
 
