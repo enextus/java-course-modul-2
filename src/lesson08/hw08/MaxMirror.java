@@ -6,11 +6,12 @@ package lesson08.hw08;
  * the same group appears in reverse order.
  * For example, the largest mirror section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part).
  * Return the size of the largest mirror section found in the given array.
- * <p>
+ * *
  * Expectation:
- * maxMirror([1, 2, 3, 8, 9, 3, 2, 1])  → 3
- * maxMirror([1, 2, 1, 4])              → 3
- * maxMirror([7, 1, 2, 9, 7, 2, 1])     → 2
+ * maxMirror({1, 2, 3, 8, 9, 3, 2, 1}) → 3
+ * maxMirror({1, 2, 1, 4}) → 3
+ * maxMirror({7, 1, 2, 9, 7, 2, 1}) → 2
+ * *
  * Test:
  */
 public class MaxMirror {
@@ -18,15 +19,29 @@ public class MaxMirror {
 
     public static void main(String[] args) {
         maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1});
-        maxMirror(new int[]{1, 2, 1, 4});
-        maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1});
+        // maxMirror(new int[]{1, 2, 1, 4});
+        // maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1});
     }
 
     private static int maxMirror(int[] arr) {
         arr = arr;
+        final int arrLen = arr.length;
+        int maxElem = 0;
+        if (arrLen == 0) return maxElem;
 
-        //
-        return -1;
+        for (int i = 0; i < arrLen; i++) {
+            int counter = 0;
+            for (int j = (arrLen - 1); j > i; j--) {
+                if (arr[i + counter] != arr[j]) {
+                    break;
+                }
+                counter++;
+            }
+
+            maxElem = Math.max(maxElem, counter);
+        }
+
+        if (maxElem == 1) maxElem = 0;
+        return maxElem;
     }
-
 }
