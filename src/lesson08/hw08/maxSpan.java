@@ -18,7 +18,7 @@ package lesson08.hw08;
  * 6
  * 11
  */
-public class Span {
+public class maxSpan {
     public static int[] arr;
 
     public static void main(String[] args) {
