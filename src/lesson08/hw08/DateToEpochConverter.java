@@ -1,5 +1,6 @@
 package lesson08.hw08;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Scanner;
@@ -13,8 +14,12 @@ public class DateToEpochConverter {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
+        LocalDate date =  LocalDate.parse(input);
 
-        LocalDateTime time = LocalDateTime.now();
+        LocalDateTime localDateTimeAtStartOfDay = date.atStartOfDay();
+
+        // LocalDateTime time = LocalDateTime.now();
+        LocalDateTime time =  localDateTimeAtStartOfDay;
         System.out.println("Now is: " + time);
 
         ZoneId zoneId = ZoneId.systemDefault(); // or: ZoneId.of("Europe/Berlin");
