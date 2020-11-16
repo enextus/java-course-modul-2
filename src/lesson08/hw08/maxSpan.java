@@ -33,8 +33,8 @@ public class maxSpan {
         int span;
         int spanResult = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            span = findIndexOfTarget(arr[i]);
+        for (int j : arr) {
+            span = findIndexOfTarget(j);
             if (spanResult < span) spanResult = span;
         }
         return spanResult;
