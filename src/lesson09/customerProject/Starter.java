@@ -11,23 +11,19 @@ public class Starter {
         Ingredient cola = new Ingredient("Кола", 100);
         Ingredient energiser = new Ingredient("RedBull", 100);
 
-        Cocktail disco1 = new Cocktail("Диско", cola, energiser);
-        Cocktail disco2 = new Cocktail("Диско", cola, energiser);
-        System.out.println(disco1);
+        Cocktail cocktail1 = new Cocktail("Disco", cola, energiser);
+        Cocktail cocktail2 = new Cocktail("Start", vodka, energiser);
+
+        Cocktail cocktail3 = new Cocktail("007", vodka, martini);
+        Cocktail cocktail4 = new Cocktail("RoMa", rom, martini);
+
+        System.out.println(cocktail1);
         System.out.println();
-
-/*        System.out.println(disco1.equals(disco1));
-        System.out.println(disco1.equals(disco2));
-        */
-
-        Cocktail cocktail11 = new Cocktail("Диско", cola, energiser);
-        Cocktail disco22 = new Cocktail("Диско", cola, energiser);
-
-        System.out.println(cocktail11.hashCode());
-        System.out.println(cocktail11.getName());
-        cocktail11.setName("New name");
-        System.out.println(cocktail11.hashCode());
-        System.out.println(cocktail11.getName());
+        System.out.println(cocktail2);
+        System.out.println();
+        System.out.println(cocktail3);
+        System.out.println();
+        System.out.println(cocktail4);
         System.out.println();
     }
 }
