@@ -22,7 +22,6 @@ public class Human {
     public Human(String name, LocalDate dateOfBirth) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
-        int fullAge = getFullAge();
     }
 
     private int getFullAge() {
