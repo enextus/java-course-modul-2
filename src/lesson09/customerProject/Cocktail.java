@@ -7,14 +7,24 @@ import java.util.Objects;
  * class Cocktail
  */
 public class Cocktail {
-    private final String name;
+    public String name;
     private final Ingredient[] ingredients;
     private int liquid;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Cocktail(String name, Ingredient... ingredients) {
         this.name = name;
         this.ingredients = ingredients;
     }
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -41,4 +51,6 @@ public class Cocktail {
                 "ingredient=" + Arrays.toString(ingredients) +
                 '}';
     }
+
+
 }
