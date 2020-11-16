@@ -16,7 +16,6 @@ public class DateToEpochConverter {
         scanner.close();
 
         LocalDate date =  LocalDate.parse(input);
-
         LocalDateTime time =  date.atStartOfDay();
         System.out.println("Date (with time at start of day) is: " + time);
 
