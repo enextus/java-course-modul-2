@@ -23,7 +23,7 @@ public class Cocktail {
         double sum = 0;
         for (Ingredient ing : ingredients) {
             // Determine the total alcohol content in the cocktail.
-            sum += ing.getLiquid() * ing.getPerCent()/(double) 100;
+            sum += ing.getLiquid() * ing.getPerCent() / 100.0;
         }
 
         // Рассчитываем содержание алкоголя (спирта) в 90мл виски:
