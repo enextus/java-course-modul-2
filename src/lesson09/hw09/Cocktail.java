@@ -13,7 +13,7 @@ public class Cocktail {
     private final int liquid;
     private final double perCent;
 
-    private static int getPerCent(Ingredient[] ingredients) {
+    private static double getPerCent(Ingredient[] ingredients) {
         int sum = 0;
         for (Ingredient ing : ingredients) sum += ing.getPerCent();
         return sum;
