@@ -18,9 +18,9 @@ public class Ingredient {
 
     public Ingredient(String name, int liquid, int perCent) {
         this.name = name;
-        this.alcohol = isAlcohol();
         this.liquid = liquid;
         this.perCent = perCent;
+        this.alcohol = isAlcohol();
     }
 
     public boolean isAlcohol(){
