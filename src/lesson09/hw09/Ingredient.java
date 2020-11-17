@@ -27,19 +27,19 @@ public class Ingredient {
     }
 
     private boolean isAlcohol() {
-        return this.perCent > 0;
+        return perCent > 0;
     }
 
     private String getName() {
-        return this.name;
+        return name;
     }
 
     public int getLiquid() {
-        return this.liquid;
+        return liquid;
     }
 
     public double getPerCent() {
-        return this.perCent;
+        return perCent;
     }
 
     @Override
