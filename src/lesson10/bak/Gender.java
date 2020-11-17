@@ -3,17 +3,10 @@ package lesson10.bak;
 public enum Gender {
     MALE("Gender MALE", 100),
     FEMALE("Gender FEMALE", 200),
-    DIVERSE("Gender diversity is equitable or fair representation of people of different genders.", 300);
+    DIVERSE("Gender diversity.", 300);
+
     private final String gender;
     private final int genID;
-
-    @Override
-    public String toString() {
-        return "Gender{" +
-                "gender=" + gender +
-                ", genderID=" + genID +
-                '}';
-    }
 
     Gender(String gender, int genID) {
         this.gender = gender;
@@ -22,5 +15,13 @@ public enum Gender {
 
     public String getGender() {
         return gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Gender{" +
+                "gender=" + gender +
+                ", genID=" + genID +
+                '}';
     }
 }
