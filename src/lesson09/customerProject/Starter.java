@@ -34,12 +34,12 @@ public class Starter {
         System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail4.getPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getPerCent() + "%.");
         System.out.println();
         System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getLiquid() + "ml.");
-        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail4.getLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getLiquid() + "ml.");
     }
 }
