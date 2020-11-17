@@ -11,11 +11,6 @@ public class Starter {
         return numberOfIng;
     }
 
-    public static int getPerCantOfCocktail(Cocktail cocktail) {
-        //int numberOfIng = cocktail.
-        return -1;
-    }
-
     public static void main(String[] args) {
         Ingredient vodka = new Ingredient("Водка", 100);
         Ingredient rom = new Ingredient("Ром", 100);
@@ -33,15 +28,15 @@ public class Starter {
 
         bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4};
 
-        System.out.println(numberOfIng(cocktail1));
-        System.out.println(numberOfIng(cocktail2));
-        System.out.println(numberOfIng(cocktail3));
-        System.out.println(numberOfIng(cocktail4));
-        System.out.println();
+        System.out.println("Quantity of cocktails in the bar: " + bar.length + "\n");
 
-        System.out.println("Quantity of cocktails in the bar: " + bar.length);
+        System.out.println("The cocktail \"" + cocktail1.getName() + "\" has " + numberOfIng(cocktail1) + " ingredients.\n");
 
-        System.out.println(cocktail1.getPerCent());
+        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getPerCent() + "%.");
+
 
     }
 }

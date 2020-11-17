@@ -16,6 +16,13 @@ public class Ingredient {
         this.liquid = liquid;
     }
 
+    public Ingredient(String name, boolean alcohol, int liquid, int perCent) {
+        this.name = name;
+        this.alcohol = alcohol;
+        this.liquid = liquid;
+        this.perCent = perCent;
+    }
+
     public String getName() {
         return name;
     }
