@@ -10,16 +10,16 @@ import java.util.Objects;
 public class Cocktail {
     private final String name;
     private final Ingredient[] ingredients;
-    private int liquid;
+    private final int liquid;
     private final double perCent;
 
-    public static int getPerCent(Ingredient[] ingredients) {
+    private static int getPerCent(Ingredient[] ingredients) {
         int sum = 0;
         for (Ingredient ing : ingredients) sum += ing.getPerCent();
         return sum;
     }
 
-    public static int getLiquid(Ingredient[] ingredients) {
+    private static int getLiquid(Ingredient[] ingredients) {
         int sum = 0;
         for (Ingredient ing : ingredients) sum += ing.getLiquid();
         return sum;
