@@ -7,13 +7,17 @@ import java.util.Objects;
  * class Cocktail
  */
 public class Cocktail {
-    public String name;
+    private String name;
     private Ingredient[] ingredients;
     private int liquid;
 
     public int getPerCent() {
         int sum = 0;
-        for (Ingredient ing : getIngredients()) sum += ing.getPerCent();
+        for (Ingredient ing : getIngredients()) {
+
+            System.out.println(ing.getPerCent());
+            sum += ing.getPerCent();
+        }
         return sum;
     }
 

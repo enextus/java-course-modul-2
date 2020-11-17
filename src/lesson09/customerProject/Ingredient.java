@@ -16,19 +16,20 @@ public class Ingredient {
         this.liquid = liquid;
     }
 
-    public Ingredient(String name, boolean alcohol, int liquid, int perCent) {
+    public Ingredient(String name, int liquid, int perCent) {
         this.name = name;
-        this.alcohol = alcohol;
+        this.alcohol = isAlcohol();
         this.liquid = liquid;
         this.perCent = perCent;
     }
 
-    public String getName() {
-        return name;
+    public boolean isAlcohol(){
+        if (this.perCent > 0) return true;
+        return false;
     }
 
-    public boolean isAlcohol() {
-        return alcohol;
+    public String getName() {
+        return name;
     }
 
     public int getLiquid() {
