@@ -37,7 +37,7 @@ public class Ingredient {
         return this.liquid;
     }
 
-    private int getPerCent() {
+    public int getPerCent() {
         return this.perCent;
     }
 
