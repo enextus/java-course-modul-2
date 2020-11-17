@@ -10,14 +10,15 @@ public class Ingredient {
     private final String name;
     private boolean alcohol;
     private final int liquid;
-    private int perCent;
+    private double perCent;
 
     public Ingredient(String name, int liquid) {
         this.name = name;
         this.liquid = liquid;
+        this.perCent = 0.0;
     }
 
-    public Ingredient(String name, int liquid, int perCent) {
+    public Ingredient(String name, int liquid, double perCent) {
         this.name = name;
         this.liquid = liquid;
         this.perCent = perCent;
@@ -37,7 +38,7 @@ public class Ingredient {
         return this.liquid;
     }
 
-    public int getPerCent() {
+    public double getPerCent() {
         return this.perCent;
     }
 

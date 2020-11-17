@@ -13,9 +13,9 @@ public class Starter {
     }
 
     public static void main(String[] args) {
-        Ingredient vodka = new Ingredient("Водка", 100, 40);
-        Ingredient rom = new Ingredient("Ром", 100);
-        Ingredient martini = new Ingredient("Мартини", 100);
+        Ingredient vodka = new Ingredient("Водка", 50, 40);
+        Ingredient rom = new Ingredient("Ром", 75, 80);
+        Ingredient martini = new Ingredient("Мартини", 75, 14.4);
         Ingredient cola = new Ingredient("Кола", 100);
         Ingredient energiser = new Ingredient("RedBull", 100);
         Ingredient milk = new Ingredient("Milk", 250);

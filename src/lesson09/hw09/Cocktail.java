@@ -11,7 +11,7 @@ public class Cocktail {
     private final String name;
     private final Ingredient[] ingredients;
     private int liquid;
-    private int perCent;
+    private final double perCent;
 
     public static int getPerCent(Ingredient[] ingredients) {
         int sum = 0;
@@ -19,14 +19,25 @@ public class Cocktail {
         return sum;
     }
 
-    public int getPerCent() {
-        return -1;
+    public static int getLiquid(Ingredient[] ingredients) {
+        int sum = 0;
+        for (Ingredient ing : ingredients) sum += ing.getLiquid();
+        return sum;
+    }
+
+    public Cocktail(String name, Ingredient... ingredients) {
+        this.name = name;
+        this.ingredients = ingredients;
+        this.liquid = getLiquid(this.ingredients);
+        this.perCent = getPerCent(this.ingredients);
+    }
+
+    public double getPerCent() {
+        return this.perCent;
     }
 
     public int getLiquid() {
-        int sum = 0;
-        for (Ingredient ing : getIngredients()) sum += ing.getLiquid();
-        return sum;
+        return this.liquid;
     }
 
     public String getName() {
@@ -35,12 +46,6 @@ public class Cocktail {
 
     public Ingredient[] getIngredients() {
         return this.ingredients;
-    }
-
-    public Cocktail(String name, Ingredient... ingredients) {
-        this.name = name;
-        this.ingredients = ingredients;
-        this.perCent = getPerCent(this.ingredients);
     }
 
     @Override
@@ -66,7 +71,8 @@ public class Cocktail {
                 "name='" + name + '\'' +
                 ", perCent=" + perCent + '}' +
                 ", liquid=" + liquid + '}' +
-                ", ingredients=" + Arrays.toString(ingredients) +
-                "\n";
+                ", ingredients=" + Arrays.toString(ingredients) /*+
+                "\n"*/
+                ;
     }
 }
