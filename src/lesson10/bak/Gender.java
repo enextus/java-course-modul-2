@@ -1,24 +1,23 @@
 package lesson10.bak;
 
 public enum Gender {
-    MALE("1",1),
-    FEMALE("2",2),
-    DIVERSE("3",3);
-    // look at file WeekDay.java, how it was done
-    private String gender;
-    private int code;
+    MALE("Gender MALE", 1),
+    FEMALE("Gender FEMALE", 2),
+    DIVERSE("Gender diversity is equitable or fair representation of people of different genders.", 3);
+    private final String gender;
+    private final int genID;
 
     @Override
     public String toString() {
         return "Gender{" +
                 "gender=" + gender +
-                ", code=" + code +
+                ", genderID=" + genID +
                 '}';
     }
 
-    private Gender(String gender, int code) {
+    private Gender(String gender, int genID) {
         this.gender = gender;
-        this.code = code;
+        this.genID = genID;
     }
 
     public String getGender() {
