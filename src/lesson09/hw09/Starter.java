@@ -44,7 +44,7 @@ public class Starter {
         Ingredient martini = new Ingredient("Мартини", 75, 14.4);
         Ingredient cola = new Ingredient("Кола", 100);
         Ingredient energiser = new Ingredient("RedBull", 100);
-        Ingredient milk = new Ingredient("Milk", 200);
+        Ingredient milk = new Ingredient("Milk", 150);
 
         Cocktail cocktail1 = new Cocktail("Disco", cola, energiser);
         Cocktail cocktail2 = new Cocktail("Start", vodka, energiser);
