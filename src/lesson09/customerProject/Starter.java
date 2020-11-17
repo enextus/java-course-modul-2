@@ -22,11 +22,7 @@ public class Starter {
         Cocktail cocktail2 = new Cocktail("Start", vodka, energiser);
         Cocktail cocktail3 = new Cocktail("007", vodka, martini);
         Cocktail cocktail4 = new Cocktail("RoMa", rom, martini);
-
         Cocktail cocktail5 = new Cocktail("VoCo", vodka, cola);
-
-        System.out.println(cocktail1);
-        System.out.println();
 
         bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4};
 
@@ -39,7 +35,5 @@ public class Starter {
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail4.getPerCent() + "%.");
-
-
     }
 }
