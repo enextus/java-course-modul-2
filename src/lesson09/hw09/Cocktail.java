@@ -5,7 +5,7 @@ import java.util.Objects;
 
 /**
  * class Cocktail
- * The class written about a cocktail.
+ * The class written about an cocktail.
  */
 public class Cocktail {
     private final String name;

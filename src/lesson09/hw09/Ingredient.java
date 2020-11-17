@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * class Ingredient
- * The class written about a ingredient.
+ * The class written about an ingredient.
  */
 public class Ingredient {
     private final String name;
