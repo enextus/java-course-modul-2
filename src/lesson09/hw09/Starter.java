@@ -9,6 +9,7 @@ package lesson09.hw09;
  *
  * The cocktail "Disco" has 2 ingredients.
  *
+ *
  * Cocktail {name='Disco', perCent=0.0}, liquid=200}, ingredients=[Ingredient{name='Кола', alcohol=false, liquid=100, perCent=0.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
  * Cocktail {name='Start', perCent=40.0}, liquid=150}, ingredients=[Ingredient{name='Водка', alcohol=true, liquid=50, perCent=40.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
  * Cocktail {name='007', perCent=54.0}, liquid=125}, ingredients=[Ingredient{name='Водка', alcohol=true, liquid=50, perCent=40.0}, Ingredient{name='Мартини', alcohol=true, liquid=75, perCent=14.4}]
