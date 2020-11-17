@@ -11,6 +11,11 @@ public class Starter {
         return numberOfIng;
     }
 
+    public static int getPerCantOfCocktail(Cocktail cocktail) {
+        //int numberOfIng = cocktail.
+        return -1;
+    }
+
     public static void main(String[] args) {
         Ingredient vodka = new Ingredient("Водка", 100);
         Ingredient rom = new Ingredient("Ром", 100);
@@ -35,6 +40,8 @@ public class Starter {
         System.out.println();
 
         System.out.println("Quantity of cocktails in the bar: " + bar.length);
+
+        System.out.println(cocktail1.getPerCent());
 
     }
 }

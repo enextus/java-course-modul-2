@@ -11,12 +11,19 @@ public class Cocktail {
     private Ingredient[] ingredients;
     private int liquid;
 
+    public int getPerCent() {
+
+        int sum = 0;
+        for (Ingredient ing : getIngredients()) sum += ing.getPerCent();
+        return sum;
+    }
+
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public Ingredient[] getIngredients() {
-        return ingredients;
+        return this.ingredients;
     }
 
     public void setName(String name) {
@@ -27,7 +34,7 @@ public class Cocktail {
         this.name = name;
         this.ingredients = ingredients;
     }
-    
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
