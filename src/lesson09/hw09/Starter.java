@@ -48,8 +48,6 @@ public class Starter {
 
         System.out.println();
 
-        for (Cocktail cocktail: bar) {
-            System.out.println(cocktail.toString());
-        }
+        for (Cocktail cocktail : bar) System.out.println(cocktail.toString());
     }
 }
