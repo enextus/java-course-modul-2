@@ -31,10 +31,6 @@ public class Cocktail {
         return this.ingredients;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Cocktail(String name, Ingredient... ingredients) {
         this.name = name;
         this.ingredients = ingredients;

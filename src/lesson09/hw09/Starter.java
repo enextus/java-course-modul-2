@@ -1,7 +1,8 @@
 package lesson09.hw09;
 
 /**
- * class Starter / Main / Application /
+ * class Starter / Main / Application / Run
+ * The class written about a cocktail bar & Co.
  */
 public class Starter {
     private static Cocktail[] bar;
