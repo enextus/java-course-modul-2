@@ -22,10 +22,8 @@ public class Cocktail {
     private static double getPerCent(Ingredient[] ingredients) {
         double sum = 0;
         for (Ingredient ing : ingredients) {
-            // Рассчитываем содержание алкоголя (спирта) в 90мл виски:
-//          ing.getPerCent(); // в 100мл виски – 40мл спирта
-//
-            sum += ing.getLiquid() * (double) 40/(double) 100; // в 90мл виски – Х мл спирта, отсюда Х=90*40/100,
+            // Determine the total alcohol content in the cocktail.
+            sum += ing.getLiquid() * ing.getPerCent()/(double) 100;
         }
 
         // Рассчитываем содержание алкоголя (спирта) в 90мл виски:
