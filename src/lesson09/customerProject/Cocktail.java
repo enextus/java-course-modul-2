@@ -8,11 +8,15 @@ import java.util.Objects;
  */
 public class Cocktail {
     public String name;
-    private final Ingredient[] ingredients;
+    private Ingredient[] ingredients;
     private int liquid;
 
     public String getName() {
         return name;
+    }
+
+    public Ingredient[] getIngredients() {
+        return ingredients;
     }
 
     public void setName(String name) {

@@ -6,14 +6,30 @@ import java.util.Objects;
  * class Ingredient
  */
 public class Ingredient {
-    private final String name;
+    private String name;
     private boolean alcohol;
-    private final int liquid;
+    private int liquid;
     private int perCent;
 
     public Ingredient(String name, int liquid) {
         this.name = name;
         this.liquid = liquid;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isAlcohol() {
+        return alcohol;
+    }
+
+    public int getLiquid() {
+        return liquid;
+    }
+
+    public int getPerCent() {
+        return perCent;
     }
 
     @Override
