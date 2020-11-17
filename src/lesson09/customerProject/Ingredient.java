@@ -29,15 +29,15 @@ public class Ingredient {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getLiquid() {
-        return liquid;
+        return this.liquid;
     }
 
     public int getPerCent() {
-        return perCent;
+        return this.perCent;
     }
 
     @Override

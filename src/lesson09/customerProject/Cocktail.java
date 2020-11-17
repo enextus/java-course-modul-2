@@ -17,6 +17,12 @@ public class Cocktail {
         return sum;
     }
 
+    public int getLiquid() {
+        int sum = 0;
+        for (Ingredient ing : getIngredients()) sum += ing.getLiquid();
+        return sum;
+    }
+
     public String getName() {
         return this.name;
     }
