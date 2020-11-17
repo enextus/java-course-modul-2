@@ -4,11 +4,12 @@ import java.util.Objects;
 
 /**
  * class Ingredient
+ * The class written about a ingredient.
  */
 public class Ingredient {
-    private String name;
+    private final String name;
     private boolean alcohol;
-    private int liquid;
+    private final int liquid;
     private int perCent;
 
     public Ingredient(String name, int liquid) {

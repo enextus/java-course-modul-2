@@ -5,10 +5,11 @@ import java.util.Objects;
 
 /**
  * class Cocktail
+ * The class written about a cocktail.
  */
 public class Cocktail {
-    private String name;
-    private Ingredient[] ingredients;
+    private final String name;
+    private final Ingredient[] ingredients;
     private int liquid;
 
     public int getPerCent() {
