@@ -1,4 +1,4 @@
-package lesson09.customerProject;
+package lesson09.hw09;
 
 import java.util.Objects;
 
@@ -23,7 +23,7 @@ public class Ingredient {
         this.alcohol = isAlcohol();
     }
 
-    public boolean isAlcohol(){
+    public boolean isAlcohol() {
         if (this.perCent > 0) return true;
         return false;
     }
@@ -45,20 +45,20 @@ public class Ingredient {
         if (this == o) return true;
         if (!(o instanceof Ingredient)) return false;
         Ingredient that = (Ingredient) o;
-        return alcohol == that.alcohol &&
-                liquid == that.liquid &&
-                perCent == that.perCent &&
-                Objects.equals(name, that.name);
+        return isAlcohol() == that.isAlcohol() &&
+                getLiquid() == that.getLiquid() &&
+                getPerCent() == that.getPerCent() &&
+                getName().equals(that.getName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, alcohol, liquid, perCent);
+        return Objects.hash(getName(), isAlcohol(), getLiquid(), getPerCent());
     }
 
     @Override
     public String toString() {
-        return "\nIngredient{" +
+        return "Ingredient{" +
                 "name='" + name + '\'' +
                 ", alcohol=" + alcohol +
                 ", liquid=" + liquid +
