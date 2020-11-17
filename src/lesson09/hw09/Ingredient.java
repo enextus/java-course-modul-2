@@ -14,9 +14,9 @@ public class Ingredient {
 
     public Ingredient(String name, int liquid) {
         this.name = name;
+        this.alcohol = false;
         this.liquid = liquid;
         this.perCent = 0.0;
-        this.alcohol = false;
     }
 
     public Ingredient(String name, int liquid, double perCent) {
