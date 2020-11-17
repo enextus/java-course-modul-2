@@ -45,5 +45,11 @@ public class Starter {
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getLiquid() + "ml.");
+
+        System.out.println();
+
+        for (Cocktail cocktail: bar) {
+            System.out.println(cocktail.toString());
+        }
     }
 }
