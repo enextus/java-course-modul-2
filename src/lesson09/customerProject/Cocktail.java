@@ -45,15 +45,15 @@ public class Cocktail {
         if (this == o) return true;
         if (!(o instanceof Cocktail)) return false;
         Cocktail cocktail = (Cocktail) o;
-        return liquid == cocktail.liquid &&
-                Objects.equals(name, cocktail.name) &&
-                Arrays.equals(ingredients, cocktail.ingredients);
+        return getLiquid() == cocktail.getLiquid() &&
+                getName().equals(cocktail.getName()) &&
+                Arrays.equals(getIngredients(), cocktail.getIngredients());
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(name, liquid);
-        result = 31 * result + Arrays.hashCode(ingredients);
+        int result = Objects.hash(getName(), getLiquid());
+        result = 31 * result + Arrays.hashCode(getIngredients());
         return result;
     }
 
@@ -61,8 +61,8 @@ public class Cocktail {
     public String toString() {
         return "Cocktail{" +
                 "name='" + name + '\'' +
-                ", liquid=" + liquid + ", " +
-                "ingredient=" + Arrays.toString(ingredients) +
+                ", ingredients=" + Arrays.toString(ingredients) +
+                ", liquid=" + liquid +
                 '}';
     }
 }
