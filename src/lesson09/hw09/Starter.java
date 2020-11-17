@@ -32,12 +32,12 @@ public class Starter {
 
         System.out.println("The cocktail \"" + cocktail1.getName() + "\" has " + numberOfIng(cocktail1) + " ingredients.\n");
 
-/*        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getPerCent() + "%.");*/
+        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getPerCent() + "%.");
         System.out.println();
         System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getLiquid() + "ml.");

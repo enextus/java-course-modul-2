@@ -19,6 +19,10 @@ public class Cocktail {
         return sum;
     }
 
+    public int getPerCent() {
+        return -1;
+    }
+
     public int getLiquid() {
         int sum = 0;
         for (Ingredient ing : getIngredients()) sum += ing.getLiquid();
@@ -58,10 +62,11 @@ public class Cocktail {
 
     @Override
     public String toString() {
-        return "Cocktail{" +
+        return "Cocktail {" +
                 "name='" + name + '\'' +
+                ", perCent=" + perCent + '}' +
+                ", liquid=" + liquid + '}' +
                 ", ingredients=" + Arrays.toString(ingredients) +
-                ", liquid=" + liquid +
-                '}';
+                "\n";
     }
 }
