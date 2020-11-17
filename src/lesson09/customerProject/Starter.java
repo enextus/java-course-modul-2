@@ -4,7 +4,7 @@ package lesson09.customerProject;
  * class Starter / Main / Application /
  */
 public class Starter {
-    public static Cocktail[] bar;
+    private static Cocktail[] bar;
 
     public static int numberOfIng(Cocktail cocktail) {
         int numberOfIng = cocktail.getIngredients().length;
@@ -17,12 +17,15 @@ public class Starter {
         Ingredient martini = new Ingredient("Мартини", 100);
         Ingredient cola = new Ingredient("Кола", 100);
         Ingredient energiser = new Ingredient("RedBull", 100);
+        Ingredient milk = new Ingredient("Milk", 250);
+
 
         Cocktail cocktail1 = new Cocktail("Disco", cola, energiser);
         Cocktail cocktail2 = new Cocktail("Start", vodka, energiser);
         Cocktail cocktail3 = new Cocktail("007", vodka, martini);
         Cocktail cocktail4 = new Cocktail("RoMa", rom, martini);
         Cocktail cocktail5 = new Cocktail("VoCo", vodka, cola);
+        Cocktail cocktail6 = new Cocktail("RedMilk", milk, energiser);
 
         bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4};
 
@@ -35,11 +38,13 @@ public class Starter {
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getPerCent() + "%.");
         System.out.println();
         System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getLiquid() + "ml.");
         System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getLiquid() + "ml.");
     }
 }
