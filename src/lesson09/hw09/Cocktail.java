@@ -32,20 +32,20 @@ public class Cocktail {
         this.perCent = getPerCent(this.ingredients);
     }
 
-    public double getPerCent() {
-        return this.perCent;
-    }
-
-    public int getLiquid() {
-        return this.liquid;
-    }
-
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public Ingredient[] getIngredients() {
-        return this.ingredients;
+        return ingredients;
+    }
+
+    public int getLiquid() {
+        return liquid;
+    }
+
+    public double getPerCent() {
+        return perCent;
     }
 
     @Override
