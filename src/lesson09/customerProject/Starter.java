@@ -33,7 +33,7 @@ public class Starter {
         System.out.println(numberOfIng(cocktail3));
         System.out.println(numberOfIng(cocktail4));
 
-        System.out.println(bar.numberOfIng(cocktail4));
+        System.out.println(bar.length);
 
     }
 }
