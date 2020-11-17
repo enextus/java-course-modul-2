@@ -32,8 +32,9 @@ public class Starter {
         System.out.println(numberOfIng(cocktail2));
         System.out.println(numberOfIng(cocktail3));
         System.out.println(numberOfIng(cocktail4));
+        System.out.println();
 
-        System.out.println(bar.length);
+        System.out.println("Quantity of cocktails in the bar: " + bar.length);
 
     }
 }
