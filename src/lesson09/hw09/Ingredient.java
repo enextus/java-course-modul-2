@@ -24,12 +24,12 @@ public class Ingredient {
         this.alcohol = isAlcohol();
     }
 
-    public boolean isAlcohol() {
+    private boolean isAlcohol() {
         if (this.perCent > 0) return true;
         return false;
     }
 
-    public String getName() {
+    private String getName() {
         return this.name;
     }
 
@@ -37,7 +37,7 @@ public class Ingredient {
         return this.liquid;
     }
 
-    public int getPerCent() {
+    private int getPerCent() {
         return this.perCent;
     }
 
