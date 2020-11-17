@@ -15,7 +15,7 @@ public enum Gender {
                 '}';
     }
 
-    private Gender(String gender, int genID) {
+    Gender(String gender, int genID) {
         this.gender = gender;
         this.genID = genID;
     }
