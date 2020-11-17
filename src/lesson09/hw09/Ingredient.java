@@ -49,8 +49,8 @@ public class Ingredient {
         Ingredient that = (Ingredient) o;
         return isAlcohol() == that.isAlcohol() &&
                 getLiquid() == that.getLiquid() &&
-                getPerCent() == that.getPerCent() &&
-                getName().equals(that.getName());
+                Double.compare(that.getPerCent(), getPerCent()) == 0 &&
+                Objects.equals(getName(), that.getName());
     }
 
     @Override
