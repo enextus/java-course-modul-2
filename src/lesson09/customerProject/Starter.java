@@ -25,7 +25,15 @@ public class Starter {
 
         System.out.println(cocktail1);
         System.out.println();
-        cocktail1.getIngredients();
+
+        bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4};
+
+        System.out.println(numberOfIng(cocktail1));
+        System.out.println(numberOfIng(cocktail2));
+        System.out.println(numberOfIng(cocktail3));
+        System.out.println(numberOfIng(cocktail4));
+
+        System.out.println(bar.numberOfIng(cocktail4));
 
     }
 }

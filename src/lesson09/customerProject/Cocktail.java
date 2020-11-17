@@ -27,9 +27,7 @@ public class Cocktail {
         this.name = name;
         this.ingredients = ingredients;
     }
-
-
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
