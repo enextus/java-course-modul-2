@@ -6,23 +6,23 @@ package lesson09.hw09;
  * *
  * Test:
  * Quantity of cocktails in the bar: 6
- * *
+ *
  * The cocktail "Disco" has 2 ingredients.
- * *
+ *
  * Cocktail {name='Disco', perCent=0.0}, liquid=200}, ingredients=[Ingredient{name='Кола', alcohol=false, liquid=100, perCent=0.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
  * Cocktail {name='Start', perCent=40.0}, liquid=150}, ingredients=[Ingredient{name='Водка', alcohol=true, liquid=50, perCent=40.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
  * Cocktail {name='007', perCent=54.0}, liquid=125}, ingredients=[Ingredient{name='Водка', alcohol=true, liquid=50, perCent=40.0}, Ingredient{name='Мартини', alcohol=true, liquid=75, perCent=14.4}]
  * Cocktail {name='RoMa', perCent=94.0}, liquid=150}, ingredients=[Ingredient{name='Ром', alcohol=true, liquid=75, perCent=80.0}, Ingredient{name='Мартини', alcohol=true, liquid=75, perCent=14.4}]
  * Cocktail {name='VoCo', perCent=40.0}, liquid=150}, ingredients=[Ingredient{name='Водка', alcohol=true, liquid=50, perCent=40.0}, Ingredient{name='Кола', alcohol=false, liquid=100, perCent=0.0}]
  * Cocktail {name='RedMilk', perCent=0.0}, liquid=350}, ingredients=[Ingredient{name='Milk', alcohol=false, liquid=250, perCent=0.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
- * *
+ *
  * The proof of cocktail "Disco" is 0.0%.
  * The proof of cocktail "Start" is 40.0%.
  * The proof of cocktail "007" is 54.0%.
  * The proof of cocktail "RoMa" is 94.0%.
  * The proof of cocktail "VoCo" is 40.0%.
  * The proof of cocktail "RedMilk" is 0.0%.
- * *
+ *
  * The proof of cocktail "Disco" is 200ml.
  * The proof of cocktail "Start" is 150ml.
  * The proof of cocktail "007" is 125ml.
