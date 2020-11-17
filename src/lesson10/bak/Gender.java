@@ -1,9 +1,9 @@
 package lesson10.bak;
 
 public enum Gender {
-    MALE("Gender MALE", 1),
-    FEMALE("Gender FEMALE", 2),
-    DIVERSE("Gender diversity is equitable or fair representation of people of different genders.", 3);
+    MALE("Gender MALE", 100),
+    FEMALE("Gender FEMALE", 200),
+    DIVERSE("Gender diversity is equitable or fair representation of people of different genders.", 300);
     private final String gender;
     private final int genID;
 

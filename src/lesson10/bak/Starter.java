@@ -7,12 +7,11 @@ public class Starter {
 
         System.out.println("in: " + in.toString());
         System.out.println(in);
+
         System.out.println(in.name());
-        System.out.println(in);
-        System.out.println(in);
+        System.out.println(Gender.valueOf("DIVERSE"));
         System.out.println(in.getGender());
-        System.out.println(in.compareTo(in));
-        System.out.println(in.equals(in));
         System.out.println(in.hashCode());
+        System.out.println(in.ordinal());
     }
 }

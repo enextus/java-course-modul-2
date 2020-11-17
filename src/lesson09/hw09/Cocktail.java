@@ -13,7 +13,7 @@ public class Cocktail {
     private int liquid;
     private int perCent;
 
-    public static int getPerCent() {
+    public static int getPerCent(Ingredient [] ingredients) {
         int sum = 0;
         // for (Ingredient ing : getIngredients()) sum += ing.getPerCent();
         return sum;
@@ -36,7 +36,7 @@ public class Cocktail {
     public Cocktail(String name, Ingredient... ingredients) {
         this.name = name;
         this.ingredients = ingredients;
-        this.perCent = getPerCent();
+        this.perCent = getPerCent(ingredients);
     }
 
     @Override
