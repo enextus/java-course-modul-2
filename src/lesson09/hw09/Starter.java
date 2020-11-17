@@ -27,7 +27,7 @@ public class Starter {
         Cocktail cocktail5 = new Cocktail("VoCo", vodka, cola);
         Cocktail cocktail6 = new Cocktail("RedMilk", milk, energiser);
 
-        bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4};
+        bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6};
         System.out.println("Quantity of cocktails in the bar: " + bar.length + "\n");
 
         System.out.println("The cocktail \"" + cocktail1.getName() + "\" has " + numberOfIng(cocktail1) + " ingredients.\n");
