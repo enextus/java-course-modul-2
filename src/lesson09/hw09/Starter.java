@@ -7,7 +7,7 @@ package lesson09.hw09;
 public class Starter {
     private static Cocktail[] bar;
 
-    public static int numberOfIng(Cocktail cocktail) {
+    private static int numberOfIng(Cocktail cocktail) {
         int numberOfIng = cocktail.getIngredients().length;
         return numberOfIng;
     }

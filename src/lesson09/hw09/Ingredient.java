@@ -8,14 +8,15 @@ import java.util.Objects;
  */
 public class Ingredient {
     private final String name;
-    private boolean alcohol;
+    private final boolean alcohol;
     private final int liquid;
-    private double perCent;
+    private final double perCent;
 
     public Ingredient(String name, int liquid) {
         this.name = name;
         this.liquid = liquid;
         this.perCent = 0.0;
+        this.alcohol = false;
     }
 
     public Ingredient(String name, int liquid, double perCent) {
@@ -26,8 +27,7 @@ public class Ingredient {
     }
 
     private boolean isAlcohol() {
-        if (this.perCent > 0) return true;
-        return false;
+        return this.perCent > 0;
     }
 
     private String getName() {
