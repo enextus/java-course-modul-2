@@ -18,11 +18,11 @@ public class Starter {
         female = Gender.FEMALE;
         diverse = Gender.DIVERSE;
 
-        drink = new Alcohol("\"соточка\"", 40.0, 100);
-        System.out.println(drink);
+        drink01 = new Alcohol("\"соточка\"", 40.0, 100);
+        System.out.println(drink01);
 
-        drink = new Alcohol("\"соточка\"", 40.0, 100);
-        System.out.println(drink);
+        drink02 = new Alcohol("\"соточка\"", 40.0, 100);
+        System.out.println(drink02);
 
         person1 = new Person("Adam", 95.0, 190.0, male,
                 LocalDate.of(1970, 12, 01));
