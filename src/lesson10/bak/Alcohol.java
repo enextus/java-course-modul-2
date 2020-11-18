@@ -2,6 +2,9 @@ package lesson10.bak;
 
 import java.util.Objects;
 
+/**
+ * class Alcohol
+ */
 public class Alcohol {
     private final String title;
     private final double perCent;
@@ -25,6 +28,15 @@ public class Alcohol {
     }
 
     @Override
+    public String toString() {
+        return "Alcohol{" +
+                "title='" + title + '\'' +
+                ", perCent=" + perCent +
+                ", ml=" + ml +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Alcohol)) return false;
@@ -37,14 +49,5 @@ public class Alcohol {
     @Override
     public int hashCode() {
         return Objects.hash(title, perCent, ml);
-    }
-
-    @Override
-    public String toString() {
-        return "Alcohol{" +
-                "title='" + title + '\'' +
-                ", perCent=" + perCent +
-                ", ml=" + ml +
-                '}';
     }
 }
