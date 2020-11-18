@@ -5,11 +5,9 @@ package lesson09.hw09;
  * The class written about a cocktail bar & Co.
  * *
  * Test:
- *
  * Quantity of cocktails in the bar: 6
  *
  * The cocktail "Disco" has 2 ingredients.
- *
  *
  * Cocktail {name='Disco', perCent=0.0}, liquid=200}, ingredients=[Ingredient{name='Кола', alcohol=false, liquid=100, perCent=0.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
  * Cocktail {name='Start', perCent=20.0}, liquid=150}, ingredients=[Ingredient{name='Водка', alcohol=true, liquid=50, perCent=40.0}, Ingredient{name='RedBull', alcohol=false, liquid=100, perCent=0.0}]
@@ -57,14 +55,9 @@ public class Starter {
 
         bar = new Cocktail[]{cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6};
         System.out.println("Quantity of cocktails in the bar: " + bar.length + "\n");
-
         System.out.println("The cocktail \"" + cocktail1.getName() + "\" has " + numberOfIng(cocktail1) + " ingredients.\n");
-        System.out.println();
-
         for (Cocktail cocktail : bar) System.out.println(cocktail.toString());
-
         System.out.println();
-
         System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getFullPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getFullPerCent() + "%.");
         System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getFullPerCent() + "%.");
