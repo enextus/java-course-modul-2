@@ -7,8 +7,8 @@ import java.util.Objects;
  * class Bak
  */
 public class Bak {
-    private Person person;
-    private Alcohol[] alcoholDrinks;
+    private final Person person;
+    private final Alcohol[] alcoholDrinks;
     private double bloodAlcoholConcentration;
 
     public Bak(Person person, Alcohol... alcoholDrinks) {
