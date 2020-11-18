@@ -3,9 +3,9 @@ package lesson10.bak;
 import java.util.Objects;
 
 public class Alcohol {
-    private String title;
-    private double perCent;
-    private double ml;
+    private final String title;
+    private final double perCent;
+    private final double ml;
     private static final double ALCO_COEF = 0.008;
 
     public Alcohol(double perCent, double ml) {
