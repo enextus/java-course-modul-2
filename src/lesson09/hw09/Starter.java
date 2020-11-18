@@ -57,18 +57,18 @@ public class Starter {
         System.out.println("The cocktail \"" + cocktail1.getName() + "\" has " + numberOfIng(cocktail1) + " ingredients.\n");
         for (Cocktail cocktail : bar) System.out.println(cocktail.toString());
         System.out.println();
-        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getFullPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getFullPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getFullPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getFullPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getFullPerCent() + "%.");
-        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getFullPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.calcFullPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.calcFullPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.calcFullPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.calcFullPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.calcFullPerCent() + "%.");
+        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.calcFullPerCent() + "%.");
         System.out.println();
-        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.getFullLiquid() + "ml.");
-        System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.getFullLiquid() + "ml.");
-        System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.getFullLiquid() + "ml.");
-        System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.getFullLiquid() + "ml.");
-        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.getFullLiquid() + "ml.");
-        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.getFullLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail1.getName() + "\" is " + cocktail1.calcFullLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail2.getName() + "\" is " + cocktail2.calcFullLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail3.getName() + "\" is " + cocktail3.calcFullLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail4.getName() + "\" is " + cocktail4.calcFullLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail5.getName() + "\" is " + cocktail5.calcFullLiquid() + "ml.");
+        System.out.println("The proof of cocktail \"" + cocktail6.getName() + "\" is " + cocktail6.calcFullLiquid() + "ml.");
     }
 }
