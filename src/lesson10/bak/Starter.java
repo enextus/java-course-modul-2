@@ -1,13 +1,31 @@
 package lesson10.bak;
 
+/**
+ * class Starter / App
+ */
 public class Starter {
     public static void main(String[] args) {
-        Gender in = Gender.DIVERSE;
+        Gender in1 = Gender.MALE;
+        Gender in2 = Gender.FEMALE;
+        Gender in3 = Gender.DIVERSE;
 
-        System.out.println(in);
-        System.out.println(in.name());
+        System.out.println(in1);
+        System.out.println(in1.name());
+        System.out.println("Gender.valueOf(\"MALE\"): " + Gender.valueOf("MALE"));
+        System.out.println(in1.getGender());
+        System.out.println(in1.ordinal());
+        System.out.println();
+        System.out.println(in2);
+        System.out.println(in2.name());
+        System.out.println("Gender.valueOf(\"FEMALE\"): " + Gender.valueOf("FEMALE"));
+        System.out.println(in2.getGender());
+        System.out.println(in2.ordinal());
+        System.out.println();
+        System.out.println(in3);
+        System.out.println(in3.name());
         System.out.println("Gender.valueOf(\"DIVERSE\"): " + Gender.valueOf("DIVERSE"));
-        System.out.println(in.getGender());
-        System.out.println(in.ordinal());
+        System.out.println(in3.getGender());
+        System.out.println(in3.ordinal());
+        System.out.println();
     }
 }
