@@ -1,5 +1,8 @@
 package lesson10;
 
+/**
+ * enum Cover
+ */
 public enum Cover {
     HARD("Hart"),
     EBOOK("E-Book"),
