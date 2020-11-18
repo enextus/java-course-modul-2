@@ -5,17 +5,16 @@ package lesson10;
  */
 public class Main {
     public static void main(String[] args) {
-
         WeekDay firstDay = WeekDay.MONDAY;
         WeekDay foursDay = WeekDay.THURSDAY;
-
         DayOfWeek monday = DayOfWeek.MONDAY;
+
         /*System.out.println(DayOfWeek.FRIDAY.ordinal());
         System.out.println(DayOfWeek.MONDAY.ordinal());
         System.out.println(Arrays.toString(DayOfWeek.values()));
         System.out.println(DayOfWeek.TUESDAY.getTitle());
         DayOfWeek.SUNDAY.sayHello();
-       // DayOfWeek.SUNDAY.
+        DayOfWeek.SUNDAY.
         System.out.println(Gender.MALE);
         System.out.println(Gender.MALE.getGender());*/
 
