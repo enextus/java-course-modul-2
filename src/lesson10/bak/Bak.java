@@ -37,7 +37,6 @@ public class Bak {
         } else {
             result = "Ошибка ввода данных.";
         }
-
         return result;
     }
 
