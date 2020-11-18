@@ -16,6 +16,31 @@ public class Bak {
         this.alcoholDrinks = alcoholDrinks;
     }
 
+    public String displayLevel(Double bloodAlcoholConcentration) {
+        Double a = bloodAlcoholConcentration;
+        String result;
+
+        if (a <= 0.3) {
+            result = "Норма, содержание алкоголя в рамках физиологической нормы.";
+        } else if (a < 0.5) {
+            result = "Установлен факт употребления, признаки опьянения минимальны.";
+        } else if (a < 1.5) {
+            result = "Легкая степень опьянения.";
+        } else if (a < 2.5) {
+            result = "Средняя степень опьянения.";
+        } else if (a < 3.0) {
+            result = "Тяжелая степень опьянения, возможно алкогольное отравление.";
+        } else if (a < 6.0) {
+            result = "Опасная степень опьянения, высока вероятность отравления.";
+        } else if (a < 100) {
+            result = "Смертельно опасная концентрация алкоголя, обратитесь помощью.";
+        } else {
+            result = "Ошибка ввода данных.";
+        }
+
+        return result;
+    }
+
     @Override
     public String toString() {
         return "BAK{" +
