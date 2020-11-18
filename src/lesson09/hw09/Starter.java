@@ -29,7 +29,6 @@ package lesson09.hw09;
  * The proof of cocktail "RoMa" is 150ml.
  * The proof of cocktail "VoCo" is 150ml.
  * The proof of cocktail "RedMilk" is 250ml.
- *
  */
 public class Starter {
     private static Cocktail[] bar;
