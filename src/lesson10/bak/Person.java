@@ -1,6 +1,7 @@
 package lesson10.bak;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Objects;
 
 public class Person {
@@ -11,7 +12,7 @@ public class Person {
     private LocalDate birthday;
 
     public int getAge() {
-        return LocalDate.now().getYear() - birthday.getYear();
+        return Period.between(birthday, LocalDate.now()).getYears();
     }
 
     public Person(String name, double weight, Gender gender) {

@@ -21,7 +21,7 @@ public class Starter {
         drink01 = new Alcohol("\"соточка\"", 40.0, 100);
         System.out.println(drink01);
 
-        drink02 = new Alcohol("\"соточка\"", 40.0, 100);
+        drink02 = new Alcohol("\"пивасик\"", 13.0, 500);
         System.out.println(drink02);
 
         person1 = new Person("Adam", 95.0, 190.0, male,
