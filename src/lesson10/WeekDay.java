@@ -2,6 +2,9 @@ package lesson10;
 
 import java.util.Objects;
 
+/**
+ * class WeekDay
+ */
 public class WeekDay {
     private String titleOfDay;
 

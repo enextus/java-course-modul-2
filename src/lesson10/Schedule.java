@@ -1,5 +1,8 @@
 package lesson10;
 
+/**
+ * class Schedule
+ */
 public class Schedule {
     private DayOfWeek[] week;
 
