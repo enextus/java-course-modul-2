@@ -3,7 +3,7 @@ package lesson10.bak;
 public enum Gender {
     MALE("Gender MALE", 100),
     FEMALE("Gender FEMALE", 200),
-    DIVERSE("Gender diversity.", 300);
+    DIVERSE("Gender diversity", 300);
 
     private final String gender;
     private final int genID;
@@ -20,6 +20,8 @@ public enum Gender {
     @Override
     public String toString() {
         return "Gender{" +
+                "ordinal='" + ordinal() + '\'' +
+                "name='" + name() + '\'' +
                 "gender=" + gender +
                 ", genID=" + genID +
                 '}';

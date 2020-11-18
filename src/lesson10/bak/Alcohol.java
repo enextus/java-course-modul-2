@@ -1,12 +1,15 @@
 package lesson10.bak;
 
+import java.util.Objects;
+
 public class Alcohol {
     private String title;
     private double perCent;
     private double ml;
-    private static final double ALCO_COEF=0.008;
+    private static final double ALCO_COEF = 0.008;
 
     public Alcohol(double perCent, double ml) {
+        this.title = null;
         this.perCent = perCent;
         this.ml = ml;
     }
@@ -21,6 +24,20 @@ public class Alcohol {
         return ml * perCent * ALCO_COEF;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Alcohol)) return false;
+        Alcohol alcohol = (Alcohol) o;
+        return Double.compare(alcohol.perCent, perCent) == 0 &&
+                Double.compare(alcohol.ml, ml) == 0 &&
+                Objects.equals(title, alcohol.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, perCent, ml);
+    }
 
     @Override
     public String toString() {
