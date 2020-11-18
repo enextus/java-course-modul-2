@@ -5,7 +5,7 @@ import java.time.LocalDate;
 /**
  * class Starter / App
  */
-public class Starter {
+public class App {
     public static Gender male;
     public static Gender female;
     public static Gender diverse;
