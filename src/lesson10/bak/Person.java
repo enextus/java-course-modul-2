@@ -1,12 +1,13 @@
 package lesson10.bak;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Person {
-    private String name;
-    private double weight;// kg
+    private final String name;
+    private final double weight;// kg
     private double height;// cm
-    private Gender gender;
+    private final Gender gender;
     private LocalDate birthday;
 
     public int getAge() {
@@ -46,6 +47,23 @@ public class Person {
 
     public Gender getGender() {
         return gender;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+        Person person = (Person) o;
+        return Double.compare(person.getWeight(), getWeight()) == 0 &&
+                Double.compare(person.getHeight(), getHeight()) == 0 &&
+                Objects.equals(getName(), person.getName()) &&
+                getGender() == person.getGender() &&
+                Objects.equals(birthday, person.birthday);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getWeight(), getHeight(), getGender(), birthday);
     }
 
     @Override
