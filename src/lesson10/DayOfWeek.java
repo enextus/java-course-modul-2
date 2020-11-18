@@ -1,5 +1,8 @@
 package lesson10;
 
+/**
+ * enum DayOfWeek
+ */
 public enum DayOfWeek {
     MONDAY("mon"),
     TUESDAY("tue"),
