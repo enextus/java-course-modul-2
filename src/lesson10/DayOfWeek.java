@@ -12,7 +12,7 @@ public enum DayOfWeek {
     SATURDAY("sat"),
     SUNDAY("sun");
 
-    private String title;
+    private final String title;
 
     DayOfWeek(String title) {
         this.title = title;
@@ -22,14 +22,18 @@ public enum DayOfWeek {
         return title;
     }
 
+    public void sayHello() {
+        System.out.println("Hello from enum DayOfWeek!");
+    }
+
     @Override
     public String toString() {
         return "DayOfWeek{" +
-                "title='" + title + '\'' +
+                "name='" + name() + '\'' +
+                ", " +
+                "title='" + getTitle() + '\'' +
+                ", " +
+                "ordinal='" + ordinal() + '\'' +
                 '}';
-    }
-
-    public void sayHello() {
-        System.out.println("Hello");
     }
 }

@@ -6,7 +6,7 @@ import java.util.Objects;
  * class WeekDay
  */
 public class WeekDay {
-    private String titleOfDay;
+    private final String titleOfDay;
 
     private WeekDay(String titleOfDay) {
         this.titleOfDay = titleOfDay;
