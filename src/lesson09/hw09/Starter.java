@@ -59,7 +59,6 @@ public class Starter {
         System.out.println("Quantity of cocktails in the bar: " + bar.length + "\n");
 
         System.out.println("The cocktail \"" + cocktail1.getName() + "\" has " + numberOfIng(cocktail1) + " ingredients.\n");
-
         System.out.println();
 
         for (Cocktail cocktail : bar) System.out.println(cocktail.toString());

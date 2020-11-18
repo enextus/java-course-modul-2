@@ -28,8 +28,8 @@ public class Cocktail {
     public Cocktail(String name, Ingredient... ingredients) {
         this.name = name;
         this.ingredients = ingredients;
-        this.liquid = getFullLiquid(ingredients);
-        this.perCent = getFullPerCent(ingredients);
+        this.liquid = getFullLiquid(getIngredients());
+        this.perCent = getFullPerCent(getIngredients());
     }
 
     public String getName() {
