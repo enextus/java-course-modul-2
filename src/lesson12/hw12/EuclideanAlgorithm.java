@@ -11,13 +11,14 @@ public class EuclideanAlgorithm {
     public static void main(String[] args) {
         int a = 1071;
         int b = 462;
-        int gcd = 0;
 
-        System.out.println("GCD = " + euclidean(a, b, gcd));
+        System.out.println("GCD = " + euclidean(a, b));
         System.out.println();
     }
 
-    private static int euclidean(int a, int b, int gcd) {
+    private static int euclidean(int a, int b) {
+        int gcd;
+
         if (a < b) gcd = b;
         else gcd = a;
 
