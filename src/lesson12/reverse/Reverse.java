@@ -4,7 +4,6 @@ import lesson12.lesson12;
 
 public class Reverse {
     String str;
-    String result;
 
     Reverse(String str) {
 
