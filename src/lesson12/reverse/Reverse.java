@@ -1,5 +1,8 @@
 package lesson12.reverse;
 
+/**
+ * class Reverse
+ */
 public class Reverse {
     String str;
 
