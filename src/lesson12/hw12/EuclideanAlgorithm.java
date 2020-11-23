@@ -7,17 +7,20 @@ public class EuclideanAlgorithm {
     public static void main(String[] args) {
         int a = 1071;
         int b = 462;
-        int del = 0;
+        int gcd = 0;
 
-        if (a < b) del = b;
-        else del = a;
+        System.out.println("_ gcd _ : " + euclidean(a, b, gcd));
+        System.out.println();
+    }
+
+    private static int euclidean(int a, int b, int gcd) {
+        if (a < b) gcd = b;
+        else gcd = a;
 
         while (true) {
-            del--;
-            if (a % del == 0 && b % del == 0) {
-                break;
-            }
+            gcd--;
+            if (a % gcd == 0 && b % gcd == 0) break;
         }
-        System.out.println(del);
+        return gcd;
     }
 }
