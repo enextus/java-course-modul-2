@@ -2,6 +2,10 @@ package lesson12.hw12;
 
 /**
  * class Euclidean algorithm for greatest common divisor (GCD)
+ * Expectation:
+ * 21
+ * Test:
+ * 21
  */
 public class EuclideanAlgorithm {
     public static void main(String[] args) {
@@ -9,7 +13,7 @@ public class EuclideanAlgorithm {
         int b = 462;
         int gcd = 0;
 
-        System.out.println("_ gcd _ : " + euclidean(a, b, gcd));
+        System.out.println("GCD = " + euclidean(a, b, gcd));
         System.out.println();
     }
 
