@@ -3,8 +3,7 @@ package lesson12.reverse;
 public class Reverse {
     String str;
 
-    Reverse(String str) {
-        this.str = str;
+    public Reverse() {
     }
 
     public String reverseNaive(String str) {
