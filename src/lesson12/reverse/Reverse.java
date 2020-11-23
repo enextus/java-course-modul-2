@@ -14,8 +14,8 @@ public class Reverse {
     }
 
     public String reverseOptimized(String str) {
-        char[] arr = new char[str.length()];
         int length = str.length();
+        char[] arr = new char[length];
 
         for (int i = length - 1; i >= 0; i--) {
             arr[i] = str.charAt(length - i - 1);
