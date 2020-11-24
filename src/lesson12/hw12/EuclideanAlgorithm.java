@@ -7,7 +7,7 @@ package lesson12.hw12;
  * Test:
  * 21
  */
-public class GCDAlgorithm {
+public class EuclideanAlgorithm {
     public static void main(String[] args) {
         int a = 1071;
         int b = 462;
