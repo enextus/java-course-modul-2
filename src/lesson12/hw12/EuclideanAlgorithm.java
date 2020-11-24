@@ -18,9 +18,7 @@ public class EuclideanAlgorithm {
 
     private static int euclidean(int a, int b) {
         int gcd;
-
-        if (a < b) gcd = b;
-        else gcd = a;
+        gcd = a < b ? b : a;
 
         while (true) {
             gcd--;
