@@ -17,19 +17,15 @@ package lesson02.hw02;
  */
 public class Gcd {
     public static void main(String[] args) {
-
-        int a = 20;
-        int b = 15;
+        int a = 15;
+        int b = 20;
 
         System.out.println(getGcd(a, b));
     }
 
     public static int getGcd(int a, int b) {
-
         System.out.println("a: " + a + ", b: " + b);
-
         System.out.println();
-
         return b == 0 ? a : getGcd(b, a % b);
     }
 }
