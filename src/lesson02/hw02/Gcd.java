@@ -20,7 +20,7 @@ public class Gcd {
         int a = 15;
         int b = 20;
 
-        System.out.println(getGcd(a, b));
+        System.out.println("GCD = " + getGcd(a, b));
     }
 
     public static int getGcd(int a, int b) {
