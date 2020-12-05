@@ -18,12 +18,11 @@ public class EuclideanAlgorithm {
 
     private static int getGcd(int a, int b) {
         int gcd;
-        gcd = a < b ? b : a;
+        gcd = Math.max(a, b);
 
-        while (true) {
+        do {
             gcd--;
-            if (a % gcd == 0 && b % gcd == 0) break;
-        }
+        } while (a % gcd != 0 || b % gcd != 0);
         return gcd;
     }
 }
