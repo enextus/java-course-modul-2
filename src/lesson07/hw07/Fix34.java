@@ -24,6 +24,7 @@ public class Fix34 {
     public static int[] arr;
 
     public static void main(String[] args) {
+
         printArr(fix34(1, 3, 1, 4));
         printArr(fix34(1, 3, 1, 4, 4, 3, 1));
         printArr(fix34(3, 2, 2, 4));
@@ -32,6 +33,7 @@ public class Fix34 {
     }
 
     private static int[] fix34(int... args) {
+
         arr = args;
         int target = 4;
         int indexOfTarget;
@@ -52,16 +54,24 @@ public class Fix34 {
     }
 
     public static int findIndexOfTarget(int target, int startIndex) {
-        for (int i = startIndex; i < arr.length; i++) if (target == arr[i]) return i;
+
+        for (int i = startIndex; i < arr.length; i++)
+            if (target == arr[i]) return i;
+
         return -1;
     }
 
     private static void printArr(int[] arr) {
+
         System.out.print("[");
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
-            if (i < arr.length - 1) System.out.print(", ");
+
+            if (i < arr.length - 1)
+                System.out.print(", ");
         }
+
         System.out.println("]");
     }
 }
