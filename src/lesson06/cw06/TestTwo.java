@@ -1,4 +1,4 @@
-package lesson06.hw07;
+package lesson06.cw06;
 
 public class TestTwo {
 }
