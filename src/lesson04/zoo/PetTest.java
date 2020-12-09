@@ -20,6 +20,5 @@ public class PetTest {
         System.out.println();
         System.out.println(c2.getTimestampTwo());
         System.out.println(c2.instanceNumber);
-
     }
 }
